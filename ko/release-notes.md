@@ -34,6 +34,7 @@
 
 * CloudTrail 로그 민감 정보 마스킹 처리
 
+
 ## 2023. 10. 31.
 * Network Firewall 서비스 출시
   
