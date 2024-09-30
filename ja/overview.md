@@ -1,5 +1,7 @@
 ## Security > Network Firewall > 概要
 
+This is only for test. 
+
 Network Firewallは、NHN Cloudで使用するインフラ資産を安全に保護するために提供するネットワークセキュリティサービスです。
 NHN Cloudに特化したアクセス制御を適用することができ、別途ファイアウォール製品を使用しなくても簡単にファイアウォール機能を使用できます。
 
