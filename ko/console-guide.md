@@ -527,18 +527,20 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
     * Syslog: 최대 2개의 원격지 주소로 로그를 전송
         * 2개의 원격지는 개별적으로 설정 가능(IP주소, 프로토콜, 포트 번호)
     * Object Storage: NHN Cloud에서 제공하는 Object Storage 서비스로 로그를 전송
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS_Setting.png" height="65%" />
+    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS.png" height="65%" />
         * 엑세스 키 / 비밀 키: Object Storage 서비스에서 S3 API 자격 증명 등록 시 확인 가능한 Access Key 정보를 입력
-            <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/S3%20API.png" height="65%" />
         * 버킷 이름: Object Storage 서비스에서 생성한 컨테이너의 이름을 입력
         * 엔드포인트: 리전 별 엔드포인트를 확인 후 위치에 맞게 엔드포인트를 입력
         * 리전: 리전 별 이름을 확인 후 리전 위치에 맞게 이름을 입력
     * Log & Crash Search: NHN Cloud에서 제공하는 Log & Crash Search 서비스로 로그를 전송
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/lncs.png" height="65%" />        
+    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/LNCS.png" height="65%" />
         * AppKey: Log&crash Search 서비스를 활성화 후 생성된 AppKey를 입력
 
 > [참고]
-> Object Storage 설정 시 [사용자 가이드](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)를 참고하여 입력하세요.
+> * Object Storage 설정 시 [사용자 가이드](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)를 참고하여 입력하세요.
+> * Log&crash Search 서비스를 사용 시 로그 알람 설정 기능을 활용하여 이상 행위를 탐지할 수 있습니다.
+예를 들어, Network Firewall에 특정 목적지로 향하는 SSH 통신에 대한 ACL 차단정책을 추가한 후 해당 정책에서 발생되는 로그에 대한 알람 조건을 설정합니다.(예: 1분 동안 SSH 접속 시도 로그가 20회 이상 발생)
+사용자가 설정한 조건을 만족 시 알람을 수신할 수 있습니다.
  
 <br>
 
