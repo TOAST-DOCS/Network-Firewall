@@ -3,7 +3,7 @@
 Network Firewall을 생성하기 위한 절차와 생성 이후 콘솔을 사용하는 방법을 설명합니다.
 
 ## 시작하기
-dfd
+
 Network Firewall을 사용하기 위해서는 가장 먼저 Network Firewall 서비스를 활성화합니다.
 
 ## Network Firewall 생성
