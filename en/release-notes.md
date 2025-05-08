@@ -4,7 +4,7 @@
 
 ### Added Features
 
-* Added a mirroring feature미러링 기능 추가
+* Added a mirroring feature
 
 ### Feature Updates
 
