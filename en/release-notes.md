@@ -6,11 +6,11 @@
 
 * Added a mirroring feature
 
-## October 15, 2024
+## April 15, 2025
 
 ### Added Features
 
-* Added the route feature
+* Added a mirroring feature
 
 ### Feature Updates
 
