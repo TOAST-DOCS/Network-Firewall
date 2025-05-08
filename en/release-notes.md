@@ -1,10 +1,10 @@
 ## Security > Network Firewall > Release Notes
 
-## October 15, 2024
+## April 15, 2025
 
 ### Added Features
 
-* Added the route feature
+* Added a mirroring feature미러링 기능 추가
 
 ### Feature Updates
 
