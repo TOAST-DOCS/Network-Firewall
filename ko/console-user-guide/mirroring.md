@@ -4,17 +4,15 @@
 
 **미러링** 탭에서는 Network Firewall을 통과하는 네트워크 패킷을 IDS/IPS, SIEM, NDR 등의 위협 탐지 및 분석 솔루션으로 복사하여, 네트워크 위협을 실시간으로 탐지하고 대응할 수 있도록 합니다.
 
-> [참고]
-> **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
-<br>
->     ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+!!! tip "알아두기"
+    * **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
+    ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
 
 <br>
 
-### 미러링 룰
+## 미러링 룰 설정하기
 
 * 미러링 룰을 추가하여 복사한 패킷을 원하는 대상 단말로 전송합니다.
-![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
     * 이름: 설정한 이름을 표시합니다.
     * 방향: 설정한 방향을 표시합니다.
     * 미러 지정 인터페이스: 선택한 Network Firewall의 인터페이스를 표시합니다.
@@ -25,6 +23,8 @@
         * Active: 활성화 
         * Inactive: 비활성화
     * 자세히 보기: 설정한 미러링 룰의 상세 정보를 확인합니다.
+    ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
+
 
 <br>
 
@@ -43,20 +43,21 @@
     * 미러링 대상 IP: 미러링 패킷을 수신할 대상의 사설 IP를 입력합니다.
     * VNI(virtual network identifier): VNI를 입력합니다.
 
-> [참고]
->
-> * 미러링 대상 단말이 VXLAN 패킷을 수신할 수 있도록 정책(보안 그룹 및 방화벽 등)에서 미러링 송신 IP와 UDP 포트 4789번에 대한 접속 허용 설정이 필요합니다.
-> * 미러링 룰은 최대 3개까지 생성할 수 있습니다.
-> * 미러링 룰을 적용할 때 고객의 환경에 따라 많은 통신 데이터를 발생시킬 수 있으므로, 미러링 대상 IP 정보를 정확하게 입력해야 합니다.
-> * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
+!!! tip "알아두기"
+    * 미러링 대상 단말이 VXLAN 패킷을 수신할 수 있도록 정책(보안 그룹 및 방화벽 등)에서 미러링 송신 IP와 UDP 포트 4789번에 대한 접속 허용 설정이 필요합니다.
+    * 미러링 룰은 최대 3개까지 생성할 수 있습니다.
+    * 미러링 룰을 적용할 때 고객의 환경에 따라 많은 통신 데이터를 발생시킬 수 있으므로, 미러링 대상 IP 정보를 정확하게 입력해야 합니다.
+    * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
+
+<br>
 
 * **필터 그룹**을 선택합니다.
     * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
     * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
-> [참고]
-> 필터 그룹은 룰당 하나만 적용 가능합니다.
+!!! tip "알아두기"
+    필터 그룹은 룰당 하나만 적용 가능합니다.
 
 <br>
 
@@ -64,8 +65,8 @@
 
 * **수정**을 클릭해 미러링 룰을 수정할 수 있습니다.
 
-> [참고]
-> 이름, 설명, 상태, 필터 그룹만 수정 가능합니다.
+!!! tip "알아두기"
+    이름, 설명, 상태, 필터 그룹만 수정 가능합니다.
 
 <br>
 
@@ -75,21 +76,20 @@
 
 <br>
 
-### 필터 그룹
+### 필터 그룹 설정하기
 
 * **필터 그룹**을 통해 미러링 룰에 적용할 필터를 설정하면 사용자가 원하는 패킷만 선별하여 전송할 수 있습니다.
-![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
     * 이름: 설정한 이름을 표시합니다.
     * 연결된 미러링 룰: 해당 필터 그룹을 사용하는 미러링 룰을 표시합니다.
     * 설명: 설명을 표시합니다.
     * 필터 규칙 보기: 해당 필터 그룹에 설정된 규칙을 확인합니다.
+    ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
 
 <br>
 
 ### 추가
 * **추가**를 클릭해 필터 그룹을 추가할 수 있습니다.
-    ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
-    * 필터 규칙 정의
+  * 필터 규칙 정의
         * 우선순위: 작은 숫자일수록 우선순위가 높습니다. 높은 우선순위부터 규칙을 적용하여 미러링 패킷을 전송합니다.
         * 프로토콜: 프로토콜을 지정합니다.
             * ALL: 모든 프로토콜을 지정합니다. 선택 시 출발지/목적지 설정이 비활성화됩니다.
@@ -104,15 +104,15 @@
         * 전송 여부: 해당 규칙에 부합하는 패킷의 전송 여부를 설정합니다.
             * 전송: 규칙에 맞는 패킷을 전송합니다.
             * 미전송: 규칙에 맞는 패킷을 전송하지 않습니다.
+    ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
-> [참고]
->
-> * 각 규칙의 [－], [＋] 버튼을 클릭해 삭제하거나 추가할 수 있습니다.
-> * 각 규칙의 위, 아래 버튼을 클릭해 규칙의 우선순위를 변경할 수 있습니다.
->     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
-> * 필터 그룹은 default 필터 그룹을 포함하여 최대 10개까지 설정 가능합니다.
-> * 필터 규칙은 최대 30개까지 설정 가능합니다.
-> * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
+!!! tip "알아두기"
+    * 각 규칙의 [－], [＋] 버튼을 클릭해 삭제하거나 추가할 수 있습니다.
+    각 규칙의 위, 아래 버튼을 클릭해 규칙의 우선순위를 변경할 수 있습니다.
+     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+    * 필터 그룹은 default 필터 그룹을 포함하여 최대 10개까지 설정 가능합니다.
+    * 필터 규칙은 최대 30개까지 설정 가능합니다.
+    * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
 
 <br>
 
@@ -124,5 +124,5 @@
 ### 삭제
 * **삭제**를 클릭해 필터 그룹을 삭제할 수 있습니다.
 
-> [참고]
-> default 필터 그룹은 삭제할 수 없습니다.
+!!! tip "알아두기"
+    default 필터 그룹은 삭제할 수 없습니다.

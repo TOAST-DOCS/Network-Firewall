@@ -3,7 +3,10 @@
 **Security > Network Firewall > 콘솔 사용 가이드 > ACL**
 
 **ACL** 탭에서는 Network Firewall과 연결된 VPC 간 트래픽과 인바운드/아웃바운드 트래픽을 제어할 수 있습니다.
-<br/>
+
+<br>
+
+## ACL 설정하기
 
 ### 추가
 
@@ -19,31 +22,27 @@
 * **복사**를 클릭해 정책을 복사할 수 있습니다.
     * 복사: 복사하고자 하는 정책과 동일한 정책을 복사
     * 역방향 복사: 복사하고자 하는 정책의 출발지와 목적지를 변경하여 복사
+    ![acl_copy.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_copy_1.png)
 
-![acl_copy.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_copy_1.png)
-
-> [참고]
-> 
-> 복사된 정책은 비활성화됩니다. 사용이 필요할 경우 **수정**을 클릭해 정책을 활성화한 뒤 사용하세요.
-
+!!! tip "알아두기"
+    복사된 정책은 비활성화됩니다. 사용이 필요할 경우 **수정**을 클릭해 정책을 활성화한 뒤 사용하세요.
+    
 ### 수정
 
 * **수정**을 클릭해 정책을 수정할 수 있습니다.
-
 
 ### 이동
 
 * **이동**을 클릭해 정책을 이동할 수 있습니다.
     * default-deny 정책 아래로는 이동이 불가능합니다.
-
-![acl_move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_move_1.png)
+    ![acl_move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_move_1.png)
 
 ### 삭제
 
 * **삭제**를 클릭해 정책을 삭제할 수 있습니다.
 
->[주의]
->한번 삭제한 정책은 복구할 수 없으며, default-deny 정책은 삭제할 수 없습니다.
+!!! danger "주의"
+    한번 삭제한 정책은 복구할 수 없으며, default-deny 정책은 삭제할 수 없습니다.
 
 ### 정책 일괄 다운로드
 
@@ -54,5 +53,3 @@
 * 내려받은 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 
 ![acl_batch.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_batch_1.png)
-
-<br>
