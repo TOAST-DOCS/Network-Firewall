@@ -529,6 +529,42 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  
  <br>
 
+## Mirroring
+
+<!-- TODO: translate body -->
+
+### Mirroring rule
+
+<!-- TODO: translate body -->
+
+### Add
+
+<!-- TODO: translate body -->
+
+### Modify
+
+<!-- TODO: translate body -->
+
+### Delete
+
+<!-- TODO: translate body -->
+
+### Filter group
+
+<!-- TODO: translate body -->
+
+### Add
+
+<!-- TODO: translate body -->
+
+### Modify
+
+<!-- TODO: translate body -->
+
+### Delete
+
+<!-- TODO: translate body -->
+
 ## VPN
 
 The **VPN** tab enables secure, private communication over an encrypted tunnel between sites.
