@@ -529,6 +529,138 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  
  <br>
 
+## Mirroring
+
+In the **Mirroring** tab, network packets passing through Network Firewall are copied to threat detection and analysis solutions such as IDS/IPS, SIEM, and NDR to enable real-time detection and response to network threats.
+
+> [Note]
+> You can use this feature after activating it by setting it to **Enable** in **Options - Mirroring Settings**. (Activation takes about 30 seconds)
+<br>
+>     ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+
+<br>
+
+### Mirroring rule
+
+* Add a mirroring rule to transmit copied packets to the desired target device.
+![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
+    * Name: Displays the configured name.
+    * Direction: Displays the configured direction.
+    * Mirror designated interface: Displays the interface of the selected Network Firewall.
+    * Mirroring source IP: Displays the IP of the mirroring interface.
+    * Mirroring target IP: Displays the destination IP to send mirroring packets to.
+    * Filter group: Displays the selected filter group.
+    * Status: Displays the status of the mirroring rule through a badge.
+        * Active: Activated 
+        * Inactive: Deactivated
+    * View details: View detailed information about the configured mirroring rule.
+
+<br>
+
+### Add
+
+* You can add a mirroring rule by clicking **Add**.
+    ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
+    * Status: Set whether to activate the mirroring rule.
+    * Direction: Set the receive/transmit packets to mirror from the mirror designated interface. You can mirror only packets in a specific direction through this setting.
+        * Receive (Rx): Packets received from the mirror designated interface
+        * Transmit (Tx): Packets transmitted from the mirror designated interface
+    * Mirror designated interface: Choose from the following Network Firewall interfaces:
+        * NetworkFirewall_INF_NAT: Top interface for external control of Network Firewall
+        * NetworkFirewall_INF_TRAFFIC: Bottom interface for internal control of Network Firewall
+    * Mirroring source IP: The mirroring interface of the external transmission subnet is set by default.
+    * Mirroring target IP: Enter the private IP of the target that will receive mirroring packets.
+    * VNI (Virtual Network Identifier): Enter the VNI.
+
+> [Note]
+>
+> * Policy settings (security groups, firewalls, etc.) must allow access to the mirroring source IP and UDP port 4789 so that the mirroring target device can receive VXLAN packets.
+> * You can create up to 3 mirroring rules.
+> * When you apply mirroring rules, they can generate large amounts of communication data depending on your environment, so you must enter the mirroring target IP information accurately.
+> * Network Firewall transmits mirroring packets through VXLAN tunnels, so VNI configuration is required. Enter a VNI value between 1 and 16,777,215, and set it the same as the mirroring target equipment.
+
+* Select a **Filter group**.
+    * If there are no previously added filter groups, you can add a filter group by clicking **Add Filter Group**.
+    * For more information, see [Filter Group Description](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9).
+        ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
+
+> [Note]
+> You can apply only one filter group per rule.
+
+<br>
+
+### Modify
+
+* You can choose **Edit** to modify the mirroring rule.
+
+> [Note]
+> You can modify only the name, description, status, and filter group.
+
+<br>
+
+### Delete
+
+* You can click **Delete** to delete the mirroring rule.
+
+<br>
+
+### Filter group
+
+* By configuring filters to apply to mirroring rules through **filter groups**, you can select and transmit only the packets you want.
+![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
+    * Name: Displays the configured name.
+    * Connected mirroring rule: Displays the mirroring rule that uses this filter group.
+    * Description: Displays the description.
+    * View filter rules: Check the rules configured in this filter group.
+
+<br>
+
+### Add
+
+* You can add a filter group by clicking **Add**.
+    ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
+    * Filter rule definition
+        * Priority: Lower numbers have higher priority. Rules are applied from highest to lowest priority to transmit mirroring packets.
+        * Protocol: Specifies the protocol.
+            * ALL: Specifies all protocols. When selected, source/destination settings are deactivated.
+            * TCP: Specifies TCP.
+            * UDP: Specifies UDP.
+            * ICMP: Specifies ICMP. When selected, source/destination port settings are deactivated.
+        * Source/Destination CIDR: Sets the source and destination CIDR.
+        * Source/Destination Port: Select and set ALL, Port, or Port Range.
+            * ALL: Specifies all ports.
+            * Port: Specifies a single port in the range from 1 to 65535.
+            * Port Range: Specifies a port range within the range from 1 to 65535.
+        * Transmission: Sets whether to transmit packets that match the rule.
+            * Transmit: Transmits packets that match the rule.
+            * Do not transmit: Does not transmit packets that match the rule.
+
+> [Note]
+>
+> * You can delete or add rules by clicking the [－] and [＋] buttons for each rule.
+> * You can change the priority of rules by clicking the up and down buttons for each rule.
+>     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+> * You can set up to 10 filter groups, including the default filter group.
+> * You can set up to 30 filter rules.
+> * Filter rules are applied from highest to lowest priority. Therefore, packets that have already been applied to a no transmission rule are not applied to the next priority rule.
+
+<br>
+
+### Modify
+
+* You can click **Edit** to modify the filter group.
+
+<br>
+
+### Delete
+
+* You can delete the filter group by clicking **Delete**.
+
+> [Note]
+> The default filter group cannot be deleted.
+
+<br>
+
 ## VPN
 
 The **VPN** tab enables secure, private communication over an encrypted tunnel between sites.
