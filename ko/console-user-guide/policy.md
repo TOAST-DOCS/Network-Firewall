@@ -23,9 +23,6 @@
     * 복사: 복사하고자 하는 정책과 동일한 정책을 복사
     * 역방향 복사: 복사하고자 하는 정책의 출발지와 목적지를 변경하여 복사
     ![acl_copy.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_copy_1.png)
-
-!!! tip "알아두기"
-    복사된 정책은 비활성화됩니다. 사용이 필요할 경우 **수정**을 클릭해 정책을 활성화한 뒤 사용하세요.
     
 ### 수정
 
@@ -41,9 +38,6 @@
 
 * **삭제**를 클릭해 정책을 삭제할 수 있습니다.
 
-!!! danger "주의"
-    한번 삭제한 정책은 복구할 수 없으며, default-deny 정책은 삭제할 수 없습니다.
-
 ### 정책 일괄 다운로드
 
 * 정책 탭에 생성되어 있는 정책 전체를 한번에 다운로드할 수 있습니다.
@@ -53,3 +47,9 @@
 * 내려받은 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 
 ![acl_batch.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_batch_1.png)
+
+!!! tip "알아두기"
+    복사된 정책은 비활성화됩니다. 사용이 필요할 경우 **수정**을 클릭해 정책을 활성화한 뒤 사용하세요.
+
+!!! danger "주의"
+    한번 삭제한 정책은 복구할 수 없으며, default-deny 정책은 삭제할 수 없습니다.

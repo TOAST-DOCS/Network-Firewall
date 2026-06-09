@@ -6,10 +6,6 @@
 
 ![policy-route.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-route.png)
 
-!!! danger "주의"
-    * Network Firewall의 기본 게이트웨이는 NAT 이더넷이며, 수정하거나 삭제할 수 없습니다.
-    * 라우트 설정이 변경될 경우 통신에 문제가 있을 수 있으므로 유의하여 설정하세요. 
-
 <br>
 
 ## 라우트 설정하기
@@ -20,6 +16,14 @@
     * 목적지: 서브넷 형식으로 입력
     * 이더넷: NAT, TRAFFIC, VPN(IPSec VPN 기능 사용 시) 중 선택
     * 게이트웨이: 호스트 형식으로 입력
+
+### 수정
+
+* **수정**을 클릭해 라우트를 수정할 수 있습니다.
+
+### 삭제
+
+* **삭제**를 클릭해 라우트를 삭제할 수 있습니다.
 
 !!! tip "알아두기"
     * 이더넷을 VPN으로 선택할 경우 게이트웨이는 지정하지 않아도 됩니다.
@@ -32,14 +36,6 @@
             * 10.10.10.130/25 (X) → 10.10.10.128/25 (O)
             ![route_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/route_add.png)
 
-<br>
-
-### 수정
-
-* **수정**을 클릭해 라우트를 수정할 수 있습니다.
-
-<br>
-
-### 삭제
-
-* **삭제**를 클릭해 라우트를 삭제할 수 있습니다.
+!!! danger "주의"
+    * Network Firewall의 기본 게이트웨이는 NAT 이더넷이며, 수정하거나 삭제할 수 없습니다.
+    * 라우트 설정이 변경될 경우 통신에 문제가 있을 수 있으므로 유의하여 설정하세요. 

@@ -8,11 +8,6 @@
 
 Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아래와 같습니다.
 
-!!! tip "알아두기"
-
-    **Network Firewall > 개요**에서 서비스 구성도를 참조하세요.
-
-
 [1개의 프로젝트 구성 시 준비 사항]
 
 * 1개의 프로젝트
@@ -62,7 +57,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * VPC의 Routing에 연결된 인터넷 게이트웨이
 
 !!! tip "알아두기"
-    
+    * **Network Firewall > 개요**에서 서비스 구성도를 참조하세요.
     * 위의 서비스 자원은 [Network] 카테고리에서 생성 가능합니다. 
     * Network Firewall 생성은 프로젝트당 1개씩만 생성 가능합니다.
 

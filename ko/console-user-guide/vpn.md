@@ -12,10 +12,6 @@
 
 ![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
 
-!!! tip "알아두기"
-    * VPC와 서브넷은 수정할 수 없습니다.
-    * 게이트웨이는 최대 10개까지 생성 가능합니다.
-
 ### 수정
 
 * **수정** 버튼을 클릭해 게이트웨이를 수정합니다.
@@ -31,6 +27,10 @@
     * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용중인 항목이 노출됩니다.
 
 ![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
+
+!!! tip "알아두기"
+    * VPC와 서브넷은 수정할 수 없습니다.
+    * 게이트웨이는 최대 10개까지 생성 가능합니다.
 
 <br>
 

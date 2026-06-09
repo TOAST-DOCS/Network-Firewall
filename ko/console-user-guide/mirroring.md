@@ -25,9 +25,6 @@
     * 자세히 보기: 설정한 미러링 룰의 상세 정보를 확인합니다.
     ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
 
-
-<br>
-
 ### 추가
 
 * **추가**를 클릭해 미러링 룰을 추가할 수 있습니다.
@@ -43,36 +40,25 @@
     * 미러링 대상 IP: 미러링 패킷을 수신할 대상의 사설 IP를 입력합니다.
     * VNI(virtual network identifier): VNI를 입력합니다.
 
-!!! tip "알아두기"
-    * 미러링 대상 단말이 VXLAN 패킷을 수신할 수 있도록 정책(보안 그룹 및 방화벽 등)에서 미러링 송신 IP와 UDP 포트 4789번에 대한 접속 허용 설정이 필요합니다.
-    * 미러링 룰은 최대 3개까지 생성할 수 있습니다.
-    * 미러링 룰을 적용할 때 고객의 환경에 따라 많은 통신 데이터를 발생시킬 수 있으므로, 미러링 대상 IP 정보를 정확하게 입력해야 합니다.
-    * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
-
-<br>
-
 * **필터 그룹**을 선택합니다.
     * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
     * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
-!!! tip "알아두기"
-    필터 그룹은 룰당 하나만 적용 가능합니다.
-
-<br>
-
 ### 수정
 
 * **수정**을 클릭해 미러링 룰을 수정할 수 있습니다.
 
-!!! tip "알아두기"
-    이름, 설명, 상태, 필터 그룹만 수정 가능합니다.
-
-<br>
-
 ### 삭제
 
 * **삭제**를 클릭해 미러링 룰을 삭제할 수 있습니다.
+
+!!! tip "알아두기"
+    * 미러링 대상 단말이 VXLAN 패킷을 수신할 수 있도록 정책(보안 그룹 및 방화벽 등)에서 미러링 송신 IP와 UDP 포트 4789번에 대한 접속 허용 설정이 필요합니다.
+    * 미러링 룰은 최대 3개까지 생성할 수 있습니다.
+    * 미러링 룰을 적용할 때 고객의 환경에 따라 많은 통신 데이터를 발생시킬 수 있으므로, 미러링 대상 IP 정보를 정확하게 입력해야 합니다.
+    * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
+    * 필터 그룹은 필터 그룹은 룰당 하나만 적용 가능하며, 이름, 설명, 프로토콜, 전송 여부만 수정 가능합니다.
 
 <br>
 
@@ -84,8 +70,6 @@
     * 설명: 설명을 표시합니다.
     * 필터 규칙 보기: 해당 필터 그룹에 설정된 규칙을 확인합니다.
     ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
-
-<br>
 
 ### 추가
 * **추가**를 클릭해 필터 그룹을 추가할 수 있습니다.
@@ -106,23 +90,16 @@
             * 미전송: 규칙에 맞는 패킷을 전송하지 않습니다.
     ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
-!!! tip "알아두기"
-    * 각 규칙의 [－], [＋] 버튼을 클릭해 삭제하거나 추가할 수 있습니다.
-    각 규칙의 위, 아래 버튼을 클릭해 규칙의 우선순위를 변경할 수 있습니다.
-     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
-    * 필터 그룹은 default 필터 그룹을 포함하여 최대 10개까지 설정 가능합니다.
-    * 필터 규칙은 최대 30개까지 설정 가능합니다.
-    * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
-
-<br>
-
 ### 수정
 * **수정**을 클릭해 필터 그룹을 수정할 수 있습니다.
-
-<br>
 
 ### 삭제
 * **삭제**를 클릭해 필터 그룹을 삭제할 수 있습니다.
 
 !!! tip "알아두기"
-    default 필터 그룹은 삭제할 수 없습니다.
+    * 각 규칙의 [－], [＋] 버튼을 클릭해 삭제하거나 추가할 수 있고, 위, 아래 버튼을 클릭해 규칙의 우선순위를 변경할 수 있습니다.
+     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+    * 필터 그룹은 default 필터 그룹을 포함하여 최대 10개까지 설정 가능합니다.
+    * 필터 규칙은 최대 30개까지 설정 가능합니다.
+    * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
+    * default 필터 그룹은 삭제할 수 없습니다.

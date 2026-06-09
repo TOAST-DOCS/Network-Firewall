@@ -4,6 +4,8 @@
 
 **옵션** 탭에서는 Network Firewall 운영에 필요한 옵션을 설정할 수 있습니다.
 
+<br>
+
 ## 로그 설정하기
 
 ### 기본 차단 정책 로그 설정
@@ -38,20 +40,18 @@
 * Network Firewall에서 제공하는 기능 중 미러링의 사용 여부를 선택할 수 있습니다.
     * 사용 선택 시 필요한 서브넷은 Network Firewall 생성에 사용했던 서브넷을 사용합니다.
 
-!!! tip "알아두기"
-    * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network - Network Interface**에서 확인 가능합니다.
-        * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
-
 ### Network Firewall 구성
 * 단일 또는 이중화로 Network Firewall의 구성 방식을 설정할 수 있습니다.
-
-!!! tip "알아두기"
-    * 구성 방식 변경 시 몇 분 정도의 시간이 소요되며, 구성 변경이 완료되기 전까지 서비스에 영향이 있을 수 있습니다.
-    * 정책, NAT 등 Network Firewall 변경 작업은 구성 방식 변경이 완료된 뒤 진행할 것을 권장합니다.
 
 ### Network Firewall 삭제
 * 운영 중인 Network Firewall을 삭제할 수 있습니다.
     * Network Firewall은 한국(판교) 리전과 한국(평촌) 리전에서 각각 삭제할 수 있습니다.
+
+!!! tip "알아두기"
+    * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network - Network Interface**에서 확인 가능합니다.
+        * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
+    * 구성 방식 변경 시 몇 분 정도의 시간이 소요되며, 구성 변경이 완료되기 전까지 서비스에 영향이 있을 수 있습니다.
+    * 정책, NAT 등 Network Firewall 변경 작업은 구성 방식 변경이 완료된 뒤 진행할 것을 권장합니다.
 
 !!! danger "주의"
     운영 중인 Network Firewall을 삭제할 경우 Network Firewall과 연결된 다른 서비스를 고려하여 진행하세요.  
