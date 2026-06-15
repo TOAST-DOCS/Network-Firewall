@@ -8,7 +8,7 @@
 
 Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아래와 같습니다.
 
-[1개의 프로젝트 구성 시 준비 사항]
+### 1개의 프로젝트 구성 시 준비 사항
 
 * 1개의 프로젝트
 * 2개의 VPC(Hub VPC, Spoke VPC)
@@ -17,7 +17,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Spoke VPC 내 최소 1개의 서브넷
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
 
-[1개의 프로젝트 내 2개의 Spoke VPC 구성 시 준비 사항]
+### 1개의 프로젝트 내 2개의 Spoke VPC 구성 시 준비 사항
 
 * 1개의 프로젝트
 * 3개의 VPC(Hub VPC, Spoke1 VPC, Spoke2 VPC)
@@ -26,7 +26,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Spoke1 VPC, Spoke2 VPC 내 각각 최소 1개의 서브넷
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
 
-[1개 이상의 프로젝트 구성 시 준비 사항]
+### 1개 이상의 프로젝트 구성 시 준비 사항
 
 * 2개의 프로젝트
 * 2개의 VPC(각각 프로젝트에 Hub VPC, Spoke VPC)
@@ -35,8 +35,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Spoke VPC 내 최소 1개의 서브넷
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
 
-
-[다른 리전 간 프로젝트 구성 시 준비 사항]
+### 다른 리전 간 프로젝트 구성 시 준비 사항
 
 * 1개의 프로젝트
 * 2개의 VPC(KR1 리전에 Hub VPC, KR2 리전에 Spoke VPC)
@@ -45,8 +44,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Spoke VPC 내 최소 1개의 서브넷
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
 
-
-[단일 VPC 내 여러 개의 서브넷 구성 시 준비 사항]
+### 단일 VPC 내 여러 개의 서브넷 구성 시 준비 사항
 
 * 1개의 프로젝트
 * 1개의 VPC
@@ -185,5 +183,3 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 <br>
 
 위의 라우팅 설정이 완료되면 서로 다른 Spoke VPC 간 Network Firewall을 경유하여 사설 통신을 할 수 있습니다. (<strong>Network Firewall > 정책</strong> 탭에서 정책 추가 필요)
-
-**Network Firewall > 개요**에서 서비스 구성도를 참고하여 고객의 환경에 맞게 연결을 설정하세요.

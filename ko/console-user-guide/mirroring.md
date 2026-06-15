@@ -5,7 +5,7 @@
 **미러링** 탭에서는 Network Firewall을 통과하는 네트워크 패킷을 IDS/IPS, SIEM, NDR 등의 위협 탐지 및 분석 솔루션으로 복사하여, 네트워크 위협을 실시간으로 탐지하고 대응할 수 있도록 합니다.
 
 !!! tip "알아두기"
-    * **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
+    **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
     ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
 
 <br>
@@ -72,6 +72,7 @@
     ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
 
 ### 추가
+
 * **추가**를 클릭해 필터 그룹을 추가할 수 있습니다.
   * 필터 규칙 정의
         * 우선순위: 작은 숫자일수록 우선순위가 높습니다. 높은 우선순위부터 규칙을 적용하여 미러링 패킷을 전송합니다.
@@ -91,9 +92,11 @@
     ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
 ### 수정
+
 * **수정**을 클릭해 필터 그룹을 수정할 수 있습니다.
 
 ### 삭제
+
 * **삭제**를 클릭해 필터 그룹을 삭제할 수 있습니다.
 
 !!! tip "알아두기"

@@ -21,4 +21,6 @@ Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network F
   * 출발지/목적지 인터페이스는 ALL 설정 가능    
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/access_acl.png" height="65%" />  
 
-위와 같이 설정 후 출발지 IP를 보안 그룹에서 허용하면 인스턴스에 접속 가능합니다.
+!!! danger "주의"
+    
+    출발지 IP를 보안 그룹에서 허용해야만 인스턴스에 접속 가능합니다.
