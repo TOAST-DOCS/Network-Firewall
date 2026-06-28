@@ -2,8 +2,9 @@
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 인스턴스 접속**
 
-
 Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network Firewall을 경유하여 인스턴스에 접속합니다.
+
+<br>
 
 ## 설정하기
 
