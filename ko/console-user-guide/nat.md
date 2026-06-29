@@ -4,7 +4,7 @@
 
 **NAT**(네트워크 주소 변환) 탭에서는 외부에서 접속할 인스턴스와 전용으로 사용할 공인 IP를 선택하여 연결합니다.
 
-(사진 추가)
+![(nat1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat1.png)
 
 <br>
 

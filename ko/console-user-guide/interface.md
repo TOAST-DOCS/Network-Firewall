@@ -4,7 +4,7 @@
 
 **인터페이스** 탭에서는 Network Firewall에 사용할 인터페이스를 생성하고 관리합니다.
 
-(사진 추가)
+![(interface1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface1.png)
 
 <br>
 
@@ -13,24 +13,18 @@
 ### 추가
 * **추가**를 클릭해 인터페이스 그룹을 추가합니다.
     * 그룹 이름을 입력하고, VPC, 서브넷을 선택합니다.
-
-(사진 추가)
+    ![(interface2)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface2.png)
 
 ## 사용 설정
 * 오버플로우 메뉴에서 인터페이스를 사용 또는 미사용으로 설정할 수 있습니다.
-
-(사진 추가)
+![(interface4)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface4.png)
 
 ### 수정
 * **수정**을 클릭해 인터페이스 그룹을 수정할 수 있습니다.
     * VPC와 서브넷은 수정이 불가능합니다.
 
-(사진 추가)
-
 ### 삭제
 * **삭제**를 클릭해 인터페이스 그룹을 삭제할 수 있습니다.
-
-(사진 추가)
 
 !!! tips "알아두기"
 

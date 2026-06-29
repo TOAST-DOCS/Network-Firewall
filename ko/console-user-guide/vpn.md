@@ -4,7 +4,8 @@
 
 **VPN** 탭에서는 사이트간 암호화된 터널을 통해 안전한 사설 통신을 지원합니다.
 
-(사진 추가)
+![(vpn1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/7.vpn/vpn1.png)
+
 
 <br>
 
