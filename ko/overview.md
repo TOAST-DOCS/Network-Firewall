@@ -21,7 +21,7 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 서비스는 아래의 5가지 형태로 구성할 수 있습니다.
 
 ### 1개의 프로젝트
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Architectures/24.10.10/Architecture1.png" height="70%">
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/26.07.28/1. overwiew/architecture1.png" height="70%">
 
 ### 1개 이상의 프로젝트
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Architectures/24.10.10/Architecture2.png" height="70%" width="100%" />
