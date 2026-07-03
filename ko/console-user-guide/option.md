@@ -4,7 +4,7 @@
 
 **옵션** 탭에서는 Network Firewall 운영에 필요한 옵션을 설정할 수 있습니다.
 
-(사진 추가)
+![(option1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/11.option/option1.png)
 
 <br>
 

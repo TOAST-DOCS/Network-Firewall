@@ -4,7 +4,7 @@
 
 **모니터** 탭에서는 Network Firewall의 상태와 세션, 송수신 데이터를 실시간으로 확인할 수 있습니다.
 
-(사진 추가)
+![(monitor1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/10.monitor/monitor1.png)
 
 <br>
 
@@ -13,9 +13,9 @@
 Network Firewall 인스턴스 오른쪽의 아이콘 색깔에 따라 상태를 체크할 수 있습니다.
 
 * 녹색: 정상
-* 검정색: 오프라인
+* 회색: 오프라인
 * 노랑색: 재시작 중
-* 주황색: ?
+* 빨강색: 실패 / HA 전환 중
 
 <br>
 
