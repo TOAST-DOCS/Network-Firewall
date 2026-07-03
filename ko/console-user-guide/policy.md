@@ -4,7 +4,7 @@
 
 **정책** 탭에서는 Network Firewall과 연결된 VPC 간 트래픽과 인바운드/아웃바운드 트래픽을 제어할 수 있는 **ACL**과 Network Firewall을 경유하는 통신의 경로를 지정할 수 있는 **라우트** 기능을 사용할 수 있습니다.
 
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy1.png" height="65%" />
+(사진 추가)
 
 <br>
 
@@ -17,14 +17,14 @@
 * 정책의 상태(활성화/비활성화)와 동작(허용/차단), 스케줄을 설정 및 정책별 로깅 여부 등의 옵션을 설정하여 정책을 추가할 수 있습니다.
 * 스케줄 기능은 정책의 상태를 활성화 한 이후에 동작합니다(정책이 비활성화되어 있을 경우 스케줄 기능이 적용되지 않습니다.).
 
-![policy2.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy2.png)
+![acl_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/acl_add.png)
 
 ### 복사
 
 * **복사**를 클릭해 정책을 복사할 수 있습니다.
     * 복사: 복사하고자 하는 정책과 동일한 정책을 복사
     * 역방향 복사: 복사하고자 하는 정책의 출발지와 목적지를 변경하여 복사
-    ![policy3.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy3.png)
+    ![acl_copy.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_copy_1.png)
     
 ### 수정
 
@@ -34,7 +34,7 @@
 
 * **이동**을 클릭해 정책을 이동할 수 있습니다.
     * default-deny 정책 아래로는 이동이 불가능합니다.
-    ![policy4.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy4.png)
+    ![acl_move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_move_1.png)
 
 ### 삭제
 
@@ -48,7 +48,7 @@
 
 * 내려받은 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 
-![policy5.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy5.png)
+![acl_batch.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_batch_1.png)
 
 !!! tip "알아두기"
 
@@ -68,9 +68,9 @@
 
 * **추가**를 클릭해 이더넷을 선택하고, 목적지와 게이트웨이를 입력합니다. 
     * 목적지: 서브넷 형식으로 입력
-    * 이더넷: 드롭박스에 노출되는 이더넷 선택
+    * 이더넷: NAT, TRAFFIC, VPN(IPSec VPN 기능 사용 시) 중 선택
     * 게이트웨이: 호스트 형식으로 입력
-  
+
 ### 수정
 
 * **수정**을 클릭해 라우트를 수정할 수 있습니다.
