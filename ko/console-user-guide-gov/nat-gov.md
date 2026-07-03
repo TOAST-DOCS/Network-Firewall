@@ -16,7 +16,7 @@
     * NAT 전 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
     * NAT 후 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다. 
 
-![nat_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.04.05/nat_add_2.png)
+![nat_add.PNG](hhttps://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat2-gov.png)
 
 ### 수정
 
@@ -37,7 +37,7 @@
     * NAT 전 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
     * NAT 후 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
 
-![nat_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.04.05/nat_add_2.png)
+![nat_add.PNG](hhttps://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat3-gov.png)
 
 ### 수정
 
@@ -49,7 +49,7 @@
 * **삭제**를 클릭해 생성된 목적지 NAT를 삭제합니다.
 
 !!! tip "알아두기"
-    * SSL VPN 상품과 연계하여 설정 시 **타입 - SSL VPN**으로 선택하세요.
+    * SSL VPN 상품을 사용하기 위한 NAT 설정 시 **타입 - SSL VPN**으로 선택하세요.
     * 포트 기반의 목적지 NAT는 제공하지 않습니다.
     * NAT를 생성한 뒤 **정책** 탭에 허용 정책을 추가해야만 공인 통신이 가능합니다.
     * 인스턴스 접속은 목적지 탭에 NAT를 추가하면서 설정한 NAT 전 IP로 접속 가능합니다. (인스턴스에 직접 Floating IP 연결 불필요)
