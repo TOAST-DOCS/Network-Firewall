@@ -1,10 +1,8 @@
-# 미러링
+## 미러링
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 미러링**
 
 **미러링** 탭에서는 Network Firewall을 통과하는 네트워크 패킷을 IDS/IPS, SIEM, NDR 등의 위협 탐지 및 분석 솔루션으로 복사하여, 네트워크 위협을 실시간으로 탐지하고 대응할 수 있도록 합니다.
-
-(사진 추가)
 
 !!! tip "알아두기"
     **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
@@ -43,7 +41,7 @@
     * VNI(virtual network identifier): VNI를 입력합니다.
 
 * **필터 그룹**을 선택합니다.
-    * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
+    * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
     * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
@@ -108,4 +106,3 @@
     * 필터 규칙은 최대 30개까지 설정 가능합니다.
     * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
     * default 필터 그룹은 삭제할 수 없습니다.
-
