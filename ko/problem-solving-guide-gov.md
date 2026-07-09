@@ -1,4 +1,4 @@
-# Network Firewall 문제 해결 가이드
+## Network Firewall 문제 해결 가이드
 
 **Security > Network Firewall > 문제 해결 가이드**
 

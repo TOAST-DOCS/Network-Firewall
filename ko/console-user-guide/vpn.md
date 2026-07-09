@@ -1,8 +1,8 @@
-# VPN
+## VPN
 
 **Security > Network Firewall > 콘솔 사용 가이드 > VPN**
 
-**VPN** 탭에서는 사이트간 암호화된 터널을 통해 안전한 사설 통신을 지원합니다.
+**VPN** 탭에서는 사이트 간 암호화된 터널을 통해 안전한 사설 통신을 지원합니다.
 
 ![(vpn1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/7.vpn/vpn1.png)
 
@@ -27,7 +27,7 @@
 ### 플로팅 IP 연결
 
 * 피어 장비와의 연결에 필요한 플로팅 IP를 설정합니다.
-    * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용중인 항목이 노출됩니다.
+    * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용 중인 항목이 노출됩니다.
 
 ![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
 
@@ -82,7 +82,7 @@
       * 녹색: 피어 VPN 장비와 정상적으로 연결 중인 상태
       * 빨간색: 설정값 또는 통신 상태 등의 문제로 피어 VPN 장비 간 연결이 실패된 상태
       * 회색: 연결 대기 상태(새로 생성된 터널)
-      * 주황색: **중지** 버튼을 클릭해 피어 VPN 장비간 연결이 중지된 상태
+      * 주황색: **중지** 버튼을 클릭해 피어 VPN 장비 간 연결이 중지된 상태
     * 터널 생성이 완료된 이후 피어 장비의 종류와 설정에 따라 **연결**을 클릭하지 않아도 연결될 수 있습니다.
 
 ### 터널 수정

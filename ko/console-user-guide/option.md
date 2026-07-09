@@ -1,4 +1,4 @@
-# 옵션
+## 옵션
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 옵션**
 
@@ -57,7 +57,7 @@
 
 !!! tip "알아두기"
 
-    * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network - Network Interface**에서 확인 가능합니다.
+    * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network > Network Interface**에서 확인 가능합니다.
         * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
     * 구성 방식 변경 시 몇 분 정도의 시간이 소요되며, 구성 변경이 완료되기 전까지 서비스에 영향이 있을 수 있습니다.
     * 정책, NAT 등 Network Firewall 변경 작업은 구성 방식 변경이 완료된 뒤 진행할 것을 권장합니다.

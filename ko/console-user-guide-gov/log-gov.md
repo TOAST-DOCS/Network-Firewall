@@ -1,4 +1,4 @@
-# 로그
+## 로그
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 로그**
 

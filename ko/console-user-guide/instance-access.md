@@ -1,4 +1,4 @@
-# 인스턴스 접속
+## 인스턴스 접속
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 인스턴스 접속**
 
@@ -13,7 +13,7 @@ Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network F
 <img src="https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/2.instance-access/instance-access1.png" height="65%" />
 
 * **Network Firewall > NAT > 목적지** 탭으로 이동
-* **추가** 버튼 클릭 후 목적사용자 가이드 사용자 지 NAT 설정
+* **추가** 버튼 클릭 후 목적지 NAT 설정
   * 설정 전 **객체** 탭에서 목적지 IP 객체 생성과 여분의 플로팅 IP 필요 
     <img src="https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/2.instance-access/instance-access2.png" height="65%" />
 
