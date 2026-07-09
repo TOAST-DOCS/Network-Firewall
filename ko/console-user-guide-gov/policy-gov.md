@@ -4,7 +4,7 @@
 
 **정책** 탭에서는 Network Firewall과 연결된 VPC 간 트래픽과 인바운드/아웃바운드 트래픽을 제어할 수 있는 **ACL**과 Network Firewall을 경유하는 통신의 경로를 지정할 수 있는 **라우트** 기능을 사용할 수 있습니다.
 
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy1.png" height="65%" />
+<img src="../../static/images/26.07.28/2.console-user-guide/3.policy/policy1.png" height="65%" />
 
 <br>
 
@@ -17,14 +17,14 @@
 * 정책의 상태(활성화/비활성화)와 동작(허용/차단), 스케줄을 설정 및 정책별 로깅 여부 등의 옵션을 설정하여 정책을 추가할 수 있습니다.
 * 스케줄 기능은 정책의 상태를 활성화한 이후에 동작합니다(정책이 비활성화되어 있을 경우 스케줄 기능이 적용되지 않습니다.).
 
-![policy2.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy2.png)
+![policy2.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy2.png)
 
 ### 복사
 
 * **복사**를 클릭해 정책을 복사할 수 있습니다.
     * 복사: 복사하고자 하는 정책과 동일한 정책을 복사
     * 역방향 복사: 복사하고자 하는 정책의 출발지와 목적지를 변경하여 복사
-    ![policy3.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy3.png)
+    ![policy3.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy3.png)
     
 ### 수정
 
@@ -34,7 +34,7 @@
 
 * **이동**을 클릭해 정책을 이동할 수 있습니다.
     * default-deny 정책 아래로는 이동이 불가능합니다.
-    ![policy4.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy4.png)
+    ![policy4.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy4.png)
 
 ### 삭제
 
@@ -48,7 +48,7 @@
 
 * 내려받은 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 
-![policy5.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy5.png)
+![policy5.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy5.png)
 
 !!! tip "알아두기"
 
