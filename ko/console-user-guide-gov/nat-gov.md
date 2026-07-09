@@ -54,4 +54,4 @@
     * NAT를 생성한 뒤 **정책** 탭에 허용 정책을 추가해야만 공인 통신이 가능합니다.
     * 인스턴스 접속은 목적지 탭에 NAT를 추가하면서 설정한 NAT 전 IP로 접속할 수 있습니다. (인스턴스에 직접 Floating IP 연결 불필요)
     * NAT에 설정된 NAT 후 IP를 소유한 인스턴스에 직접 Floating IP를 할당할 경우 통신에 문제가 있을 수 있습니다.
-    * NAT 삭제 후 사용하지 않는 NAT 전 IP는 **Network > Floating**에서 직접 삭제하세요.
+    * NAT 삭제 후 사용하지 않는 NAT 전 IP는 **Network > Floating IP**에서 직접 삭제하세요.
