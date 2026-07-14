@@ -30,22 +30,22 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 서비스는 아래의 5가지 형태로 구성할 수 있습니다.
 
 ### 1개의 프로젝트
-<img src="../static/images/26.07.28/1.overview/architecture1.png" height="70%">
+![](../static/images/26.07.28/1.overview/architecture1.png)
 
 ### 1개 이상의 프로젝트
-<img src="../static/images/26.07.28/1.overview/architecture2.png" height="70%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecture2.png)
 
 
 ### 다른 리전 간 프로젝트
-<img src="../static/images/26.07.28/1.overview/architecture3.png" height="70%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecture3.png)
 
 
 ### 1개의 프로젝트 내 2개의 Spoke VPC
-<img src="../static/images/26.07.28/1.overview/architecture4.png" height="70%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecture4.png)
 
 
 ### 1개의 VPC 내 여러 개의 서브넷
-<img src="../static/images/26.07.28/1.overview/architecturer5.png" height="50%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecturer5.png)
 
 
 !!! tip "알아두기"
