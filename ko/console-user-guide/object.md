@@ -4,7 +4,7 @@
 
 **객체** 탭에서는 정책을 생성할 때 사용할 IP, 포트를 생성하고 관리합니다.
 
-![(object1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object1.png)
+![(object1)](../../static/images/26.07.28/2.console-user-guide/4.object/object1.png)
 
 <br>
 
@@ -14,7 +14,7 @@
 
 * 필수 항목을 입력하여 객체를 생성합니다.
     * 객체는 IP, 포트의 2가지 형태로 추가할 수 있습니다.
-    ![(object2)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object2.png)
+    ![(object2)](../../static/images/26.07.28/2.console-user-guide/4.object/object2.png)
 
 ### 수정
 
@@ -28,7 +28,7 @@
 
 ### 인스턴스 객체 추가
 * Network Firewall이 생성된 프로젝트 내에 있는 인스턴스를 활용하여 객체를 추가할 수 있습니다.
-![(object3)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object3.png)
+![(object3)](../../static/images/26.07.28/2.console-user-guide/4.object/object3.png)
 
 ### 객체 일괄 다운로드
 
