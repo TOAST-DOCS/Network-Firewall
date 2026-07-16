@@ -1,0 +1,37 @@
+## インターフェース
+
+**Security > Network Firewall > コンソール使用ガイド > インターフェース**
+
+**インターフェース**タブでは、Network Firewallに使用するインターフェースを作成・管理します。
+
+![(interface5)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface5.png)
+
+<br>
+
+## インターフェースを設定する
+
+### 追加
+* **追加**をクリックしてインターフェースを追加します。
+    * 名前を入力し、VPC、サブネットを選択します。
+    ![(interface6)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface6.png)
+
+### 修正
+* **修正**をクリックしてインターフェースを修正できます。
+    * VPCとサブネットは修正できません。
+
+### 削除
+* **削除**をクリックしてインターフェースを削除できます。
+
+### 使用設定
+* オーバーフローメニューからインターフェースを使用、または未使用に設定できます。
+![(interface7)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface7.png)
+
+!!! tip "ポイント"
+
+    修正は名前と説明のみ修正可能です。
+
+!!! danger "注意"
+    
+    * 使用中のインターフェースは削除できません。
+        * ACL及びルート設定に該当するインターフェースがなく、インターフェースタブで未使用状態の場合のみ削除可能です。
+    * インターフェースを未使用に設定した場合、通信に問題が発生する可能性があります。
