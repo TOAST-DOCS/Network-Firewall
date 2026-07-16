@@ -4,7 +4,7 @@
 
 **インターフェース**タブでは、Network Firewallに使用するインターフェースを作成・管理します。
 
-![(interface1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface1.png)
+![(interface5)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface5.png)
 
 <br>
 
@@ -13,7 +13,7 @@
 ### 追加
 * **追加**をクリックしてインターフェースを追加します。
     * 名前を入力し、VPC、サブネットを選択します。
-    ![(interface2)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface2.png)
+    ![(interface6)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface6.png)
 
 ### 修正
 * **修正**をクリックしてインターフェースを修正できます。
@@ -24,7 +24,7 @@
 
 ### 使用設定
 * オーバーフローメニューからインターフェースを使用、または未使用に設定できます。
-![(interface4)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface4.png)
+![(interface7)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface7.png)
 
 !!! tip "ポイント"
 
