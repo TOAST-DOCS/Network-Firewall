@@ -54,11 +54,11 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 * You can click **Delete** to delete the mirroring rule.
 
 !!! tip "Note"
-\* You must configure access permissions for the Mirroring Tx IP and UDP port 4789 in your policies (security groups, firewalls, etc.) so that the mirroring target device can receive VXLAN packets.
-\* You can create up to 3 mirroring rules.
-\* Applying mirroring rules may generate a large amount of communication data depending on your environment, so you must enter the mirroring target IP information accurately.
-\* Network Firewall sends mirroring packets via a VXLAN tunnel, so VNI configuration is required. Enter a VNI value between 1 and 16,777,215, and ensure it is set the same as the mirroring target device.
-\* Only one filter group can be applied per rule, and only the name, description, protocol, and transmission status can be modified.
+    * You must configure access permissions for the Mirroring Tx IP and UDP port 4789 in your policies (security groups, firewalls, etc.) so that the mirroring target device can receive VXLAN packets.
+    * You can create up to 3 mirroring rules.
+    * Applying mirroring rules may generate a large amount of communication data depending on your environment, so you must enter the mirroring target IP information accurately.
+    * Network Firewall sends mirroring packets via a VXLAN tunnel, so VNI configuration is required. Enter a VNI value between 1 and 16,777,215, and ensure it is set the same as the mirroring target device.
+    * Only one filter group can be applied per rule, and only the name, description, protocol, and transmission status can be modified.
 
 <br>
 
@@ -74,21 +74,22 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 ### Add
 
 * You can click **Add** to add a filter group.
-  * Filter Rule Definitions
-\* Priority: A lower number indicates a higher priority. Rules are applied from the highest priority to forward mirroring packets.
-\* Protocol: Specifies the protocol.
-\* ALL: Specifies all protocols. When selected, the source/destination settings are disabled.
-\* TCP: Specifies TCP.
-\* UDP: Specifies UDP.
-\* ICMP: Specifies ICMP. When selected, the source/destination port settings are disabled.
-\* Source/Destination CIDR: Configures the source and destination CIDR.
-\* Source/Destination Port: Configure by selecting ALL, a port, or a port range.
-\* ALL: Specifies all ports.
-\* Port: Specifies a single port in the range of 1–65535.
-\* Port range: Specifies a port range within 1–65535.
-\* Forward: Configures whether to forward packets that match the rule.
-\* Forward: Forwards packets that match the rule.
-\* Do not forward: Does not forward packets that match the rule.
+    * Filter Rule Definitions
+        * Priority: A lower number indicates a higher priority. Rules are applied from the highest priority to forward mirroring packets.
+        * Protocol: Specifies the protocol.
+            * ALL: Specifies all protocols. When selected, the source/destination settings are disabled.
+            * TCP: Specifies TCP.
+            * UDP: Specifies UDP.
+            * ICMP: Specifies ICMP. When selected, the source/destination port settings are disabled.
+        * Source/Destination CIDR: Configures the source and destination CIDR.
+        * Source/Destination Port: Configure by selecting ALL, a port, or a port range.
+            * ALL: Specifies all ports.
+            * Port: Specifies a single port in the range of 1–65535.
+            * Port range: Specifies a port range within 1–65535.
+        * Forward: Configures whether to forward packets that match the rule.
+            * Forward: Forwards packets that match the rule.
+            * Do not forward: Does not forward packets that match the rule.
+
 ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
 ### Modify
@@ -100,9 +101,10 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 * You can delete the filter group by clicking **Delete**.
 
 !!! tip "Note"
-\* Click the [－] or [＋] button for each rule to delete or add rules, and click the up or down button to change the priority of a rule.
-![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
-\* Up to 10 filter groups can be configured, including the default filter group.
-\* Up to 30 filter rules can be configured.
-\* Filter rules are applied in order from the highest to the lowest priority. Therefore, packets that have already been processed by a do-not-forward rule will not be subject to the next priority rule.
-\* The default filter group cannot be deleted.
+
+    * Click the [－] or [＋] button for each rule to delete or add rules, and click the up or down button to change the priority of a rule.
+    ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+    * Up to 10 filter groups can be configured, including the default filter group.
+    * Up to 30 filter rules can be configured.
+    * Filter rules are applied in order from the highest to the lowest priority. Therefore, packets that have already been processed by a do-not-forward rule will not be subject to the next priority rule.
+    * The default filter group cannot be deleted.

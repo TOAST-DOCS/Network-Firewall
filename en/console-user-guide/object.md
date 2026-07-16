@@ -35,8 +35,10 @@ In the **Object** tab, you can create and manage the IPs and ports to be used wh
 * You can download all IP and port objects created in the **Object** tab at once.
 
 !!! tip "Note"
-\* Group objects cannot be added when creating a group object (only individual or range objects can be selected and added).
-\* Objects are created by simply referencing the instance name and private IP address, regardless of the instance itself. Created objects are managed in the **Object** tab.
+
+    * Group objects cannot be added when creating a group object (only individual or range objects can be selected and added).
+    * Objects are created by simply referencing the instance name and private IP address, regardless of the instance itself. Created objects are managed in the **Object** tab.
 
 !!! danger "Caution"
-Objects in use by a policy will be changed to ALL objects after deletion.
+
+    Objects in use by a policy will be changed to ALL objects after deletion.

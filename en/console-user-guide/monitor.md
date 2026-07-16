@@ -25,4 +25,5 @@ You can check the status according to the icon color on the right of the Network
 * Network Usage: Inbound/outbound traffic currently passing through Network Firewall
 
 !!! tip "Notice"
-Search is only possible within a maximum of 24 hours (1 day).
+
+    Search is only possible within a maximum of 24 hours (1 day).

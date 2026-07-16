@@ -51,6 +51,7 @@ Logs blocked by the default-deny policy can only be checked after changing the d
 <br>
 
 !!! tip "If the issue is not resolved"
-If the issue persists after following the troubleshooting guide, contact the NHN Cloud Customer Center.
-\* [Online 1:1 inquiry](https://www.nhncloud.com/kr/support/inquiry?sec_nfw_fn)
-\* Main phone: 1588-7967 (Operating hours: Mon–Fri, 10 AM–7 PM)
+
+    If the issue persists after following the troubleshooting guide, contact the NHN Cloud Customer Center.
+    * [Online 1:1 inquiry](https://www.nhncloud.com/kr/support/inquiry?sec_nfw_fn)
+    * Main phone: 1588-7967 (Operating hours: Mon–Fri, 10 AM–7 PM)

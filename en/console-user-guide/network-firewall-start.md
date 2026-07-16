@@ -55,9 +55,10 @@ The minimum network service resources required to create Network Firewall are as
 * Internet gateway connected to Routing in the VPC
 
 !!! tip "Notice"
-\* See the service architecture in **Network Firewall > Overview**.
-\* The service resources listed above can be created in the [Network] category.
-\* Only 1 Network Firewall can be created per project.
+
+    * See the service architecture in **Network Firewall > Overview**.
+    * The service resources listed above can be created in the [Network] category.
+    * Only 1 Network Firewall can be created per project.
 
 <br>
 
@@ -74,16 +75,18 @@ The minimum network service resources required to create Network Firewall are as
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/create.png" height="60%" />
 
 !!! tip "Note"
-\* The created Network Firewall is not exposed to the user's project.
-\* The subnets used for the subnet, NAT, and external transmission must all be different subnets.
-\* It is recommended to create using the minimum unit (28-bit) available in the NHN Cloud console whenever possible.
-\* An internet gateway must be connected to the routing table of the VPC to which Network Firewall belongs in order to create it.
-\* The CIDR range owned by Network Firewall and the CIDR range that requires connectivity must not overlap.
-\* If changes are needed after creating Network Firewall with a single or redundant configuration, the configuration can be changed in the **Options** tab. However, since the availability zone cannot be changed, it is recommended to configure redundant configurations with separate availability zones whenever possible. 
+
+    * The created Network Firewall is not exposed to the user's project.
+    * The subnets used for the subnet, NAT, and external transmission must all be different subnets.
+    * It is recommended to create using the minimum unit (28-bit) available in the NHN Cloud console whenever possible.
+    * An internet gateway must be connected to the routing table of the VPC to which Network Firewall belongs in order to create it.
+    * The CIDR range owned by Network Firewall and the CIDR range that requires connectivity must not overlap.
+    * If changes are needed after creating Network Firewall with a single or redundant configuration, the configuration can be changed in the **Options** tab. However, since the availability zone cannot be changed, it is recommended to configure redundant configurations with separate availability zones whenever possible. 
 
 !!! danger "Caution"
-\* Network Firewall is a separate service from Security Groups. When using Network Firewall, both services must allow access in order to reach the instance.
-\* IPs created with the Virtual_IP type in **Network > Network Interface** are being used for redundancy in Network Firewall. Deleting them may block communication.
+
+    * Network Firewall is a separate service from Security Groups. When using Network Firewall, both services must allow access in order to reach the instance.
+    * IPs created with the Virtual_IP type in **Network > Network Interface** are being used for redundancy in Network Firewall. Deleting them may block communication.
 
 <br>
 
@@ -118,8 +121,9 @@ When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) 
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings6.png" height="65%" />
 
 !!! tip "Note"
-\* Configuring routing as described above causes all communication from the Spoke VPC to pass through Network Firewall.
-\* If communication needs to be branched, specify the destination explicitly instead of using 0.0.0.0/0.
+
+    * Configuring routing as described above causes all communication from the Spoke VPC to pass through Network Firewall.
+    * If communication needs to be branched, specify the destination explicitly instead of using 0.0.0.0/0.
 
 <br>
 
@@ -165,7 +169,8 @@ When it is Spoke VPC1 (17.2.16.0.0/24) and Spoke VPC2 (192.168.0.0/24)
         <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings11.png" height="65%" />
 
 !!! tip "Note"
-VPC peering between Spoke VPC2-Hub also requires the Add Route setting, as shown in **4****in Connection Settings**.
+
+    VPC peering between Spoke VPC2-Hub also requires the Add Route setting, as shown in **4****in Connection Settings**.
 
 <br>
 

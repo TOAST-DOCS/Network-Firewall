@@ -50,8 +50,6 @@ You can configure the service in the following five forms:
 
 !!! tip "Note"
     * The above configuration diagram is a typical configuration, and the configuration of WEB, WAS, Load Balancer, etc. except Network Firewall may differ depending on the customer's environment.
-
-
     * In a project environment in a different region, it can only be configured in the same project. For more information, see the [user guide](https://docs.nhncloud.com/en/Network/Peering%20Gateway/en/console-guide/).
 
 !!! danger "Caution"

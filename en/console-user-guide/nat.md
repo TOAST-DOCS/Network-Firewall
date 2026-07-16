@@ -49,8 +49,9 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
 * Click **Delete** to delete the created destination NAT.
 
 !!! tip "Note"
-\* Port-based destination NAT is not supported.
-\* After creating a NAT, you must add an allow policy in the **Policy** tab to enable public communication.
-\* Instances can be accessed using the Pre-NAT IP configured when adding a NAT in the Destination tab. (No need to directly associate a Floating IP with the instance.)
-\* If a Floating IP is directly assigned to an instance that owns the Post-NAT IP configured in NAT, communication issues may occur.
-\* After deleting a NAT, delete any unused Pre-NAT IPs directly in **Network > Floating IP**.
+
+    * Port-based destination NAT is not supported.
+    * After creating a NAT, you must add an allow policy in the **Policy** tab to enable public communication.
+    * Instances can be accessed using the Pre-NAT IP configured when adding a NAT in the Destination tab. (No need to directly associate a Floating IP with the instance.)
+    * If a Floating IP is directly assigned to an instance that owns the Post-NAT IP configured in NAT, communication issues may occur.
+    * After deleting a NAT, delete any unused Pre-NAT IPs directly in **Network > Floating IP**.
