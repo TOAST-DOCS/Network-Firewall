@@ -23,7 +23,6 @@
         * Active：有効 
         * Inactive：無効
     * 詳細表示：設定したミラーリングルールの詳細情報を確認します。
-    ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
 
 ### 追加
 
@@ -69,7 +68,6 @@
     * 接続されたミラーリングルール：該当するフィルタグループを使用するミラーリングルールを表示します。
     * 説明：説明を表示します。
     * フィルタルールの表示：該当するフィルタグループに設定されたルールを確認します。
-    ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
 
 ### 追加
 

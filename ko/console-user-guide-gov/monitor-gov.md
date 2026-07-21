@@ -4,8 +4,6 @@
 
 **모니터** 탭에서는 Network Firewall의 상태와 세션, 송수신 데이터를 실시간으로 확인할 수 있습니다.
 
-![(monitor1)](../../static/images/26.07.28/2.console-user-guide/10.monitor/monitor1.png)
-
 <br>
 
 ## Network Firewall 상태 체크하기

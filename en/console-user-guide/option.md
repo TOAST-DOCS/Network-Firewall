@@ -4,8 +4,6 @@
 
 In the **Options** tab, you can set the options required for Network Firewall operation.
 
-![(option1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/11.option/option1.png)
-
 <br>
 
 ## Configure Logs

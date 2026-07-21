@@ -4,8 +4,6 @@
 
 **モニター**タブでは、Network Firewallの状態とセッション、送受信データをリアルタイムで確認できます。
 
-![(monitor1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/10.monitor/monitor1.png)
-
 <br>
 
 ## Network Firewallの状態をチェックする

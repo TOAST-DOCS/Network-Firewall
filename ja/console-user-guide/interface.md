@@ -4,8 +4,6 @@
 
 **インターフェース**タブでは、Network Firewallに使用するインターフェースを作成・管理します。
 
-![(interface5)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface5.png)
-
 <br>
 
 ## インターフェースを設定する

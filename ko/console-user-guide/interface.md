@@ -4,8 +4,6 @@
 
 **인터페이스** 탭에서는 Network Firewall에 사용할 인터페이스를 생성하고 관리합니다.
 
-![(interface5)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface5.png)
-
 <br>
 
 ## 인터페이스 설정하기

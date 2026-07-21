@@ -4,8 +4,6 @@
 
 **객체** 탭에서는 정책을 생성할 때 사용할 IP, 포트를 생성하고 관리합니다.
 
-![(object1)](../../static/images/26.07.28/2.console-user-guide/4.object/object1.png)
-
 <br>
 
 ## 객체 설정하기

@@ -4,8 +4,6 @@
 
 In the **Object** tab, you can create and manage the IPs and ports to be used when creating policies.
 
-![(object1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object1.png)
-
 <br>
 
 ## Configure Objects

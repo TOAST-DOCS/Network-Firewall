@@ -23,7 +23,6 @@
         * Active: 활성화 
         * Inactive: 비활성화
     * 자세히 보기: 설정한 미러링 룰의 상세 정보를 확인합니다.
-    ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
 
 ### 추가
 
@@ -69,7 +68,6 @@
     * 연결된 미러링 룰: 해당 필터 그룹을 사용하는 미러링 룰을 표시합니다.
     * 설명: 설명을 표시합니다.
     * 필터 규칙 보기: 해당 필터 그룹에 설정된 규칙을 확인합니다.
-    ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
 
 ### 추가
 

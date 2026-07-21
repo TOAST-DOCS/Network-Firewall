@@ -4,8 +4,6 @@
 
 **NAT**(ネットワークアドレス変換)タブでは、インスタンスが外部と通信する際に外部に露出するパブリックIPを設定する送信元NATと、外部から接続するインスタンスと専用で使用するパブリックIPを選択して接続する宛先NATを設定できます。
 
-![nat1.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat1.png)
-
 <br>
 
 ## 送信元NATを設定する

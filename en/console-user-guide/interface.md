@@ -4,8 +4,6 @@
 
 In the **Interface** tab, you can create and manage interfaces to be used for the Network Firewall.
 
-![(interface1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface1.png)
-
 <br>
 
 ## Configure Interface

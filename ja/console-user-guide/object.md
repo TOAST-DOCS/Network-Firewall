@@ -4,8 +4,6 @@
 
 **オブジェクト**タブでは、ポリシーを作成する際に使用するIP、ポートを作成及び管理します。
 
-![(object1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object1.png)
-
 <br>
 
 ## オブジェクトの設定

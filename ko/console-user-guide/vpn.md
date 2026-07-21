@@ -4,9 +4,6 @@
 
 **VPN** 탭에서는 사이트 간 암호화된 터널을 통해 안전한 사설 통신을 지원합니다.
 
-![(vpn1)](../../static/images/26.07.28/2.console-user-guide/7.vpn/vpn1.png)
-
-
 <br>
 
 ## 게이트웨이 생성하기

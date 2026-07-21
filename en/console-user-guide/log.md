@@ -4,8 +4,6 @@
 
 In the **Log** tab, you can search for logs created by the Network Firewall.
 
-![(log1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/9.log/log1.png)
-
 <br>
 
 ## Search Logs

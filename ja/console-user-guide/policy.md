@@ -4,8 +4,6 @@
 
 **ポリシー**タブでは、Network Firewallと接続されたVPC間のトラフィックとインバウンド/アウトバウンドトラフィックを制御できる**ACL**と、Network Firewallを経由する通信の経路を指定できる**ルート**機能を使用できます。
 
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy1.png" height="65%" />
-
 <br>
 
 ## ACLの設定
@@ -61,8 +59,6 @@
 <br>
 
 ## ルートの設定
-
-![policy-route.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-route.png)
 
 ### 追加
 
