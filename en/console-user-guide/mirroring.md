@@ -23,7 +23,6 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
         * Active: Enabled 
         * Inactive: Disabled
     * Checks the detailed information of the configured mirroring rule.
-![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
 
 ### Add
 
@@ -69,7 +68,6 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
     * Associated mirroring rules: Displays mirroring rules that use this filter group.
     * Description: Displays a description.
     * View filter rules: Check the rules configured for the filter group.
-![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
 
 ### Add
 

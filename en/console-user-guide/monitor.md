@@ -4,8 +4,6 @@
 
 The **Monitor** tab allows you to check the status, sessions, and transmitted/received data of Network Firewall in real time.
 
-![(monitor1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/10.monitor/monitor1.png)
-
 <br>
 
 ## Check Network Firewall Status

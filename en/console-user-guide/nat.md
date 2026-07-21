@@ -4,8 +4,6 @@
 
 The Network Address Translation (**NAT**) tab allows you to configure source NAT, which sets the public IP exposed externally when an instance communicates with the outside, and destination NAT, which connects a public IP dedicated to an instance that is to be accessed from the outside.
 
-![nat1.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat1.png)
-
 <br>
 
 ## Configure Source NAT

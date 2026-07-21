@@ -4,8 +4,6 @@
 
 **로그** 탭에서는 Network Firewall에서 생성된 로그를 검색할 수 있습니다.
 
-![(log1)](../../static/images/26.07.28/2.console-user-guide/9.log/log1.png)
-
 <br>
 
 ## 로그 검색하기

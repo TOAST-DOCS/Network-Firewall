@@ -4,8 +4,6 @@
 
 **オプション**タブでは、Network Firewallの運用に必要なオプションを設定できます。
 
-![(option1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/11.option/option1.png)
-
 <br>
 
 ## ログの設定

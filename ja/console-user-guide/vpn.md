@@ -4,9 +4,6 @@
 
 **VPN**タブでは、サイト間の暗号化されたトンネルを通じて安全なプライベート通信をサポートします。
 
-![(vpn1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/7.vpn/vpn1.png)
-
-
 <br>
 
 ## ゲートウェイの作成

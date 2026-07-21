@@ -4,8 +4,6 @@
 
 **정책** 탭에서는 Network Firewall과 연결된 VPC 간 트래픽과 인바운드/아웃바운드 트래픽을 제어할 수 있는 **ACL**과 Network Firewall을 경유하는 통신의 경로를 지정할 수 있는 **라우트** 기능을 사용할 수 있습니다.
 
-![](../../static/images/26.07.28/2.console-user-guide/3.policy/policy1.png){ height="65%" }
-
 <br>
 
 ## ACL 설정하기
@@ -61,8 +59,6 @@
 <br>
 
 ## 라우트 설정하기
-
-![policy-route.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-route.png)
 
 ### 추가
 

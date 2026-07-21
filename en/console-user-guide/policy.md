@@ -4,8 +4,6 @@
 
 In the **Policy** tab, you can use the **ACL** feature to control traffic between VPCs connected to Network Firewall and inbound/outbound traffic, and the **Route** feature to specify the path for communication passing through Network Firewall.
 
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy1.png" height="65%" />
-
 <br>
 
 ## Configure ACL
@@ -60,8 +58,6 @@ Deleted policies cannot be recovered, and the default-deny policy cannot be dele
 <br>
 
 ## Configure Routing
-
-![policy-route.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-route.png)
 
 ### Add
 
