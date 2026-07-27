@@ -19,7 +19,7 @@ Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network F
 
 * **Network Firewall > 정책 > ACL** 탭에서 필요한 ACL을 허용
   * 출발지/목적지 인터페이스는 ALL 설정 가능    
-    ![](../../static/images/26.07.28/2.console-user-guide/2.instance-access/instance-access3.png){ height="65%" }  
+    ![](../../static/images/26.07.28/2.console-user-guide/2.instance-access/instance-access3.png){ height="65%" }
 
 !!! danger "주의"
     
