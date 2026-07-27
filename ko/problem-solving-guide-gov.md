@@ -52,5 +52,5 @@ default-deny 정책에 의해 차단된 로그는 기본 차단 정책 로그 �
 
 !!! tip "문제가 해결되지 않을 경우"
     문제 해결 가이드의 안내에 따라 진행하였으나 문제가 해결되지 않을 경우 NHN Cloud 고객 센터로 문의하세요.
-    * [온라인 1:1 문의 바로가기](https://www.nhncloud.com/kr/support/inquiry?alias=tab16_15)
+    * [온라인 1:1 문의 바로가기](https://www.gov-nhncloud.com/kr/support/inquiry?alias=sec_nfw_fn)
     * 대표 전화: 1588-7967(운영시간: 월~금 10:00-19:00)
