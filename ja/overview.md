@@ -30,22 +30,22 @@ NHN Cloudに特化したアクセス制御を適用でき、別途、ファイ�
 サービスは以下の5つの形態で構成できます。
 
 ### 1つのプロジェクト
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture1.png" height="70%">
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture1.png){ height="70%" }
 
 ### 1つ以上のプロジェクト
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture2.png" height="70%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture2.png){ width="100%" height="70%" }
 
 
 ### 異なるリージョン間のプロジェクト
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture3.png" height="70%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture3.png){ width="100%" height="70%" }
 
 
 ### 1つのプロジェクト内の2つのSpoke VPC
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture4.png" height="70%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture4.png){ width="100%" height="70%" }
 
 
 ### 1つのVPC内の複数のサブネット
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecturer5.png" height="50%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecturer5.png){ width="100%" height="50%" }
 
 
 !!! tip "ポイント"

@@ -30,22 +30,22 @@ You can easily use access control specialized for NHN Cloud and the firewall fea
 You can configure the service in the following five forms:
 
 ### 1 Project
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture1.png" height="70%">
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture1.png){ height="70%" }
 
 ### 1 or More Projects
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture2.png" height="70%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture2.png){ width="100%" height="70%" }
 
 
 ### Projects Between Different Regions
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture3.png" height="70%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture3.png){ width="100%" height="70%" }
 
 
 ### 2 Spoke VPCs in 1 Project
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture4.png" height="70%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture4.png){ width="100%" height="70%" }
 
 
 ### Multiple Subnets in a Single VPC
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecturer5.png" height="50%" width="100%" />
+![](https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecturer5.png){ width="100%" height="50%" }
 
 
 !!! tip "Note"
