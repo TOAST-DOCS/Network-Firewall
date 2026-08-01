@@ -1,4 +1,7 @@
-## Options
+<!-- pre-align:aligned sig=05296d704911 -->
+
+<a id="options"></a>
+## Options { #options }
 
 **Security > Network Firewall > Console User Guide > Options**
 
@@ -6,14 +9,17 @@ In the **Options** tab, you can set the options required for Network Firewall op
 
 <br>
 
-## Configure Logs
+<a id="configure-logs"></a>
+## Configure Logs { #configure-logs }
 
-### Default Block Policy Log Settings
+<a id="default-block-policy-log-settings"></a>
+### Default Block Policy Log Settings { #default-block-policy-log-settings }
 
 * Select whether to save the default block policy log that is mandatory created after Network Firewall is created.
     * When enabled, you can search logs created with the default blocking policy in the traffic log.
 
-### Log Remote Transfer Setting
+<a id="log-remote-transfer-setting"></a>
+### Log Remote Transfer Setting { #log-remote-transfer-setting }
 
 * Select the option to save traffic logs remotely.
     * Syslog: Send logs with up to 2 remote addresses
@@ -37,18 +43,22 @@ In the **Options** tab, you can set the options required for Network Firewall op
 
 <br>
 
-## Configure General Settings
+<a id="configure-general-settings"></a>
+## Configure General Settings { #configure-general-settings }
 
-### Mirroring Settings
+<a id="mirroring-settings"></a>
+### Mirroring Settings { #mirroring-settings }
 
 * You can select whether to use the mirroring feature provided by Network Firewall.
     * When enabled, the subnet used to create Network Firewall is used as the required subnet.
 
-### Configure Network Firewall
+<a id="configure-network-firewall"></a>
+### Configure Network Firewall { #configure-network-firewall }
 
 * You can configure Network Firewall as either single or redundant.
 
-### Delete Network Firewall
+<a id="delete-network-firewall"></a>
+### Delete Network Firewall { #delete-network-firewall }
 
 * You can delete a Network Firewall that is in operation.
     * Network Firewall can be deleted separately in the Korea (Pangyo) region and the Korea (Pyeongchon) region.
@@ -66,7 +76,8 @@ In the **Options** tab, you can set the options required for Network Firewall op
     
 <br>
 
-## Disable Network Firewall Service
+<a id="disable-network-firewall-service"></a>
+## Disable Network Firewall Service { #disable-network-firewall-service }
 
 You can disable the Network Firewall service in **Project Management > Services in Use**.
 

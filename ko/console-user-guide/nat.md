@@ -1,4 +1,7 @@
-## NAT
+<!-- pre-align:aligned sig=b5a6dd9155ad -->
+
+<a id="nat"></a>
+## NAT { #nat }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > NAT**
 
@@ -6,9 +9,11 @@
 
 <br>
 
-## 출발지 NAT 설정하기
+<a id="configure-source-nat"></a>
+## 출발지 NAT 설정하기 { #configure-source-nat }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 * **추가**를 클릭해 출발지 NAT를 생성합니다.
     * NAT 전 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
@@ -16,20 +21,24 @@
 
 ![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat2-pub.png)
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 * **수정**을 클릭해 생성된 출발지 NAT를 수정합니다.
     * 수정은 공인 IP와 사설 IP 모두 수정할 수 있습니다.
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 * **삭제**를 클릭해 생성된 출발지 NAT를 삭제합니다.
 
 <br>
 
-## 목적지 NAT 설정하기
+<a id="configure-destination-nat"></a>
+## 목적지 NAT 설정하기 { #configure-destination-nat }
 
-### 추가
+<a id="configure-destination-nat-add"></a>
+### 추가 { #configure-destination-nat-add }
 
 * **추가**를 클릭해 목적지 NAT를 생성합니다.
     * NAT 전 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
@@ -37,12 +46,14 @@
 
 ![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat3-pub.png)
 
-### 수정
+<a id="configure-destination-nat-modify"></a>
+### 수정 { #configure-destination-nat-modify }
 
 * **수정**을 클릭해 생성된 목적지 NAT를 수정합니다.
     * 수정은 공인 IP와 사설 IP 모두 수정할 수 있습니다.
 
-### 삭제
+<a id="configure-destination-nat-delete"></a>
+### 삭제 { #configure-destination-nat-delete }
 
 * **삭제**를 클릭해 생성된 목적지 NAT를 삭제합니다.
 

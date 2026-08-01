@@ -1,4 +1,7 @@
-## Network Firewall 개요
+<!-- pre-align:aligned sig=c8373fddc2f9 -->
+
+<a id="network-firewall-overview"></a>
+## Network Firewall 개요 { #network-firewall-overview }
 
 **Security > Network Firewall > 개요**
 
@@ -12,7 +15,8 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 
 <br>
 
-## 주요 기능
+<a id="main-features"></a>
+## 주요 기능 { #main-features }
 
 * 효율적으로 네트워크 통신 정책을 관리할 수 있습니다.
     * Stateful 방식으로 하나의 정책으로 트래픽을 제어합니다.
@@ -26,26 +30,32 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 
 <br>
 
-## 서비스 구성도
+<a id="service-architecture"></a>
+## 서비스 구성도 { #service-architecture }
 서비스는 아래의 5가지 형태로 구성할 수 있습니다.
 
-### 1개의 프로젝트
+<a id="1-project"></a>
+### 1개의 프로젝트 { #1-project }
 ![](../static/images/26.07.28/1.overview/architecture1.png){ height="70%" }
 
 
-### 1개 이상의 프로젝트
+<a id="1-or-more-projects"></a>
+### 1개 이상의 프로젝트 { #1-or-more-projects }
 ![](../static/images/26.07.28/1.overview/architecture2.png){ width="100%" height="70%" }
 
 
-### 다른 리전 간 프로젝트
+<a id="projects-between-different-regions"></a>
+### 다른 리전 간 프로젝트 { #projects-between-different-regions }
 ![](../static/images/26.07.28/1.overview/architecture3.png){ width="100%" height="70%" }
 
 
-### 1개의 프로젝트 내 2개의 Spoke VPC
+<a id="2-spoke-vpcs-in-1-project"></a>
+### 1개의 프로젝트 내 2개의 Spoke VPC { #2-spoke-vpcs-in-1-project }
 ![](../static/images/26.07.28/1.overview/architecture4.png){ width="100%" height="70%" }
 
 
-### 1개의 VPC 내 여러 개의 서브넷
+<a id="multiple-subnets-in-a-single-vpc"></a>
+### 1개의 VPC 내 여러 개의 서브넷 { #multiple-subnets-in-a-single-vpc }
 ![](../static/images/26.07.28/1.overview/architecturer5.png){ width="100%" height="50%" }
 
 

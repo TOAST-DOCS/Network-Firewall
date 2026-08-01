@@ -1,4 +1,7 @@
-## 객체
+<!-- pre-align:aligned sig=61dff5f1b687 -->
+
+<a id="object"></a>
+## 객체 { #object }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 객체**
 
@@ -6,29 +9,35 @@
 
 <br>
 
-## 객체 설정하기
+<a id="configure-objects"></a>
+## 객체 설정하기 { #configure-objects }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 * 필수 항목을 입력하여 객체를 생성합니다.
     * 객체는 IP, 포트의 2가지 형태로 추가할 수 있습니다.
     ![(object2)](../../static/images/26.07.28/2.console-user-guide/4.object/object2.png)
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 * **수정**을 클릭해 객체를 수정할 수 있습니다.
     * 타입은 수정이 불가능합니다.
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 * **삭제**를 클릭해 객체를 삭제할 수 있습니다.
     * 자동으로 Network Firewall에서 생성한 객체는 수정이나 삭제할 수 없습니다.
 
-### 인스턴스 객체 추가
+<a id="add-instance-object"></a>
+### 인스턴스 객체 추가 { #add-instance-object }
 * Network Firewall이 생성된 프로젝트 내에 있는 인스턴스를 활용하여 객체를 추가할 수 있습니다.
 ![(object3)](../../static/images/26.07.28/2.console-user-guide/4.object/object3.png)
 
-### 객체 일괄 다운로드
+<a id="batch-download-of-objects"></a>
+### 객체 일괄 다운로드 { #batch-download-of-objects }
 
 * **객체** 탭에 생성되어 있는 IP와 포트 객체 전체를 각각 한 번에 다운로드할 수 있습니다.
 

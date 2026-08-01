@@ -1,4 +1,7 @@
-## VPN
+<!-- pre-align:aligned sig=b06e75492dcf -->
+
+<a id="vpn"></a>
+## VPN { #vpn }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > VPN**
 
@@ -6,22 +9,26 @@
 
 <br>
 
-## 게이트웨이 생성하기
+<a id="create-gateway"></a>
+## 게이트웨이 생성하기 { #create-gateway }
 
 * **게이트웨이 생성**을 클릭해 피어 VPN 장비와 연결하기 위한 게이트웨이를 생성합니다.
 
 ![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 * **수정** 버튼을 클릭해 게이트웨이를 수정합니다.
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 * **삭제** 버튼을 클릭해 게이트웨이를 삭제합니다.
     * 게이트웨이에 연결된 터널이 있을 경우 삭제가 되지 않습니다.
 
-### 플로팅 IP 연결
+<a id="associate-floating-ip"></a>
+### 플로팅 IP 연결 { #associate-floating-ip }
 
 * 피어 장비와의 연결에 필요한 플로팅 IP를 설정합니다.
     * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용 중인 항목이 노출됩니다.
@@ -35,7 +42,8 @@
 
 <br>
 
-## 터널 생성하기
+<a id="create-tunnel"></a>
+## 터널 생성하기 { #create-tunnel }
 
 * 피어 장비와 연결할 터널을 생성합니다.
 
@@ -69,7 +77,8 @@
       * 172.16.0.0/12
       * 192.168.0.0/16 
 
-### 터널 연결
+<a id="connect-tunnel"></a>
+### 터널 연결 { #connect-tunnel }
 
 * 터널은 연결 대기 상태로 생성되며, **연결**을 클릭하여 생성된 터널과 피어 VPN 장비를 연결합니다.
 
@@ -82,21 +91,25 @@
       * 주황색: **중지** 버튼을 클릭해 피어 VPN 장비 간 연결이 중지된 상태
     * 터널 생성이 완료된 이후 피어 장비의 종류와 설정에 따라 **연결**을 클릭하지 않아도 연결될 수 있습니다.
 
-### 터널 수정
+<a id="modify-tunnel"></a>
+### 터널 수정 { #modify-tunnel }
 
 * **수정** 버튼을 클릭해 터널을 수정합니다.
     * 설정값 중 게이트웨이를 제외한 모든 값은 수정이 가능하며, 수정할 경우 피어 VPN 장비도 동일한 값으로 수정해야 합니다.
 
-### 터널 중지
+<a id="stop-tunnel"></a>
+### 터널 중지 { #stop-tunnel }
 
 * **중지** 버튼을 클릭해 터널을 중지합니다.
     * 중지할 경우 피어 VPN 장비를 통한 사설 통신이 중단됩니다. 
 
-### 터널 삭제
+<a id="delete-tunnel"></a>
+### 터널 삭제 { #delete-tunnel }
 
 * **삭제** 버튼을 클릭해 터널을 삭제합니다.
 
-### 이벤트
+<a id="event"></a>
+### 이벤트 { #event }
 
 * 피어 VPN 장비와의 터널 연결 시 발생하는 이벤트 로그를 검색할 수 있습니다.
 

@@ -1,4 +1,7 @@
-## Policy
+<!-- pre-align:aligned sig=9132502e0f26 -->
+
+<a id="policy"></a>
+## Policy { #policy }
 
 **Security > Network Firewall > Console User Guide > Policy**
 
@@ -6,9 +9,11 @@ In the **Policy** tab, you can use the **ACL** feature to control traffic betwee
 
 <br>
 
-## Configure ACL
+<a id="configure-acl"></a>
+## Configure ACL { #configure-acl }
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 * Add policies based on departure, destination, and destination port.
     * Select the departure, destination, and destination port through already created objects.
@@ -17,32 +22,38 @@ In the **Policy** tab, you can use the **ACL** feature to control traffic betwee
 
 ![policy2.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy2.png)
 
-### Copy
+<a id="copy"></a>
+### Copy { #copy }
 
 * Click **Copy** to copy a policy.
     * Copy: Copies the same policy as the one you want to copy.
     * Reverse copy: Copies the policy with the source and destination of the policy being copied swapped.
 ![policy3.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy3.png)
     
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 * Click **modify** to modify a policy.
 
-### Move
+<a id="move"></a>
+### Move { #move }
 
 * Click **Move** to move a policy.
     * Could not move below the default-deny policy.
 ![policy4.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy4.png)
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 * Click **Delete** to delete a policy.
 
-### Batch Download of Policies
+<a id="batch-download-of-policies"></a>
+### Batch Download of Policies { #batch-download-of-policies }
 
 * Download all policies created in the Policy tab at once.
 
-### Batch Register Policies
+<a id="batch-register-policies"></a>
+### Batch Register Policies { #batch-register-policies }
 
 * You can register policies at once using the downloaded template.
 
@@ -57,20 +68,24 @@ Deleted policies cannot be recovered, and the default-deny policy cannot be dele
 
 <br>
 
-## Configure Routing
+<a id="configure-routing"></a>
+## Configure Routing { #configure-routing }
 
-### Add
+<a id="configure-routing-add"></a>
+### Add { #configure-routing-add }
 
 * Click **Add** to select Ethernet, and enter the destination and gateway. 
     * Destination: Enter in subnet format
     * Ethernet: Select an Ethernet from the dropdown list.
     * Gateway: Enter in host format
   
-### Modify
+<a id="configure-routing-modify"></a>
+### Modify { #configure-routing-modify }
 
 * Click **Modify** to modify a route.
 
-### Delete
+<a id="configure-routing-delete"></a>
+### Delete { #configure-routing-delete }
 
 * Click **Delete** to delete a route.
 

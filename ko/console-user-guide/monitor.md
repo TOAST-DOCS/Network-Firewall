@@ -1,4 +1,7 @@
-## 모니터
+<!-- pre-align:aligned sig=d82b8d730add -->
+
+<a id="monitor"></a>
+## 모니터 { #monitor }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 모니터**
 
@@ -6,7 +9,8 @@
 
 <br>
 
-## Network Firewall 상태 체크하기
+<a id="check-network-firewall-status"></a>
+## Network Firewall 상태 체크하기 { #check-network-firewall-status }
 
 Network Firewall 인스턴스 오른쪽의 아이콘 색깔에 따라 상태를 체크할 수 있습니다.
 
@@ -17,7 +21,8 @@ Network Firewall 인스턴스 오른쪽의 아이콘 색깔에 따라 상태를 
 
 <br>
 
-## 검색하기
+<a id="search"></a>
+## 검색하기 { #search }
 
 * 세션: 현재 Network Firewall을 통해 사용하는 세션의 수량
 * 네트워크 사용량: 현재 Network Firewall을 경유하는 인바운드/아웃바운드 트래픽

@@ -1,14 +1,20 @@
-## Security > Network Firewall > Console User Guide
+<!-- pre-align:aligned sig=4fe6a8d6a81c -->
+
+<a id="security-network-firewall-console-user-guide"></a>
+## Security > Network Firewall > Console User Guide { #security-network-firewall-console-user-guide }
 
 This guide describes the procedure for creating Network Firewall and how to use the console after creation.
 
-## Get Started
+<a id="get-started"></a>
+## Get Started { #get-started }
 
 To use Network Firewall, first enable the Network Firewall service.
 
-## Create Network Firewall
+<a id="create-network-firewall"></a>
+## Create Network Firewall { #create-network-firewall }
 
-### Prerequisites
+<a id="prerequisites"></a>
+### Prerequisites { #prerequisites }
 
 The minimum network service resources needed to create a Network Firewall are as follows.
 
@@ -70,7 +76,8 @@ The minimum network service resources needed to create a Network Firewall are as
 >* The above service resources can be created in the [Network] category. 
 >* Only one network firewall can be created per project.
 
-### Create Network Firewall
+<a id="create-network-firewall-2"></a>
+### Create Network Firewall { #create-network-firewall-2 }
 
 1. Go to **Security > Network Firewall**.
 2. Select all required items and click **Create Network Firewall** at the bottom.
@@ -94,7 +101,8 @@ The minimum network service resources needed to create a Network Firewall are as
 >* IPs created with the Virtual_IP type **in Network > Network Interface**are used by Network Firewall for redundancy purposes, so deleting them may block communication.
 >* After you create Network Firewall by selecting a single or redundancy configuration, you can change the configuration on the **Options** tab if you need to make changes. However, availability zones cannot be changed, so for redundancy configurations, configure separate availability zones whenever possible. 
 
-### Connection Settings
+<a id="connection-settings"></a>
+### Connection Settings { #connection-settings }
 
 > [Example]
 > When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) that needs to be connected to the Network Firewall is 172.16.0.0/24.
@@ -198,7 +206,8 @@ Please refer to the Network Firewall service configuration diagram to set up the
 
 ***
 
-## Connect to Instance
+<a id="connect-to-instance"></a>
+## Connect to Instance { #connect-to-instance }
 After creating Network Firewall and complete all connection settings, you can access your instance through the Network Firewall.
 
 For example, if you configure 3 subnets with 2 Spoke VPCs in 1 project and need web firewall access from outside, set up NAT and ACLs as shown below.
@@ -219,7 +228,8 @@ After setting up as above, you can access the instance if the departure IP is al
 
 <br>>
 
-## Policy
+<a id="policy"></a>
+## Policy { #policy }
 After creating Network Firewall, go to the **Policies** tab.
 
 ![policy-default.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-default.png)
@@ -231,11 +241,13 @@ After creating Network Firewall, go to the **Policies** tab.
 
 <br>
 
-## ACL
+<a id="acl"></a>
+## ACL { #acl }
 On the **ACLs** tab, you can control inbound and outbound traffic and traffic between the Network Firewall and the associated VPCs.
 <br/>
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 * Add policies based on departure, destination, and destination port.
     * Select the departure, destination, and destination port through already created objects.
@@ -244,7 +256,8 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
 
 ![acl_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/acl_add.png)
 
-### Copy
+<a id="copy"></a>
+### Copy { #copy }
 
 * Click **Copy**to copy the policy.
     * Copy: Copy the same policy as the one you want to copy
@@ -257,37 +270,43 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
 > The copied policy will be disabled. If you have to use it, click **Modify** to enable the policy to use.
 
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 * Modify the policy by clicking **Edit**.
 
 
-### Move
+<a id="move"></a>
+### Move { #move }
 
 * Move the policy by clicking **Move**.
     * Could not move below the default-deny policy.
 
 ![acl_move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_move_1.png)
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 * Delete the policy by clicking **Delete**.
 
 > [Caution]
 > Once deleted, a policy cannot be restored, and a policy with name: default-deny cannot be deleted.
 
-### Batch Download of Policies
+<a id="batch-download-of-policies"></a>
+### Batch Download of Policies { #batch-download-of-policies }
 
 * Download all policies created in the Policies tab at once.
 
-### Batch Register Policies
+<a id="batch-register-policies"></a>
+### Batch Register Policies { #batch-register-policies }
 
 * Register policies at once using the downloaded template.
 
 ![acl_batch.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_batch_1.png)
 
 
-## Route
+<a id="route"></a>
+## Route { #route }
 
 On the **Route** tab, specify the path of communication through the Network Firewall.
 
@@ -298,7 +317,8 @@ On the **Route** tab, specify the path of communication through the Network Fire
 > * The default gateway for Network Firewall is NAT Ethernet, which cannot be modified or deleted.
 > * If the route settings change, there may be communication issues, so set them carefully.  
 
-### Add
+<a id="route-add"></a>
+### Add { #route-add }
 
 * Click **Add** to select Ethernet, and enter the destination and gateway. 
     * Destination: Enter in subnet format
@@ -317,22 +337,26 @@ On the **Route** tab, specify the path of communication through the Network Fire
 > 
 > ![route_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/route_add.png)
 
-### Modify
+<a id="route-modify"></a>
+### Modify { #route-modify }
 
 * Modify the route by clicking **Edit**.
 
-### Delete
+<a id="route-delete"></a>
+### Delete { #route-delete }
 
 * Delete a route by clicking **Delete**.
 
 ***
 <br>
 
-## Object
+<a id="object"></a>
+## Object { #object }
 
 In the **Object** tab, create and manage IPs and ports to use when creating policies.
 
-### Add
+<a id="object-add"></a>
+### Add { #object-add }
 
 * Create an object by entering the required fields.
     * Objects can be added in two forms: IP and port.
@@ -340,12 +364,14 @@ In the **Object** tab, create and manage IPs and ports to use when creating poli
 > [Note]
 > * Group objects cannot be added when creating a group object (only single or range objects can be added by selecting them).
 
-### Modify
+<a id="object-modify"></a>
+### Modify { #object-modify }
 
 * Modify the object by clicking **Edit**.
     * Types cannot be modified.
 
-### Delete
+<a id="object-delete"></a>
+### Delete { #object-delete }
 
 * You can delete an object by clicking **Delete**.
     * Objects automatically created by Network Firewall cannot be modified or deleted.
@@ -353,20 +379,23 @@ In the **Object** tab, create and manage IPs and ports to use when creating poli
 >[Note]
 > Objects in use by a policy will be changed to ALL objects after deletion (caution required).
 
-### Add Instance Objects
+<a id="add-instance-objects"></a>
+### Add Instance Objects { #add-instance-objects }
 * Add an object by using the instances in the project in which Network Firewall is created.
 
 > [Note]
 > * Create an object by simply referencing the instance's name and private IP address, regardless of instances (once created, manage on the Object tab).
 
 
-### Batch Download of Objects
+<a id="batch-download-of-objects"></a>
+### Batch Download of Objects { #batch-download-of-objects }
 
 * Download all IPs and port objects created in the **Object** tab at once.
 
 <br>
 
-## NAT
+<a id="nat"></a>
+## NAT { #nat }
 
 In the **NAT** (Network Address Translation) tab, select and connect a dedicated public IP with the instance to be accessed from the outside.
 
@@ -378,7 +407,8 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
 > * If you assign a floating IP directly to an instance that owns a private IP after NAT has been set up, there may be communication issues.
 > * After deleting NAT, delete the unused public IP before NAT directly from **Network - Floating**.
 
-### Add
+<a id="nat-add"></a>
+### Add { #nat-add }
 
 * Click **Add** to create NAT.
     * For the public IP before NAT, select one of the pre-created IPs in **Network - Floating IP**.  
@@ -389,12 +419,14 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
 >[Note]
 > * Instances can be accessed from the pre-NAT public IP that you set when adding NAT (Not required to connect a floating IP directly to the instance).
 
-### Modify
+<a id="nat-modify"></a>
+### Modify { #nat-modify }
 
 * Click **Modify** to modify the created NAT.
     * You can modify both public and private IPs.
 
-### Delete
+<a id="nat-delete"></a>
+### Delete { #nat-delete }
 
 * Click **Delete** to delete the created NAT.
  
@@ -529,11 +561,58 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  
  <br>
 
-## VPN
+<a id="mirroring"></a>
+## Mirroring { #mirroring }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-rules"></a>
+### Mirroring Rules { #mirroring-rules }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-add"></a>
+### Add { #mirroring-add }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-modify"></a>
+### Modify { #mirroring-modify }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-delete"></a>
+### Delete { #mirroring-delete }
+
+<!-- TODO: translate body -->
+
+<a id="filter-groups"></a>
+### Filter Groups { #filter-groups }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-add-2"></a>
+### Add { #mirroring-add-2 }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-modify-2"></a>
+### Modify { #mirroring-modify-2 }
+
+<!-- TODO: translate body -->
+
+<a id="mirroring-delete-2"></a>
+### Delete { #mirroring-delete-2 }
+
+<!-- TODO: translate body -->
+
+<a id="vpn"></a>
+## VPN { #vpn }
 
 The **VPN** tab enables secure, private communication over an encrypted tunnel between sites.
 
-### Create Gateway
+<a id="create-gateway"></a>
+### Create Gateway { #create-gateway }
 
 * Click **Create Gateway** to create a gateway to connect with peer VPN equipment.
 
@@ -544,23 +623,27 @@ The **VPN** tab enables secure, private communication over an encrypted tunnel b
 > * VPCs and subnets cannot be modified.
 > * You can create up to 10 gateways.
 
-### Modify
+<a id="vpn-modify"></a>
+### Modify { #vpn-modify }
 
 * Click **Modify** to modify gateways.
 
-### Delete
+<a id="vpn-delete"></a>
+### Delete { #vpn-delete }
 
 * Click **Delete** to delete gateways.
     * If there is a tunnel connected to gateways, it will not be deleted.
 
-### Associate Floating IP
+<a id="associate-floating-ip"></a>
+### Associate Floating IP { #associate-floating-ip }
 
 * Set the floating IP required to connect to the peer equipment.
     * Floating IPs that are not used appear in the list created in **Network > Floating IP**.
 
 ![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
 
-### Create Tunnel
+<a id="create-tunnel"></a>
+### Create Tunnel { #create-tunnel }
 
 * Create a tunnel to connect with the peer device.
 
@@ -594,7 +677,8 @@ The **VPN** tab enables secure, private communication over an encrypted tunnel b
  >   * 172.16.0.0/12
  >   * 192.168.0.0/16
 
-### Connect Tunnel
+<a id="connect-tunnel"></a>
+### Connect Tunnel { #connect-tunnel }
 
 * When the tunnel is created, it will be created as a pending connection, and you can click **Connect** to connect the created tunnel to the peer VPN equipment.
 
@@ -607,21 +691,25 @@ The **VPN** tab enables secure, private communication over an encrypted tunnel b
  >   * Orange: Click **Stop** to stop the connection between the peer VPN equipment.
 > * After the tunnel creation is complete, depending on the type of peer device and its settings, you may not need to click **Connect** to connect.
 
-### Modify Tunnel
+<a id="modify-tunnel"></a>
+### Modify Tunnel { #modify-tunnel }
 
 * Click **Modify** to modify the tunnel.
     * All of these values can be modified except the Gateway, and if you do, you must also modify the peer VPN devices to the same values.
 
-### Stop Tunnel
+<a id="stop-tunnel"></a>
+### Stop Tunnel { #stop-tunnel }
 
 * Click **Stop** to stop the tunnel.
     * If you stop, private communication over the peer VPN device will be stopped. 
 
-### Delete Tunnel
+<a id="delete-tunnel"></a>
+### Delete Tunnel { #delete-tunnel }
 
 * Click **Delete** to delete the tunnel.
 
-### Event
+<a id="event"></a>
+### Event { #event }
 
 * You can search event logs that occur during tunnel connections with peer VPN devices.
 
@@ -631,11 +719,13 @@ The **VPN** tab enables secure, private communication over an encrypted tunnel b
 > * Check the **Log** tab for logs of communication over the VPN tunnel or audit logs, such as tunnel creation and deletion.
 
 
-## Log
+<a id="log"></a>
+## Log { #log }
 
 In the **Log** tab, search logs created in Network Firewall.
 
-### Search
+<a id="search"></a>
+### Search { #search }
 
 * Traffic: Search traffic logs generated by allow or block policies when passing through the Network Firewall.
     * You can search only historical data up to 3 months in 1-month increments.
@@ -645,26 +735,31 @@ In the **Log** tab, search logs created in Network Firewall.
 * Audit: Search logs for changes to Network Firewall, including policy creation and deletion.
     * You can search for up to one month, and can search through CloudTrail, an organizational service.
 
-### Download Excel
+<a id="download-excel"></a>
+### Download Excel { #download-excel }
 
 * Download traffic and audit log search results through **Download Excel**.
     * The maximum number of downloads in a traffic log is 300,000.
 
-## Monitor
+<a id="monitor"></a>
+## Monitor { #monitor }
 
 In the **Monitor** tab, check the status of Network Firewall in real time.
 Searches are only available for up to 24 hours (1 day).
 
-### Search
+<a id="monitor-search"></a>
+### Search { #monitor-search }
 
 * Sessions: Quantity of sessions currently in use through Network Firewall.
 * Network Usage: Inbound/outbound traffic currently passing through Network Firewall
 
-## Options
+<a id="options"></a>
+## Options { #options }
 
 In the **Options** tab, set options required for operation of Network Firewall.
 
-### Log Settings
+<a id="log-settings"></a>
+### Log Settings { #log-settings }
 
 * Default blocking policy log settings: Select whether to save the default blocking policy log that is required after creating a Network Firewall.
     * When enabled, you can search logs created with the default blocking policy in the traffic log.
@@ -689,7 +784,8 @@ You can receive an alarm when the conditions you set are met.
 
 <br>
 
-### General Settings
+<a id="general-settings"></a>
+### General Settings { #general-settings }
 
 * Maximum transmission unit (MTU) size setting: Set the MTU size of the Ethernet associated with Network Firewall.
     * Traffic: Ethernet used for internal NHN Cloud communication (including peering communication)
@@ -726,7 +822,8 @@ You can receive an alarm when the conditions you set are met.
 
 <br>
 
-## Disable Service
+<a id="disable-service"></a>
+## Disable Service { #disable-service }
 
 You can disable the Network Firewall service in **Project Management > Services in Use**.
 
