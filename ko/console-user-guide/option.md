@@ -57,7 +57,7 @@
 ### Network Firewall 삭제
 
 * 운영 중인 Network Firewall을 삭제할 수 있습니다.
-{% if "gov" not in build_flags -%}
+{%- if "gov" not in build_flags %}
     * Network Firewall은 한국(판교) 리전과 한국(평촌) 리전에서 각각 삭제할 수 있습니다.
 
 !!! tip "알아두기"
