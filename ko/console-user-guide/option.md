@@ -59,30 +59,32 @@
 * 운영 중인 Network Firewall을 삭제할 수 있습니다.
 {% if "gov" not in build_flags -%}
     * Network Firewall은 한국(판교) 리전과 한국(평촌) 리전에서 각각 삭제할 수 있습니다.
-{% endif %}
+
 !!! tip "알아두기"
-{% if "gov" in build_flags -%}
-    * **SSL VPN - 사용** 설정 시 NHN Cloud(공공기관용)에서 인스턴스 접속 시 사용하는 Private Network의 사설 VPN Network IP를 **Network Firewall > NAT**에서 설정할 수 있습니다.
-{% endif -%}
+
     * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network > Network Interface**에서 확인 가능합니다.
         * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
     * 구성 방식 변경 시 몇 분 정도의 시간이 소요되며, 구성 변경이 완료되기 전까지 서비스에 영향이 있을 수 있습니다.
-{% if "gov" in build_flags -%}
-        * 정책, NAT 등 Network Firewall 변경 작업은 구성 방식 변경이 완료된 뒤 진행할 것을 권장합니다.
-{%- else -%}
     * 정책, NAT 등 Network Firewall 변경 작업은 구성 방식 변경이 완료된 뒤 진행할 것을 권장합니다.
-{%- endif %}
 
 !!! danger "주의"
-{% if "gov" in build_flags -%}
+
+    운영 중인 Network Firewall을 삭제할 경우 Network Firewall과 연결된 다른 서비스를 고려하여 진행하세요.  
+    
+{% else %}
+!!! tip "알아두기"
+    * **SSL VPN - 사용** 설정 시 NHN Cloud(공공기관용)에서 인스턴스 접속 시 사용하는 Private Network의 사설 VPN Network IP를 **Network Firewall > NAT**에서 설정할 수 있습니다.
+    * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network > Network Interface**에서 확인 가능합니다.
+        * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
+    * 구성 방식 변경 시 몇 분 정도의 시간이 소요되며, 구성 변경이 완료되기 전까지 서비스에 영향이 있을 수 있습니다.
+        * 정책, NAT 등 Network Firewall 변경 작업은 구성 방식 변경이 완료된 뒤 진행할 것을 권장합니다.
+
+!!! danger "주의"
     * **SSL VPN - 사용** 설정 시 SSL VPN 연결 후 인스턴스에 접근할 때 Network Firewall을 통해 접근하게 되며 **정책**에서 통신을 허용해야만 인스턴스 접근이 가능합니다.
     * Network Firewall 연동 시 인스턴스는 SSL VPN 전용 이더넷을 추가로 할당하지 않아도 됩니다. (단, Network Firewall과 연동하지 않을 경우 이더넷을 할당해야 합니다.)
     * 운영 중인 Network Firewall을 삭제할 경우 Network Firewall과 연결된 다른 서비스를 고려하여 진행하세요.  
-{%- else %}
     
-    운영 중인 Network Firewall을 삭제할 경우 Network Firewall과 연결된 다른 서비스를 고려하여 진행하세요.  
-{%- endif %}
-    
+{% endif -%}
 <br>
 
 ## Network Firewall 서비스 비활성화
