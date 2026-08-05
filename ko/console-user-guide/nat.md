@@ -1,3 +1,4 @@
+{%- set nat_img_suffix = "gov" if "gov" in build_flags else "pub" %}
 ## NAT
 
 **Security > Network Firewall > 콘솔 사용 가이드 > NAT**
@@ -14,7 +15,7 @@
     * NAT 전 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
     * NAT 후 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다. 
 
-![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat2-pub.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat2-$[ nat_img_suffix ]$.png)
 
 ### 수정
 
@@ -35,7 +36,7 @@
     * NAT 전 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
     * NAT 후 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
 
-![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat3-pub.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat3-$[ nat_img_suffix ]$.png)
 
 ### 수정
 
@@ -52,3 +53,6 @@
     * 인스턴스 접속은 목적지 탭에 NAT를 추가하면서 설정한 NAT 전 IP로 접속할 수 있습니다. (인스턴스에 직접 Floating IP 연결 불필요)
     * NAT에 설정된 NAT 후 IP를 소유한 인스턴스에 직접 Floating IP를 할당할 경우 통신에 문제가 있을 수 있습니다.
     * NAT 삭제 후 사용하지 않는 NAT 전 IP는 **Network > Floating IP**에서 직접 삭제하세요.
+{% if "gov" in build_flags -%}
+    * SSL VPN 상품을 사용하기 위한 NAT 설정 시 **타입 - SSL VPN**으로 선택하세요.
+{% endif -%}
