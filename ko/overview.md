@@ -1,3 +1,5 @@
+{%- set nfw_start_date = "2024년 6월 4일" if "gov" in build_flags else "2022년 3월 7일" %}
+{%- set peering_gateway_docs_host = "https://docs.gov-nhncloud.com" if "gov" in build_flags else "https://docs.nhncloud.com" %}
 ## Network Firewall 개요
 
 **Security > Network Firewall > 개요**
@@ -8,7 +10,7 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 !!! tip "알아두기"
 
     Network Firewall 서비스는 한국(판교) 리전의 경우 신규 네트워크 환경에서만 이용할 수 있습니다.
-    한국(판교) 리전에서 2022년 3월 7일 이전에 생성한 프로젝트는 개선하기 전의 네트워크 환경이므로 Network Firewall 서비스를 이용하려면 프로젝트를 새로 생성해야 합니다.
+    한국(판교) 리전에서 $[ nfw_start_date ]$ 이전에 생성한 프로젝트는 개선하기 전의 네트워크 환경이므로 Network Firewall 서비스를 이용하려면 프로젝트를 새로 생성해야 합니다.
 
 <br>
 
@@ -53,10 +55,10 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 
     * 위의 구성도는 일반적인 구성이며, 고객의 환경에 따라 Network Firewall을 제외한 WEB, WAS, Load Balancer 등의 구성이 다를 수 있습니다.
 
-    * 다른 리전의 프로젝트 환경에서는 같은 프로젝트만 구성 가능합니다. 자세한 내용은 [사용자 가이드](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)를 참고하세요.
+    * 다른 리전의 프로젝트 환경에서는 같은 프로젝트만 구성 가능합니다. 자세한 내용은 [사용자 가이드]($[ peering_gateway_docs_host ]$/ko/Network/Peering%20Gateway/ko/console-guide/)를 참고하세요.
 
 !!! danger "주의"
 
-    서비스 구성 시 2022년 3월 7일 이전에 구성한 네트워크 환경과는 연결할 수 없습니다.
+    서비스 구성 시 $[ nfw_start_date ]$ 이전에 구성한 네트워크 환경과는 연결할 수 없습니다.
     
-    예를 들어, 2022년 3월 7일 이전에 구성한 네트워크 환경을 사용하는 프로젝트와 이후에 구성한 네트워크 환경을 사용하는 프로젝트가 생성되어 있을 경우 신규 네트워크 환경에 Network Firewall을 생성할 수 있지만 개선하기 전의 네트워크 환경을 Spoke VPC로 사용할 수 없습니다.
+    예를 들어, $[ nfw_start_date ]$ 이전에 구성한 네트워크 환경을 사용하는 프로젝트와 이후에 구성한 네트워크 환경을 사용하는 프로젝트가 생성되어 있을 경우 신규 네트워크 환경에 Network Firewall을 생성할 수 있지만 개선하기 전의 네트워크 환경을 Spoke VPC로 사용할 수 없습니다.
