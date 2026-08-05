@@ -91,12 +91,12 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 > * 서브넷, NAT, 외부 전송에 사용하는 서브넷은 모두 다른 서브넷으로 선택해야 합니다.
 >    * 가급적 NHN Cloud 콘솔에서 생성할 수 있는 최소 단위(28비트)로 생성할 것을 권장합니다.
 > * Network Firewall이 속할 VPC의 라우팅 테이블에 인터넷 게이트웨이가 연결되어 있어야 생성 가능합니다.
-> * Security Groups와는 별개의 서비스이므로 Network Firewall을 사용하면 두 서비스를 모두 허용해야 인스턴스에 접근할 수 있습니다.
-> * Network Firewall이 소유하고 있는 CIDR 대역과 연결이 필요한 CIDR 대역은 중복되지 않아야 합니다.
-> * **Network > Network Interface**에서 Virtual_IP 타입으로 생성되어 있는 IP는 Network Firewall에서 이중화 용도로 사용 중이므로 삭제할 경우 통신이 차단될 수 있습니다.
 {% if "gov" in build_flags -%}
 > * Network Firewall 서비스는 가용 영역을 분리하여 이중화를 기본으로 제공합니다.
 {% endif -%}
+> * Security Groups와는 별개의 서비스이므로 Network Firewall을 사용하면 두 서비스를 모두 허용해야 인스턴스에 접근할 수 있습니다.
+> * Network Firewall이 소유하고 있는 CIDR 대역과 연결이 필요한 CIDR 대역은 중복되지 않아야 합니다.
+> * **Network > Network Interface**에서 Virtual_IP 타입으로 생성되어 있는 IP는 Network Firewall에서 이중화 용도로 사용 중이므로 삭제할 경우 통신이 차단될 수 있습니다.
 > * 단일 또는 이중화 구성을 선택하여 Network Firewall을 생성한 뒤 변경이 필요할 경우 **옵션** 탭에서 구성을 변경할 수 있습니다. 하지만 가용성 영역은 변경이 불가능하므로 이중화 구성의 경우 가급적 가용성 영역을 분리하여 구성하세요. 
 
 ### 연결 설정
@@ -721,17 +721,6 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-{% if not is_daegu -%}
-* 미러링 설정: Network Firewall에서 제공하는 기능 중 미러링의 사용 여부를 선택할 수 있습니다.
-    * 사용 선택 시 필요한 서브넷은 Network Firewall 생성에 사용했던 서브넷을 사용합니다.
-
-> [참고]
-> * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network - Network Interface**에서 확인 가능합니다.
->   * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
-
-<br>
-
-{% endif -%}
 {% if "gov" in build_flags -%}
 * SSL VPN 설정: 외부에서 NHN Cloud(공공기관용) 인스턴스 접속이 필요할 경우 사용하는 SSL VPN 서비스와 Network Firewall을 연동하는 옵션을 제공합니다.
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/SSLVPN.png" height="65%" />
@@ -741,6 +730,17 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * 해당 옵션을 사용할 경우 NHN Cloud(공공기관용)에서 인스턴스 접속 시 사용하는 Private Network의 사설 VPN Network IP를 **Network Firewall > NAT**에서 설정할 수 있습니다.
 > * 옵션 사용 시 SSL VPN 연결 후 인스턴스에 접근할 때 Network Firewall을 통해 접근하게 되며 **정책**에서 통신을 허용해야만 인스턴스 접근이 가능합니다.
 > * Network Firewall 연동 시 인스턴스는 SSL VPN 전용 이더넷을 추가로 할당하지 않아도 됩니다. (단, Network Firewall과 연동하지 않을 경우 이더넷을 할당해야 합니다.)
+
+<br>
+
+{% endif -%}
+{% if not is_daegu -%}
+* 미러링 설정: Network Firewall에서 제공하는 기능 중 미러링의 사용 여부를 선택할 수 있습니다.
+    * 사용 선택 시 필요한 서브넷은 Network Firewall 생성에 사용했던 서브넷을 사용합니다.
+
+> [참고]
+> * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network - Network Interface**에서 확인 가능합니다.
+>   * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
 
 <br>
 
