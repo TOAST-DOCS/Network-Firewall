@@ -1,3 +1,5 @@
+{%- set intf_add_num = "2" if "gov" in build_flags else "6" %}
+{%- set intf_use_num = "4" if "gov" in build_flags else "7" %}
 ## 인터페이스
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 인터페이스**
@@ -11,7 +13,7 @@
 ### 추가
 * **추가**를 클릭해 인터페이스를 추가합니다.
     * 이름을 입력하고, VPC, 서브넷을 선택합니다.
-    ![(interface6)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface6.png)
+    ![(interface$[ intf_add_num ]$)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface$[ intf_add_num ]$.png)
 
 ### 수정
 * **수정**을 클릭해 인터페이스를 수정할 수 있습니다.
@@ -22,7 +24,7 @@
 
 ### 사용 설정
 * 오버플로우 메뉴에서 인터페이스를 사용 또는 미사용으로 설정할 수 있습니다.
-![(interface7)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface7.png)
+![(interface$[ intf_use_num ]$)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface$[ intf_use_num ]$.png)
 
 !!! tip "알아두기"
 
