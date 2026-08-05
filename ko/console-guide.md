@@ -1,3 +1,4 @@
+{%- set is_daegu = "ngoic" in build_flags or "ngovc" in build_flags or "ngsc" in build_flags or "ninc" in build_flags %}
 ## Security > Network Firewall > 콘솔 사용 가이드
 
 Network Firewall을 생성하기 위한 절차와 생성 이후 콘솔을 사용하는 방법을 설명합니다.
@@ -43,7 +44,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Spoke VPC 내 최소 1개의 서브넷
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
 
-
+{% if "gov" not in build_flags -%}
 [다른 리전 간 프로젝트 구성 시 준비 사항]
 
 * 1개의 프로젝트
@@ -54,6 +55,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
 
 
+{% endif -%}
 [단일 VPC 내 여러 개의 서브넷 구성 시 준비 사항]
 
 * 1개의 프로젝트
@@ -92,6 +94,9 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 > * Security Groups와는 별개의 서비스이므로 Network Firewall을 사용하면 두 서비스를 모두 허용해야 인스턴스에 접근할 수 있습니다.
 > * Network Firewall이 소유하고 있는 CIDR 대역과 연결이 필요한 CIDR 대역은 중복되지 않아야 합니다.
 > * **Network > Network Interface**에서 Virtual_IP 타입으로 생성되어 있는 IP는 Network Firewall에서 이중화 용도로 사용 중이므로 삭제할 경우 통신이 차단될 수 있습니다.
+{% if "gov" in build_flags -%}
+> * Network Firewall 서비스는 가용 영역을 분리하여 이중화를 기본으로 제공합니다.
+{% endif -%}
 > * 단일 또는 이중화 구성을 선택하여 Network Firewall을 생성한 뒤 변경이 필요할 경우 **옵션** 탭에서 구성을 변경할 수 있습니다. 하지만 가용성 영역은 변경이 불가능하므로 이중화 구성의 경우 가급적 가용성 영역을 분리하여 구성하세요. 
 
 ### 연결 설정
@@ -376,6 +381,9 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * 포트 기반의 NAT는 제공하지 않습니다.
 > * NAT를 생성한 뒤 **정책** 탭에 허용 정책을 추가해야만 공인 통신이 가능합니다.
 > * NAT에 설정된 NAT 후 사설 IP를 소유한 인스턴스에 직접 Floating IP를 할당할 경우 통신에 문제가 있을 수 있습니다.
+{% if "gov" in build_flags -%}
+> * NHN Cloud(공공기관용)에서 제공하는 SSL VPN 서비스와 Network Firewall을 연동하여 사용할 수 있습니다. (**옵션 > SSL VPN 설정**에서 **사용**으로 설정 시)
+{% endif -%}
 > * NAT 삭제 후 사용하지 않는 NAT 전 공인 IP는 **Network > Floating**에서 직접 삭제하세요.
 
 ### 추가
@@ -383,11 +391,22 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 * **추가**를 클릭해 NAT를 생성합니다.
     * NAT 전 공인 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
     * NAT 후 사설 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
-
+{% if "gov" in build_flags -%}
+    * 타입을 선택합니다. 
+{% endif %}
 ![nat_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.04.05/nat_add_2.png)
 
 >[참고]
+{% if "gov" in build_flags -%}
+> 
+> * 옵션 - SSL VPN 설정에서 사용으로 설정했을 경우에만 타입이 노출됩니다.
+> * 타입의 선택에 따라 아래의 NAT 전 공인 IP가 노출됩니다.
+>   * Network Firewall: **Network > Floating IP**에서 Public Network로 생성된 Floating IP
+>   * SSL VPN: **Network > Floating IP**에서 VPN Network로 생성된 Floating IP
+> * 인스턴스 접속은 NAT를 추가하면서 설정한 NAT 전 공인 IP로 접속 가능합니다. (인스턴스에 직접 Floating IP 연결 불필요)
+{%- else -%}
 > 인스턴스 접속은 NAT를 추가하면서 설정한 NAT 전 공인 IP로 접속 가능합니다. (인스턴스에 직접 Floating IP 연결 불필요)
+{%- endif %}
 
 ### 수정
 
@@ -400,6 +419,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
+{% if not is_daegu -%}
 ## 미러링
 
 **미러링** 탭에서는 Network Firewall을 통과하는 네트워크 패킷을 IDS/IPS, SIEM, NDR 등의 위협 탐지 및 분석 솔루션으로 복사하여, 네트워크 위협을 실시간으로 탐지하고 대응할 수 있도록 합니다.
@@ -451,7 +471,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
 
 * **필터 그룹**을 선택합니다.
-    * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
+    * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
     * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
@@ -529,6 +549,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
+{% endif -%}
 ## VPN
 
 **VPN** 탭에서는 사이트간 암호화된 터널을 통해 안전한 사설 통신을 지원합니다.
@@ -700,6 +721,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
+{% if not is_daegu -%}
 * 미러링 설정: Network Firewall에서 제공하는 기능 중 미러링의 사용 여부를 선택할 수 있습니다.
     * 사용 선택 시 필요한 서브넷은 Network Firewall 생성에 사용했던 서브넷을 사용합니다.
 
@@ -709,6 +731,20 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
+{% endif -%}
+{% if "gov" in build_flags -%}
+* SSL VPN 설정: 외부에서 NHN Cloud(공공기관용) 인스턴스 접속이 필요할 경우 사용하는 SSL VPN 서비스와 Network Firewall을 연동하는 옵션을 제공합니다.
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/SSLVPN.png" height="65%" />
+
+> [참고]
+> 
+> * 해당 옵션을 사용할 경우 NHN Cloud(공공기관용)에서 인스턴스 접속 시 사용하는 Private Network의 사설 VPN Network IP를 **Network Firewall > NAT**에서 설정할 수 있습니다.
+> * 옵션 사용 시 SSL VPN 연결 후 인스턴스에 접근할 때 Network Firewall을 통해 접근하게 되며 **정책**에서 통신을 허용해야만 인스턴스 접근이 가능합니다.
+> * Network Firewall 연동 시 인스턴스는 SSL VPN 전용 이더넷을 추가로 할당하지 않아도 됩니다. (단, Network Firewall과 연동하지 않을 경우 이더넷을 할당해야 합니다.)
+
+<br>
+
+{% endif -%}
 * Network Firewall 구성: 단일 또는 이중화로 Network Firewall의 구성 방식을 설정할 수 있습니다.
 
 > [참고]
