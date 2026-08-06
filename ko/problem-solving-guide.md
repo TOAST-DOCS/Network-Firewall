@@ -1,10 +1,14 @@
-## Network Firewall 문제 해결 가이드
+<!-- pre-align:aligned sig=9be9bdfa8e4e -->
+
+<a id="network-firewall-troubleshooting-guide"></a>
+## Network Firewall 문제 해결 가이드 { #network-firewall-troubleshooting-guide }
 
 **Security > Network Firewall > 문제 해결 가이드**
 
 <br>
 
-## Network Firewall 서비스를 생성할 수 없습니다.
+<a id="i-cannot-create-the-network-firewall-service"></a>
+## Network Firewall 서비스를 생성할 수 없습니다. { #i-cannot-create-the-network-firewall-service }
 
 아래의 네트워크 자원이 준비되어 있는지 체크합니다.
 
@@ -15,7 +19,8 @@
 
 <br>
 
-## Spoke VPC에 속해있는 인스턴스가 인터넷 통신이 안됩니다.
+<a id="instances-in-the-spoke-vpc-cannot-communicate-with-the-internet"></a>
+## Spoke VPC에 속해있는 인스턴스가 인터넷 통신이 안됩니다. { #instances-in-the-spoke-vpc-cannot-communicate-with-the-internet }
 
 Spoke VPC의 공인 통신은 라우팅, 피어링, NAT, ACL 정책이 모두 설정되어 있어야 동작합니다. 아래의 내용을 확인하세요.
 
@@ -28,7 +33,8 @@ Spoke VPC의 공인 통신은 라우팅, 피어링, NAT, ACL 정책이 모두 �
 
 <br>
 
-## 외부에서 인스턴스에 접속되지 않습니다.
+<a id="instances-cannot-be-accessed-from-outside"></a>
+## 외부에서 인스턴스에 접속되지 않습니다. { #instances-cannot-be-accessed-from-outside }
 
 외부에서 인스턴스에 접속하려면 NAT, ACL, Security Groups 설정이 모두 필요합니다. 아래 내용을 확인하세요.
 
@@ -41,7 +47,8 @@ Spoke VPC의 공인 통신은 라우팅, 피어링, NAT, ACL 정책이 모두 �
 
 <br>
 
-## 차단된 로그가 로그 탭에서 보이지 않습니다.
+<a id="blocked-logs-are-not-visible-in-the-log-tab"></a>
+## 차단된 로그가 로그 탭에서 보이지 않습니다. { #blocked-logs-are-not-visible-in-the-log-tab }
 
 default-deny 정책에 의해 차단된 로그는 기본 차단 정책 로그 설정을 사용으로 변경해야 확인할 수 있습니다. 아래 경로에서 설정을 확인하세요.
 

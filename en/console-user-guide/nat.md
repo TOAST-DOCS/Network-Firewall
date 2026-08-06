@@ -1,4 +1,7 @@
-## NAT
+<!-- pre-align:aligned sig=b5a6dd9155ad -->
+
+<a id="nat"></a>
+## NAT { #nat }
 
 **Security > Network Firewall > Console User Guide > NAT**
 
@@ -6,9 +9,11 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
 
 <br>
 
-## Configure Source NAT
+<a id="configure-source-nat"></a>
+## Configure Source NAT { #configure-source-nat }
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 * Click **Add** to create a source NAT.
     * Objects to be selected in Pre-NAT IP must be created in advance in the **Object** tab before clicking **Add**.
@@ -16,20 +21,24 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
 
 ![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat2-pub.png)
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 * Click **Modify** to modify the created source NAT.
     * You can modify both public and private IPs.
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 * Click **Delete** to delete the created source NAT.
 
 <br>
 
-## Configure Destination NAT
+<a id="configure-destination-nat"></a>
+## Configure Destination NAT { #configure-destination-nat }
 
-### Add
+<a id="configure-destination-nat-add"></a>
+### Add { #configure-destination-nat-add }
 
 * Click **Add** to create a destination NAT.
     * For Pre-NAT IP, select one of the IPs created in advance in **Network > Floating IP**.  
@@ -37,12 +46,14 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
 
 ![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat3-pub.png)
 
-### Modify
+<a id="configure-destination-nat-modify"></a>
+### Modify { #configure-destination-nat-modify }
 
 * Click **Modify** to modify the created destination NAT.
     * You can modify both public and private IPs.
 
-### Delete
+<a id="configure-destination-nat-delete"></a>
+### Delete { #configure-destination-nat-delete }
 
 * Click **Delete** to delete the created destination NAT.
 

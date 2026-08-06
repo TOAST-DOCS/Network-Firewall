@@ -1,4 +1,7 @@
-## インスタンス接続
+<!-- pre-align:aligned sig=1e5a2402cc4a -->
+
+<a id="instance-access"></a>
+## インスタンス接続 { #instance-access }
 
 **Security > Network Firewall > コンソール使用ガイド > インスタンス接続**
 
@@ -6,7 +9,8 @@ Network Firewallを作成し、接続設定を全て完了した後、Network Fi
 
 <br>
 
-## 設定する
+<a id="configure"></a>
+## 設定する { #configure }
 
 例えば、1つのプロジェクト内の2つのSpoke VPCで3つのサブネットを構成し、外部からWebファイアウォールへの接続が必要な場合、以下のようにNAT、ACLを設定します。
 

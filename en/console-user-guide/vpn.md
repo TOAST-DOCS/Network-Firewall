@@ -1,4 +1,7 @@
-## VPN
+<!-- pre-align:aligned sig=b06e75492dcf -->
+
+<a id="vpn"></a>
+## VPN { #vpn }
 
 **Security > Network Firewall > Console User Guide > VPN**
 
@@ -6,22 +9,26 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
 
 <br>
 
-## Create Gateway
+<a id="create-gateway"></a>
+## Create Gateway { #create-gateway }
 
 * Click **Create Gateway** to create a gateway for connecting to a peer VPN device.
 
 ![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 * Click **Modify** button to modify a gateway.
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 * Click the **Delete** button to delete a gateway.
     * If there is a tunnel connected to the gateway, it cannot be deleted.
 
-### Associate Floating IP
+<a id="associate-floating-ip"></a>
+### Associate Floating IP { #associate-floating-ip }
 
 * Configure the floating IP required for connection with the peer device.
     * Only unused floating IPs from the list created in **Network > Floating IP** are displayed.
@@ -35,7 +42,8 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
 
 <br>
 
-## Create Tunnel
+<a id="create-tunnel"></a>
+## Create Tunnel { #create-tunnel }
 
 * Create a tunnel to connect to the peer device.
 
@@ -69,7 +77,8 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
       * 172.16.0.0/12
       * 192.168.0.0/16 
 
-### Connect Tunnel
+<a id="connect-tunnel"></a>
+### Connect Tunnel { #connect-tunnel }
 
 * The tunnel is created in a waiting for connection state. Click **Connect** to connect the created tunnel to the peer VPN device.
 
@@ -82,21 +91,25 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
       * Orange: Connection between peer VPN devices has been stopped by clicking the **Stop** button
     * After tunnel creation is complete, a connection may be established without clicking **Connect**, depending on the type and configuration of the peer device.
 
-### Modify Tunnel
+<a id="modify-tunnel"></a>
+### Modify Tunnel { #modify-tunnel }
 
 * Click **Modify** button to modify a tunnel.
     * All values except the gateway can be modified. If modified, the same values must also be updated on the peer VPN device.
 
-### Stop Tunnel
+<a id="stop-tunnel"></a>
+### Stop Tunnel { #stop-tunnel }
 
 * Click **Stop** button to stop a tunnel.
     * If the tunnel is stopped, private communication through the peer VPN device will be interrupted. 
 
-### Delete Tunnel
+<a id="delete-tunnel"></a>
+### Delete Tunnel { #delete-tunnel }
 
 * Click **Delete** button to delete a tunnel.
 
-### Event
+<a id="event"></a>
+### Event { #event }
 
 * You can search event logs generated when connecting a tunnel to the peer VPN device.
 

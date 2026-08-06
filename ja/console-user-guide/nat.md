@@ -1,4 +1,7 @@
-## NAT
+<!-- pre-align:aligned sig=b5a6dd9155ad -->
+
+<a id="nat"></a>
+## NAT { #nat }
 
 **Security > Network Firewall > コンソール使用ガイド > NAT**
 
@@ -6,9 +9,11 @@
 
 <br>
 
-## 送信元NATを設定する
+<a id="configure-source-nat"></a>
+## 送信元NATを設定する { #configure-source-nat }
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 
 * **追加**をクリックして送信元NATを作成します。
     * NAT前IPで選択するオブジェクトは、**オブジェクト**タブであらかじめ作成しておくことで、**追加**をクリックして追加できるようになります。
@@ -16,20 +21,24 @@
 
 ![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat2-pub.png)
 
-### 修正
+<a id="modify"></a>
+### 修正 { #modify }
 
 * **修正**をクリックして作成された送信元NATを修正します。
     * 修正はパブリックIPとプライベートIPの両方を修正できます。
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 
 * **削除**をクリックして作成された送信元NATを削除します。
 
 <br>
 
-## 宛先NATを設定する
+<a id="configure-destination-nat"></a>
+## 宛先NATを設定する { #configure-destination-nat }
 
-### 追加
+<a id="configure-destination-nat-add"></a>
+### 追加 { #configure-destination-nat-add }
 
 * **追加**をクリックして宛先NATを作成します。
     * NAT前IPは、**Network > フローティングIP**であらかじめ作成したIPから1つ選択します。  
@@ -37,12 +46,14 @@
 
 ![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat3-pub.png)
 
-### 修正
+<a id="configure-destination-nat-modify"></a>
+### 修正 { #configure-destination-nat-modify }
 
 * **修正**をクリックして作成された宛先NATを修正します。
     * 修正はパブリックIPとプライベートIPの両方を修正できます。
 
-### 削除
+<a id="configure-destination-nat-delete"></a>
+### 削除 { #configure-destination-nat-delete }
 
 * **削除**をクリックして作成された宛先NATを削除します。
 

@@ -1,4 +1,7 @@
-## Instance Access
+<!-- pre-align:aligned sig=1e5a2402cc4a -->
+
+<a id="instance-access"></a>
+## Instance Access { #instance-access }
 
 **Security > Network Firewall > Console User Guide > Instance Access**
 
@@ -6,7 +9,8 @@ After creating Network Firewall and completing all connection settings, you acce
 
 <br>
 
-## Configure
+<a id="configure"></a>
+## Configure { #configure }
 
 For example, if you configure 3 subnets with 2 Spoke VPCs in 1 project and need web firewall access from outside, set up NAT and ACLs as shown below.
 
