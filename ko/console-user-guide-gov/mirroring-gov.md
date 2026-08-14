@@ -23,7 +23,6 @@
         * Active: 활성화 
         * Inactive: 비활성화
     * 자세히 보기: 설정한 미러링 룰의 상세 정보를 확인합니다.
-    ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
 
 ### 추가
 
@@ -58,18 +57,17 @@
     * 미러링 룰은 최대 3개까지 생성할 수 있습니다.
     * 미러링 룰을 적용할 때 고객의 환경에 따라 많은 통신 데이터를 발생시킬 수 있으므로, 미러링 대상 IP 정보를 정확하게 입력해야 합니다.
     * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
-    * 필터 그룹은 필터 그룹은 룰당 하나만 적용 가능하며, 이름, 설명, 프로토콜, 전송 여부만 수정 가능합니다.
+    * 필터 그룹은 룰당 하나만 적용 가능하며, 이름, 설명, 프로토콜, 전송 여부만 수정 가능합니다.
 
 <br>
 
-### 필터 그룹 설정하기
+## 필터 그룹 설정하기
 
 * **필터 그룹**을 통해 미러링 룰에 적용할 필터를 설정하면 사용자가 원하는 패킷만 선별하여 전송할 수 있습니다.
     * 이름: 설정한 이름을 표시합니다.
     * 연결된 미러링 룰: 해당 필터 그룹을 사용하는 미러링 룰을 표시합니다.
     * 설명: 설명을 표시합니다.
     * 필터 규칙 보기: 해당 필터 그룹에 설정된 규칙을 확인합니다.
-    ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
 
 ### 추가
 

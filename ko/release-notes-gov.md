@@ -1,4 +1,4 @@
-# Network Firewall 릴리스 노트
+## Network Firewall 릴리스 노트
 
 **Security > Network Firewall > 릴리스 노트**
 

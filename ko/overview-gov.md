@@ -1,4 +1,4 @@
-# Network Firewall 개요
+## Network Firewall 개요
 
 **Security > Network Firewall > 개요**
 
@@ -16,9 +16,9 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 
 * 효율적으로 네트워크 통신 정책을 관리할 수 있습니다.
     * Stateful 방식으로 하나의 정책으로 트래픽을 제어합니다.
-* Hub - Spoke 구조로 외부 공격으로부터 안전하게 인스0턴스를 보호할 수 있습니다.
+* Hub - Spoke 구조로 외부 공격으로부터 안전하게 인스턴스를 보호할 수 있습니다.
     * VPC 간 내부 트래픽과 인바운드/아웃바운드 트래픽을 제어합니다.
-* 여러개의 인터페이스를 연결하고 라우트를 설정하여 트래픽을 제어할 수 있습니다.
+* 여러 개의 인터페이스를 연결하고 라우트를 설정하여 트래픽을 제어할 수 있습니다.
 * 인터넷 환경에서 사이트 간 암호화된 터널을 통해 안전한 가상 사설 네트워크(VPN)를 제공합니다.    
 * 네트워크 차단과 허용에 대한 실시간 로그 검색과 백업 기능을 제공합니다.
     * 고객의 환경에 맞춰 여러 가지 백업 방식을 제공합니다(Syslog, Object Storage, Log & Crash Search).
@@ -30,29 +30,30 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 서비스는 아래의 5가지 형태로 구성할 수 있습니다.
 
 ### 1개의 프로젝트
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture1.png" height="70%">
+![](../static/images/26.07.28/1.overview/architecture1.png){ height="70%" }
+
 
 ### 1개 이상의 프로젝트
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture2.png" height="70%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecture2.png){ width="100%" height="70%" }
 
 
 ### 다른 리전 간 프로젝트
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture3.png" height="70%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecture3.png){ width="100%" height="70%" }
 
 
 ### 1개의 프로젝트 내 2개의 Spoke VPC
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecture4.png" height="70%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecture4.png){ width="100%" height="70%" }
 
 
 ### 1개의 VPC 내 여러 개의 서브넷
-<img src="https://static.toastoven.net/prod_nfw/26.07.28/1.overview/architecturer5.png" height="50%" width="100%" />
+![](../static/images/26.07.28/1.overview/architecturer5.png){ width="100%" height="50%" }
 
 
 !!! tip "알아두기"
 
     * 위의 구성도는 일반적인 구성이며, 고객의 환경에 따라 Network Firewall을 제외한 WEB, WAS, Load Balancer 등의 구성이 다를 수 있습니다.
 
-    * 다른 리전의 프로젝트 환경에서는 같은 프로젝트만 구성 가능합니다. 자세한 내용은 [사용자 가이드](https://docs.gov-nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide-gov/)를 참조하세요.
+    * 다른 리전의 프로젝트 환경에서는 같은 프로젝트만 구성 가능합니다. 자세한 내용은 [사용자 가이드](https://docs.gov-nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide-gov/)를 참고하세요.
 
 !!! danger "주의"
 

@@ -2,13 +2,9 @@
 
 Network Firewall을 생성하기 위한 절차와 생성 이후 콘솔을 사용하는 방법을 설명합니다.
 
-<br>
-
 ## 시작하기
 
 Network Firewall을 사용하기 위해서는 가장 먼저 Network Firewall 서비스를 활성화합니다.
-
-<br>
 
 ## Network Firewall 생성
 
@@ -41,11 +37,22 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 [1개 이상의 프로젝트 구성 시 준비 사항]
 
 * 2개의 프로젝트
-* 2개의 VPC(각 프로젝트에 Hub VPC, Spoke VPC)
+* 2개의 VPC(각각 프로젝트에 Hub VPC, Spoke VPC)
 * Hub VPC 내 3개의 서브넷
     * 트래픽(내부) 서브넷, NAT(외부) 서브넷, 외부 전송 서브넷
 * Spoke VPC 내 최소 1개의 서브넷
 * Hub VPC의 Routing에 연결된 인터넷 게이트웨이
+
+
+[다른 리전 간 프로젝트 구성 시 준비 사항]
+
+* 1개의 프로젝트
+* 2개의 VPC(KR1 리전에 Hub VPC, KR2 리전에 Spoke VPC)
+* Hub VPC 내 3개의 서브넷
+    * 트래픽(내부) 서브넷, NAT(외부) 서브넷, 외부 전송 서브넷
+* Spoke VPC 내 최소 1개의 서브넷
+* Hub VPC의 Routing에 연결된 인터넷 게이트웨이
+
 
 [단일 VPC 내 여러 개의 서브넷 구성 시 준비 사항]
 
@@ -57,10 +64,11 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * Spoke 서브넷에 연결할 라우팅 테이블
 * VPC의 Routing에 연결된 인터넷 게이트웨이
 
+
 > [참고]
 > 
-> * 위의 서비스 자원은 [Network] 카테고리에서 생성 가능합니다.
-> * Network Firewall 생성은 프로젝트당 1개씩만 생성 가능합니다.
+>* 위의 서비스 자원은 [Network] 카테고리에서 생성 가능합니다. 
+>* Network Firewall 생성은 프로젝트당 1개씩만 생성 가능합니다.
 
 ### Network Firewall 생성
 
@@ -81,17 +89,17 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 > * 서브넷, NAT, 외부 전송에 사용하는 서브넷은 모두 다른 서브넷으로 선택해야 합니다.
 >    * 가급적 NHN Cloud 콘솔에서 생성할 수 있는 최소 단위(28비트)로 생성할 것을 권장합니다.
 > * Network Firewall이 속할 VPC의 라우팅 테이블에 인터넷 게이트웨이가 연결되어 있어야 생성 가능합니다.
-> * Network Firewall 서비스는 가용 영역을 분리하여 이중화를 기본으로 제공합니다.
 > * Security Groups와는 별개의 서비스이므로 Network Firewall을 사용하면 두 서비스를 모두 허용해야 인스턴스에 접근할 수 있습니다.
 > * Network Firewall이 소유하고 있는 CIDR 대역과 연결이 필요한 CIDR 대역은 중복되지 않아야 합니다.
 > * **Network > Network Interface**에서 Virtual_IP 타입으로 생성되어 있는 IP는 Network Firewall에서 이중화 용도로 사용 중이므로 삭제할 경우 통신이 차단될 수 있습니다.
-> * 단일 또는 이중화 구성을 선택하여 Network Firewall을 생성한 뒤 변경이 필요할 경우 **옵션** 탭에서 구성을 변경할 수 있습니다. 하지만 가용성 영역은 변경이 불가능하므로 이중화 구성의 경우 가급적 가용성 영역을 분리하여 구성하세요.
+> * 단일 또는 이중화 구성을 선택하여 Network Firewall을 생성한 뒤 변경이 필요할 경우 **옵션** 탭에서 구성을 변경할 수 있습니다. 하지만 가용성 영역은 변경이 불가능하므로 이중화 구성의 경우 가급적 가용성 영역을 분리하여 구성하세요. 
 
 ### 연결 설정
+
 > [예시]
 > Network Firewall이 사용하는 VPC(Hub)는 10.0.0.0/24이고, Network Firewall과 연결이 필요한 VPC(Spoke)는 172.16.0.0/24일 때
 
-1. <strong>Network > Peering Gateway</strong>로 이동하여 피어링을 생성합니다.       
+1. <strong>Network > Peering Gateway</strong>로 이동하여 피어링을 생성합니다.
     * 피어링 게이트웨이 연결에 대한 자세한 사항은 [사용자 가이드](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)를 참조하세요.
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
 <br>
@@ -179,26 +187,27 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 
 <br>
 
-* **Network > Subnet**에서 Network Firewall과 겹치지 않는 서브넷을 새로 생성하고 라우팅 테이블을 연결합니다.
+* **Network > Subnet**에서 Network Firewall과 겹치지 않는 Spoke 서브넷을 새로 생성하고 라우팅 테이블을 연결합니다.
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/subnet_create.png" height="65%" />
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_connect.png" height="65%" />
 
 <br>
 
-위의 라우팅 설정이 완료되면 서로 다른 Spoke VPC 간 통신과 같은 VPC 내 서브넷 간 통신을 Network Firewall을 경유하여 사설 통신을 할 수 있습니다. (<strong>Network Firewall > 정책</strong> 탭에서 ACL 추가 필요)
+위의 라우팅 설정이 완료되면 서로 다른 Spoke VPC 간 Network Firewall을 경유하여 사설 통신을 할 수 있습니다. (<strong>Network Firewall > 정책</strong> 탭에서 정책 추가 필요)
 Network Firewall 서비스 구성도를 참고하여 고객의 환경에 맞게 연결을 설정하세요.
 
-<br>
+***
 
 ## 인스턴스 접속
 Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network Firewall을 경유하여 인스턴스에 접속할 수 있습니다.
 
 예를 들어, 1개의 프로젝트 내 2개의 Spoke VPC로 3개의 서브넷을 구성하고, 외부에서 웹방화벽 접속이 필요할 경우 아래와 같이 NAT, ACL을 설정합니다.
 
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/instance-access.png" height="65%" />
+<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/instance-access
+.png" height="65%" />
 
 > [설정 방법]
->
+> 
 > * **Network Firewall > NAT** 탭으로 이동
 > * **추가** 버튼 클릭 후 NAT 설정
 >   * 설정 전 **객체** 탭에서 목적지 IP 객체 생성과 여분의 플로팅 IP 필요 
@@ -208,7 +217,7 @@ Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network F
 
 위와 같이 설정 후 출발지 IP를 보안 그룹에서 허용하면 인스턴스에 접속 가능합니다.
 
-<br>
+<br>>
 
 ## 정책
 Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
@@ -308,7 +317,6 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > 
 > ![route_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/route_add.png)
 
-
 ### 수정
 
 * **수정**을 클릭해 라우트를 수정할 수 있습니다.
@@ -332,17 +340,17 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > 그룹 객체 생성 시 그룹 객체는 추가할 수 없습니다(단일이나 범위 객체만 선택하여 추가 가능).
 
 ### 수정
+
 * **수정**을 클릭해 객체를 수정할 수 있습니다.
     * 타입은 수정이 불가능합니다.
 
 ### 삭제
 
 * **삭제**를 클릭해 객체를 삭제할 수 있습니다.
-
     * 자동으로 Network Firewall에서 생성한 객체는 수정이나 삭제할 수 없습니다.
 
 >[주의]
->정책에서 사용 중인 객체는 삭제 후 ALL 객체로 변경됩니다.
+> 정책에서 사용 중인 객체는 삭제 후 ALL 객체로 변경됩니다.
 
 ### 인스턴스 객체 추가
 * Network Firewall이 생성된 프로젝트 내에 있는 인스턴스를 활용하여 객체를 추가할 수 있습니다.
@@ -366,165 +374,28 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * NAT는 목적지 기반 및 1:1 방식만 제공합니다.
 > * 포트 기반의 NAT는 제공하지 않습니다.
 > * NAT를 생성한 뒤 **정책** 탭에 허용 정책을 추가해야만 공인 통신이 가능합니다.
-> * NHN Cloud(공공기관용)에서 제공하는 SSL VPN 서비스와 Network Firewall을 연동하여 사용할 수 있습니다. (**옵션 > SSL VPN 설정**에서 **사용**으로 설정 시)
 > * NAT에 설정된 NAT 후 사설 IP를 소유한 인스턴스에 직접 Floating IP를 할당할 경우 통신에 문제가 있을 수 있습니다.
-> * NAT 삭제 후 사용하지 않는 NAT 전 공인 IP는 **Network > Floating IP**에서 직접 삭제하세요.
+> * NAT 삭제 후 사용하지 않는 NAT 전 공인 IP는 **Network > Floating**에서 직접 삭제하세요.
 
 ### 추가
 
 * **추가**를 클릭해 NAT를 생성합니다.
-    * 타입을 선택합니다. 
     * NAT 전 공인 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
     * NAT 후 사설 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
 
-
-![nat_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/nat_add.png)
+![nat_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.04.05/nat_add_2.png)
 
 >[참고]
-> 
-> * 옵션 - SSL VPN 설정에서 사용으로 설정했을 경우에만 타입이 노출됩니다.
-> * 타입의 선택에 따라 아래의 NAT 전 공인 IP가 노출됩니다.
->   * Network Firewall: **Network > Floating IP**에서 Public Network로 생성된 Floating IP
->   * SSL VPN: **Network > Floating IP**에서 VPN Network로 생성된 Floating IP
-> * 인스턴스 접속은 NAT를 추가하면서 설정한 NAT 전 공인 IP로 접속 가능합니다. (인스턴스에 직접 Floating IP 연결 불필요)
+> 인스턴스 접속은 NAT를 추가하면서 설정한 NAT 전 공인 IP로 접속 가능합니다. (인스턴스에 직접 Floating IP 연결 불필요)
 
 ### 수정
 
 * **수정**을 클릭해 생성된 NAT를 수정합니다.
-    * 공인 IP와 사설 IP 모두 수정할 수 있습니다.
+    * 수정은 공인 IP와 사설 IP 모두 수정할 수 있습니다.
 
 ### 삭제
 
 * **삭제**를 클릭해 생성된 NAT를 삭제합니다.
-
-<br>
-
-## 미러링
-
-**미러링** 탭에서는 Network Firewall을 통과하는 네트워크 패킷을 IDS/IPS, SIEM, NDR 등의 위협 탐지 및 분석 솔루션으로 복사하여 네트워크 위협을 실시간으로 탐지하고 대응할 수 있도록 합니다.
-
-> [참고]
-> **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
-<br>
->     ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
-
-<br>
-
-### 미러링 룰
-
-* 미러링 룰을 추가하여 복사한 패킷을 원하는 대상 단말로 전송합니다.
-![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
-    * 이름: 설정한 이름을 표시합니다.
-    * 방향: 설정한 방향을 표시합니다.
-    * 미러 지정 인터페이스: 선택한 Network Firewall의 인터페이스를 표시합니다.
-    * 미러링 송신 IP: 미러링 인터페이스의 IP를 표시합니다.
-    * 미러링 대상 IP: 미러링 패킷을 보낼 목적지 IP를 표시합니다.
-    * 필터 그룹: 선택한 필터 그룹을 표시합니다.
-    * 상태: 해당 미러링 룰의 상태를 배지를 통해 표시합니다.
-        * Active: 활성화 
-        * Inactive: 비활성화
-    * 자세히 보기: 설정한 미러링 룰의 상세 정보를 확인합니다.
-
-<br>
-
-### 추가
-
-* **추가**를 클릭해 미러링 룰을 추가할 수 있습니다.
-    ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
-    * 상태: 미러링 룰의 활성화 여부를 설정합니다.
-    * 방향: 미러 지정 인터페이스에서 미러링할 수신/송신 패킷을 설정합니다. 해당 설정을 통해 특정 방향의 패킷만 미러링할 수 있습니다.
-        * 수신(Rx): 미러 지정 인터페이스에서 수신하는 패킷
-        * 송신(Tx): 미러 지정 인터페이스에서 송신하는 패킷
-    * 미러 지정 인터페이스: Network Firewall의 아래 인터페이스 중에서 선택합니다.
-        * NetworkFirewall\_INF\_NAT: Network Firewall의 외부 제어용 상단 인터페이스
-        * NetworkFirewall\_INF\_TRAFFIC: Network Firewall의 내부 제어용 하단 인터페이스
-    * 미러링 송신 IP: 외부 전송 서브넷의 미러링 인터페이스가 기본으로 설정됩니다.
-    * 미러링 대상 IP: 미러링 패킷을 수신할 대상의 사설 IP를 입력합니다.
-    * VNI(virtual network identifier): VNI를 입력합니다.
-
-> [참고]
->
-> * 미러링 대상 단말이 VXLAN 패킷을 수신할 수 있도록 정책(보안 그룹 및 방화벽 등)에서 미러링 송신 IP와 UDP 포트 4789번에 대한 접속 허용 설정이 필요합니다.
-> * 미러링 룰은 최대 3개까지 생성할 수 있습니다.
-> * 미러링 룰을 적용할 때 고객의 환경에 따라 많은 통신 데이터를 발생시킬 수 있으므로, 미러링 대상 IP 정보를 정확하게 입력해야 합니다.
-> * Network Firewall은 VXLAN 터널을 통해 미러링 패킷을 송신하므로 VNI 설정이 필요합니다. VNI 값은 1\~16,777,215 사이의 숫자로 입력하고, 미러링 대상 장비와 동일하게 설정해야 합니다.
-
-* **필터 그룹**을 선택합니다.
-    * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
-    * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
-        ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
-
-> [참고]
-> 필터 그룹은 룰당 하나만 적용 가능합니다.
-
-<br>
-
-### 수정
-
-* **수정**을 클릭해 미러링 룰을 수정할 수 있습니다.
-
-> [참고]
-> 이름, 설명, 상태, 필터 그룹만 수정 가능합니다.
-
-<br>
-
-### 삭제
-
-* **삭제**를 클릭해 미러링 룰을 삭제할 수 있습니다.
-
-<br>
-
-### 필터 그룹
-
-* **필터 그룹**을 통해 미러링 룰에 적용할 필터를 설정하면 사용자가 원하는 패킷만 선별하여 전송할 수 있습니다.
-![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
-    * 이름: 설정한 이름을 표시합니다.
-    * 연결된 미러링 룰: 해당 필터 그룹을 사용하는 미러링 룰을 표시합니다.
-    * 설명: 설명을 표시합니다.
-    * 필터 규칙 보기: 해당 필터 그룹에 설정된 규칙을 확인합니다.
-
-<br>
-
-### 추가
-* **추가**를 클릭해 필터 그룹을 추가할 수 있습니다.
-    ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
-    * 필터 규칙 정의
-        * 우선순위: 작은 숫자일수록 우선순위가 높습니다. 높은 우선순위부터 규칙을 적용하여 미러링 패킷을 전송합니다.
-        * 프로토콜: 프로토콜을 지정합니다.
-            * ALL: 모든 프로토콜을 지정합니다. 선택 시 출발지/목적지 설정이 비활성화됩니다.
-            * TCP: TCP를 지정합니다.
-            * UDP: UDP를 지정합니다.
-            * ICMP: ICMP를 지정합니다. 선택 시 출발지/목적지 포트 설정이 비활성화됩니다.
-        * 출발지/목적지 CIDR: 출발지와 목적지 CIDR을 설정합니다.
-        * 출발지/목적지 포트: ALL, 포트, 포트 범위를 선택하여 설정합니다.
-            * ALL: 모든 포트를 지정합니다.
-            * 포트: 1\~65535 범위의 포트 하나를 지정합니다.
-            * 포트 범위: 1\~65535 범위 내에 포트 범위를 지정합니다.
-        * 전송 여부: 해당 규칙에 부합하는 패킷의 전송 여부를 설정합니다.
-            * 전송: 규칙에 맞는 패킷을 전송합니다.
-            * 미전송: 규칙에 맞는 패킷을 전송하지 않습니다.
-
-> [참고]
->
-> * 각 규칙의 [－], [＋] 버튼을 클릭해 규칙을 삭제하거나 추가할 수 있습니다.
-> * 각 규칙의 위, 아래 버튼을 클릭해 규칙의 우선순위를 변경할 수 있습니다.
->     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
-> * 필터 그룹은 default 필터 그룹을 포함하여 최대 10개까지 설정 가능합니다.
-> * 필터 규칙은 최대 30개까지 설정 가능합니다.
-> * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
-
-<br>
-
-### 수정
-* **수정**을 클릭해 필터 그룹을 수정할 수 있습니다.
-
-<br>
-
-### 삭제
-* **삭제**를 클릭해 필터 그룹을 삭제할 수 있습니다.
-
-> [참고]
-> default 필터 그룹은 삭제할 수 없습니다.
 
 <br>
 
@@ -550,12 +421,12 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 ### 삭제
 
 * **삭제** 버튼을 클릭해 게이트웨이를 삭제합니다.
-    * 게이트웨이에 연결된 터널이 있을 경우 삭제가 되지 않으므로 불필요한 터널을 삭제한 후 게이트웨이를 삭제 하세요.
+    * 게이트웨이에 연결된 터널이 있을 경우 삭제가 되지 않습니다.
 
 ### 플로팅 IP 연결
 
-* 피어 장비와 연결에 필요한 플로팅 IP를 설정합니다.
-    * 플로팅 IP는 **Network > Floating IP**에 생성된 목록중 미사용 중인 항목이 노출됩니다.
+* 피어 장비와의 연결에 필요한 플로팅 IP를 설정합니다.
+    * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용중인 항목이 노출됩니다.
 
 ![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
 
@@ -573,11 +444,11 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
         * IKE 버전 1은 Main Mode만 지원됩니다.
     * Pre-Shared Key: 피어 VPN 장비와 동일한 키값을 입력합니다.
     * DPD(dead peer detection): 10초 단위로 총 5회의 재전송을 시도하며, 비활성화 선택 시 피어 VPN 장비의 DPD 요청에 대한 응답만 지원합니다.
-    * NAT-Traversal: 터널 생성간 발생되는 패킷의 삭제를 방지하기 위한 기능으로 일반적으로 피어 VPN 장비가 공인 IP 일경우 사용으로 설정합니다.
+    * NAT-Traversal: 터널 생성 시 발생되는 패킷의 삭제를 방지하기 위한 기능으로 일반적으로 피어 VPN 장비가 공인 IP일 경우 사용으로 설정합니다.
 * Phase 1/2 설정
     * IPSec VPN 터널을 생성하기 위해 필요한 설정 정보를 입력합니다.
 
- > [설정 시 주의 사항]
+ > [설정 시 참고 사항]
  > 
  > * 모든 설정은 피어 VPN 장비와 동일하게 설정합니다.
  > * 로컬 ID는 피어 VPN 장비의 설정 방식에 따라 선택적으로 설정합니다.
@@ -587,12 +458,11 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
  >       * 192.168.100.0/20 (X) → 192.168.96.0/20 (O)
  >       * 172.16.30.0/21 (X) → 172.16.24.0/21 (O)
  >       * 10.0.50.0/22 (X) → 10.0.48.0/22 (O)
- > * 로컬 프라이빗 IP와 피어 프라이빗 IP는 서로 중복되지 않아야 합니다. 이 범위는 VPC 피어링을 포함한 Network Firewall과 연결되는 모든 사설 대역이 포함됩니다.
- > * 아래의 CIDR은 로컬 프라이빗 IP와 피어 프라이빗 IP에 추가할 수 없으며, 추가할 경우 Network Firewall을 경유하는 통신에 문제가 있을 수 있습니다.
+ > * 로컬 프라이빗 IP와 피어 프라이빗 IP는 서로 중복되지 않아야 합니다. 이 범위는 VPC 피어링을 포함한 Network Firewall과 연결되는 모든 사설 대역이 포함됩니다. 
+  > * 아래의 CIDR은 로컬 프라이빗 IP와 피어 프라이빗 IP에 추가할 수 없으며, 추가할 경우 Network Firewall을 경유하는 통신에 문제가 있을 수 있습니다.
  >   * 10.0.0.0/8
  >   * 172.16.0.0/12
- >   * 192.168.0.0/16
-
+ >   * 192.168.0.0/16 
 
 ### 터널 연결
 
@@ -602,10 +472,10 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > 
 > * **상태** 열에서 색상별로 터널의 상태를 확인할 수 있습니다.
  >   * 녹색: 피어 VPN 장비와 정상적으로 연결 중인 상태
- >   * 빨간색: 설정 또는 통신 상태 등의 문제로 피어 VPN 장비 간 연결이 실패된 상태
+ >   * 빨간색: 설정값 또는 통신 상태 등의 문제로 피어 VPN 장비 간 연결이 실패된 상태
  >   * 회색: 연결 대기 상태(새로 생성된 터널)
- >   * 주황색: **중지** 버튼을 클릭해 피어 VPN 장비와 연결이 중지된 상태
-> * 터널 생성이 완료된 이후 피어 장비의 종류와 설정에 따라 **연결**을 클릭하지 않아도 터널이 연결될 수 있습니다.
+ >   * 주황색: **중지** 버튼을 클릭해 피어 VPN 장비간 연결이 중지된 상태
+> * 터널 생성이 완료된 이후 피어 장비의 종류와 설정에 따라 **연결**을 클릭하지 않아도 연결될 수 있습니다.
 
 ### 터널 수정
 
@@ -623,12 +493,13 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 ### 이벤트
 
-* 피어 장비와의 터널 연결 시 발생하는 이벤트 로그를 검색할 수 있습니다.
+* 피어 VPN 장비와의 터널 연결 시 발생하는 이벤트 로그를 검색할 수 있습니다.
 
 > [참고]
 > 
 > * 이벤트에서는 터널에 대한 이벤트 로그만 검색할 수 있습니다.
 > * VPN 터널을 통한 통신 로그 또는 터널 생성과 삭제 등의 감사 로그는 **로그** 탭에서 확인하세요.
+
 
 ## 로그
 
@@ -646,7 +517,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 ### 엑셀 내려받기
 
-* **엑셀 내려받기**를 클릭해 트래픽과 Audit 로그의 검색 결과를 다운로드할 수 있습니다.
+* **엑셀 내려받기**를 클릭해 트래픽과 Audit 로그의 검색 결과를 다운로드할 수 있습니다..
     * 트래픽 로그의 최대 다운로드 개수는 30만 건입니다.
 
 ## 모니터
@@ -672,7 +543,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
         * 2개의 원격지는 개별적으로 설정 가능(IP 주소, 프로토콜, 포트 번호)
     * Object Storage: NHN Cloud에서 제공하는 Object Storage 서비스로 로그를 전송
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS_5.png" height="65%" />
-        * 액세스 키 / 비밀 키: Object Storage 서비스에서 S3 API 자격 증명 등록 시 확인 가능한 액세스 정보를 입력
+        * 액세스 키 / 비밀 키: Object Storage 서비스에서 S3 API 자격 증명 등록 시 확인 가능한 액세스 키 정보를 입력
         * 버킷 이름: Object Storage 서비스에서 생성한 컨테이너의 이름을 입력
         * 엔드포인트: 리전별 엔드포인트를 확인한 뒤 위치에 맞게 엔드포인트를 입력
         * 리전: 리전별 이름을 확인한 뒤 리전 위치에 맞게 이름을 입력
@@ -684,7 +555,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * Object Storage 설정 시 [사용자 가이드](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)를 참고하여 입력하세요.
 > * Log & Crash Search 서비스를 사용 시 로그 알람 설정 기능을 활용하여 이상 행위를 탐지할 수 있습니다.
 예를 들어, Network Firewall에 특정 목적지로 향하는 SSH 통신에 대한 ACL 차단 정책을 추가한 뒤 해당 정책에서 발생되는 로그에 대한 알람 조건을 설정합니다. (예: 1분 동안 SSH 접속 시도 로그가 20회 이상 발생)
-사용자가 설정한 조건을 만족 시 알람을 수신할 수 있습니다.
+사용자가 설정한 조건을 만족 시 알람을 수신할 수 있습니다.  
 
 <br>
 
@@ -696,26 +567,6 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 > [참고]
 > 트래픽, NAT 이더넷의 기본 MTU 크기는 1450Byte입니다.
-
-<br>
-
-* SSL VPN 설정: 외부에서 NHN Cloud(공공기관용) 인스턴스 접속이 필요할 경우 사용하는 SSL VPN 서비스와 Network Firewall을 연동하는 옵션을 제공합니다.
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/SSLVPN.png" height="65%" />
-
-> [참고]
-> 
-> * 해당 옵션을 사용할 경우 NHN Cloud(공공기관용)에서 인스턴스 접속 시 사용하는 Private Network의 사설 VPN Network IP를 **Network Firewall > NAT**에서 설정할 수 있습니다.
-> * 옵션 사용 시 SSL VPN 연결 후 인스턴스에 접근할 때 Network Firewall을 통해 접근하게 되며 **정책**에서 통신을 허용해야만 인스턴스 접근이 가능합니다.
-> * Network Firewall 연동 시 인스턴스는 SSL VPN 전용 이더넷을 추가로 할당하지 않아도 됩니다. (단, Network Firewall과 연동하지 않을 경우 이더넷을 할당해야 합니다.)
-
-<br>
-
-* 미러링 설정: Network Firewall에서 제공하는 기능 중 미러링의 사용 여부를 선택할 수 있습니다.
-    * 사용 선택 시 필요한 서브넷은 Network Firewall 생성에 사용했던 서브넷을 사용합니다.
-
-> [참고]
-> * ACL 설정에 필요한 미러링 인터페이스의 IP 정보는 **Network - Network Interface**에서 확인 가능합니다.
->   * 인터페이스 이름: NetworkFirewall_INF_MIRRORING_S_NAT_VIP
 
 <br>
 
@@ -732,7 +583,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
     * Network Firewall은 한국(판교) 리전과 한국(평촌) 리전에서 각각 삭제할 수 있습니다.
 
 > [삭제 시 주의 사항]
-> 운영 중인 Network Firewall을 삭제할 경우 Network Firewall과 연결된 다른 서비스를 고려하여 진행하세요.
+> 운영 중인 Network Firewall을 삭제할 경우 Network Firewall과 연결된 다른 서비스를 고려하여 진행하세요.      
 
 <br>
 

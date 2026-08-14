@@ -1,10 +1,8 @@
-# 객체
+## 객체
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 객체**
 
 **객체** 탭에서는 정책을 생성할 때 사용할 IP, 포트를 생성하고 관리합니다.
-
-![(object1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object1.png)
 
 <br>
 
@@ -14,7 +12,7 @@
 
 * 필수 항목을 입력하여 객체를 생성합니다.
     * 객체는 IP, 포트의 2가지 형태로 추가할 수 있습니다.
-    ![(object2)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object2.png)
+    ![(object2)](../../static/images/26.07.28/2.console-user-guide/4.object/object2.png)
 
 ### 수정
 
@@ -28,7 +26,7 @@
 
 ### 인스턴스 객체 추가
 * Network Firewall이 생성된 프로젝트 내에 있는 인스턴스를 활용하여 객체를 추가할 수 있습니다.
-![(object3)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/4.object/object3.png)
+![(object3)](../../static/images/26.07.28/2.console-user-guide/4.object/object3.png)
 
 ### 객체 일괄 다운로드
 
@@ -36,7 +34,7 @@
 
 !!! tip "알아두기"
     * 그룹 객체 생성 시 그룹 객체는 추가할 수 없습니다(단일이나 범위 객체만 선택하여 추가 가능).
-    * 인스턴스와 관계없이 단순히 인스턴스의 이름과 사설 IP 주소만 참고하여 객체를 생성합니다. 생성한 객체는 **객체** 탭에서 관리합니다
+    * 인스턴스와 관계없이 단순히 인스턴스의 이름과 사설 IP 주소만 참고하여 객체를 생성합니다. 생성한 객체는 **객체** 탭에서 관리합니다.
 
 !!! danger "주의"
     정책에서 사용 중인 객체는 삭제 후 ALL 객체로 변경됩니다.

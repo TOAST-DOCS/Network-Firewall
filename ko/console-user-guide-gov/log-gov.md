@@ -1,10 +1,8 @@
-# 로그
+## 로그
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 로그**
 
 **로그** 탭에서는 Network Firewall에서 생성된 로그를 검색할 수 있습니다.
-
-![(log1)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/9.log/log1.png)
 
 <br>
 
