@@ -55,7 +55,6 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
     * You can modify both public and private IPs.
 
 <a id="configure-destination-nat-delete"></a>
-
 ### Delete { #configure-destination-nat-delete }
 
 * Click **Delete** to delete the created destination NAT.
