@@ -55,7 +55,6 @@
     * 修正はパブリックIPとプライベートIPの両方を修正できます。
 
 <a id="configure-destination-nat-delete"></a>
-
 ### 削除 { #configure-destination-nat-delete }
 
 * **削除**をクリックして作成された宛先NATを削除します。
