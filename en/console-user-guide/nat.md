@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=b5a6dd9155ad -->
 
 <a id="nat"></a>
@@ -58,9 +60,14 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
 * Click **Delete** to delete the created destination NAT.
 
 !!! tip "Note"
-
+    * Only one IP before NAT and one IP after NAT are added per entry.
     * Port-based destination NAT is not supported.
-    * After creating a NAT, you must add an allow policy in the **Policy** tab to enable public communication.
-    * Instances can be accessed using the Pre-NAT IP configured when adding a NAT in the Destination tab. (No need to directly associate a Floating IP with the instance.)
-    * If a Floating IP is directly assigned to an instance that owns the Post-NAT IP configured in NAT, communication issues may occur.
-    * After deleting a NAT, delete any unused Pre-NAT IPs directly in **Network > Floating IP**.
+    * After creating a NAT, you must add an allow policy to the **Policies** tab to enable authorized communication.
+    * Instances can be accessed from the pre-NAT IP that you set when adding NAT to the destination tab (no need to connect a floating IP directly to the instance).
+    * If you assign a floating IP directly to an instance that owns the post-NAT IP configured in NAT, you might have communication issues.
+    * After deleting NAT, delete the unused pre-NAT IP directly from **Network > Floating IP**.
+
+!!! danger "Caution"
+    * When you add a source or destination NAT, the private IP before/after NAT that you select displays the objects created with **Type-Subnet** on the **Objects** tab at the time of addition.
+        * Even if a selected object is modified or deleted on the **Objects** tab after adding NAT, it does not affect the NAT configuration (objects and NAT are not linked to each other).
+        For example, if you select an object created with 10.10.10.10/32 when adding a destination NAT and then go to the **Objects** tab to modify that object from 10.10.10.10/32 to 10.10.10.20/32, the NAT configuration remains unchanged.
