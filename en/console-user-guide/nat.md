@@ -60,6 +60,12 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
 * Click **Delete** to delete the created destination NAT.
 
 !!! tip "Note"
+    * Only one IP before NAT and one IP after NAT are added per entry.
+    * Port-based destination NAT is not supported.
+    * After creating a NAT, you must add an allow policy to the **Policies** tab to enable authorized communication.
+    * Instances can be accessed from the pre-NAT IP that you set when adding NAT to the destination tab (no need to connect a floating IP directly to the instance).
+    * If you assign a floating IP directly to an instance that owns the post-NAT IP configured in NAT, you might have communication issues.
+    * After deleting NAT, delete the unused pre-NAT IP directly from **Network > Floating IP**.
 
 !!! danger "Caution"
     * When you add a source or destination NAT, the private IP before/after NAT that you select displays the objects created with **Type-Subnet** on the **Objects** tab at the time of addition.
