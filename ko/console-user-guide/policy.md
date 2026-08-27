@@ -1,4 +1,7 @@
-## 정책
+<!-- pre-align:aligned sig=9132502e0f26 -->
+
+<a id="policy"></a>
+## 정책 { #policy }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 정책**
 
@@ -6,9 +9,11 @@
 
 <br>
 
-## ACL 설정하기
+<a id="configure-acl"></a>
+## ACL 설정하기 { #configure-acl }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 * 출발지, 목적지, 목적지 포트를 기반으로 정책을 추가할 수 있습니다.
     * 이미 만들어진 객체를 통해 출발지, 목적지, 목적지 포트를 선택합니다.
@@ -17,32 +22,38 @@
 
 ![policy2.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy2.png)
 
-### 복사
+<a id="copy"></a>
+### 복사 { #copy }
 
 * **복사**를 클릭해 정책을 복사할 수 있습니다.
     * 복사: 복사하고자 하는 정책과 동일한 정책을 복사
     * 역방향 복사: 복사하고자 하는 정책의 출발지와 목적지를 변경하여 복사
     ![policy3.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy3.png)
     
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 * **수정**을 클릭해 정책을 수정할 수 있습니다.
 
-### 이동
+<a id="move"></a>
+### 이동 { #move }
 
 * **이동**을 클릭해 정책을 이동할 수 있습니다.
     * default-deny 정책 아래로는 이동이 불가능합니다.
     ![policy4.PNG](../../static/images/26.07.28/2.console-user-guide/3.policy/policy4.png)
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 * **삭제**를 클릭해 정책을 삭제할 수 있습니다.
 
-### 정책 일괄 다운로드
+<a id="batch-download-of-policies"></a>
+### 정책 일괄 다운로드 { #batch-download-of-policies }
 
 * 정책 탭에 생성되어 있는 정책 전체를 한 번에 다운로드할 수 있습니다.
 
-### 정책 일괄 등록
+<a id="batch-register-policies"></a>
+### 정책 일괄 등록 { #batch-register-policies }
 
 * 내려받은 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 
@@ -58,20 +69,24 @@
 
 <br>
 
-## 라우트 설정하기
+<a id="configure-routing"></a>
+## 라우트 설정하기 { #configure-routing }
 
-### 추가
+<a id="configure-routing-add"></a>
+### 추가 { #configure-routing-add }
 
 * **추가**를 클릭해 이더넷을 선택하고, 목적지와 게이트웨이를 입력합니다. 
     * 목적지: 서브넷 형식으로 입력
     * 이더넷: 드롭다운 목록에 노출되는 이더넷 선택
     * 게이트웨이: 호스트 형식으로 입력
   
-### 수정
+<a id="configure-routing-modify"></a>
+### 수정 { #configure-routing-modify }
 
 * **수정**을 클릭해 라우트를 수정할 수 있습니다.
 
-### 삭제
+<a id="configure-routing-delete"></a>
+### 삭제 { #configure-routing-delete }
 
 * **삭제**를 클릭해 라우트를 삭제할 수 있습니다.
 
