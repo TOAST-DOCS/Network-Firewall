@@ -3,7 +3,7 @@
 <a id="network-firewall-release-notes"></a>
 ## Network Firewall Release Notes { #network-firewall-release-notes }
 
-<!-- TODO: translate body -->
+**Security > Network Firewall > Release Notes**
 
 <a id="july-28-2026"></a>
 ## July 28, 2026 { #july-28-2026 }
