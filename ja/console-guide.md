@@ -104,7 +104,7 @@ Network Firewallの作成に必要な最小ネットワークサービスリソ�
 > [例]
 > Network Firewallが使用するVPC(Hub)は10.0.0.0/24で、Network Firewallと接続が必要なVPC(Spoke)は172.16.0.0/24の場合
 1. <strong>Network > Peering Gateway</strong> に移動してピアリングを作成します。
-    * ピアリングゲートウェイ接続の詳細については、 [ユーザーガイド](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)を参照してください。
+    * ピアリングゲートウェイ接続の詳細については、 [ユーザーガイド](/Network/Peering%20Gateway/ja/console-guide/)を参照してください。
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
 <br>
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
@@ -466,7 +466,7 @@ Network Firewallを作成すると、**ポリシー**タブに移動します。
 > * Network FirewallはVXLANトンネルを介してミラーリングパケットを送信するため、VNI設定が必要です。VNI値は1～16,777,215の間の数字で入力し、ミラーリング対象機器と同じに設定する必要があります。
 * **フィルタグループ**を選択します。
     * 以前に追加したフィルタグループがない場合は、**フィルタグループ追加**をクリックしてフィルタグループを追加できます。
-    * 詳細については、 [フィルタグループの説明](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)を参照してください。
+    * 詳細については、 [フィルタグループの説明](#filter-groups)を参照してください。
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 > [参考]
@@ -705,7 +705,7 @@ Network Firewallを作成すると、**ポリシー**タブに移動します。
         * AppKey: Log & Crash Searchサービスを有効にした後、作成されたAppKeyを入力
 
 > [参考]
-> * Object Storage設定時、[ユーザーガイド](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)を参考にして入力してください。
+> * Object Storage設定時、[ユーザーガイド](/Storage/Object%20Storage/ja/s3-api-guide/#aws-sdk)を参考にして入力してください。
 > * Log & Crash Searchサービスを使用すると、ログアラーム設定機能を活用して異常行為を検出できます。
 例えば、Network Firewallに特定の目的地に向かうSSH通信に対するACLブロックポリシーを追加した後、そのポリシーで発生するログに対するアラーム条件を設定します。 (例：1分間、SSH接続試行ログが20回以上発生)
 ユーザーが設定した条件を満たした場合、アラームを受信できます。

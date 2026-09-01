@@ -46,7 +46,7 @@
 
 * **フィルタグループ**を選択します。
     * 以前に追加したフィルタグループがない場合は、**フィルタグループ追加**をクリックしてフィルタグループを追加できます。
-    * 詳細については、[フィルタグループの説明](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)をご参照ください。
+    * 詳細については、[フィルタグループの説明](#configure-filter-group)をご参照ください。
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 <a id="modify"></a>

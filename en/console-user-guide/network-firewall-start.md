@@ -107,7 +107,7 @@ The minimum network service resources required to create Network Firewall are as
 When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) that needs to connect to the Network Firewall is 172.16.0.0/24.
 
 1. Go to **Network > Peering Gateway** to create a peering.
-    * For more information on connecting a peering gateway, please see the [](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)user guide[](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/).
+    * For more information on connecting a peering gateway, please see the [](/Network/Peering%20Gateway/en/console-guide/)user guide[](/Network/Peering%20Gateway/en/console-guide/).
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
  <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
    

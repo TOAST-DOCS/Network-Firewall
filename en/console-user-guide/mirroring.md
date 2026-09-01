@@ -46,7 +46,7 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 
 * Select a **filter group**.
     * If there are no previously added filter groups, you can click **Add Filter Group** to add one.
-    * For more information, see [Filter Group Description](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9).
+    * For more information, see [Filter Group Description](#configure-filter-group).
 ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 <a id="modify"></a>
