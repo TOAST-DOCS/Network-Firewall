@@ -46,7 +46,7 @@
 
 * **필터 그룹**을 선택합니다.
     * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
-    * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
+    * 자세한 사항은 [필터 그룹 설명](#configure-filter-group)을 참고하세요.
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 <a id="modify"></a>

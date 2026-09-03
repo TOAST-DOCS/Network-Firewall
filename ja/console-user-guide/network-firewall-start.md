@@ -104,7 +104,7 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 > Network Firewallが使用するVPC(Hub)が10.0.0.0/24であり、Network Firewallと接続が必要なVPC(Spoke)が172.16.0.0/24である場合
 
 1. **Network > Peering Gateway**に移動してピアリングを作成します。
-    * ピアリングゲートウェイ接続の詳細については、[ユーザーガイド](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)をご参照ください。
+    * ピアリングゲートウェイ接続の詳細については、[ユーザーガイド](/Network/Peering%20Gateway/ja/console-guide/)をご参照ください。
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
     <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
 

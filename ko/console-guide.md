@@ -108,7 +108,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 > Network Firewall이 사용하는 VPC(Hub)는 10.0.0.0/24이고, Network Firewall과 연결이 필요한 VPC(Spoke)는 172.16.0.0/24일 때
 
 1. <strong>Network > Peering Gateway</strong>로 이동하여 피어링을 생성합니다.
-    * 피어링 게이트웨이 연결에 대한 자세한 사항은 [사용자 가이드](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)를 참조하세요.
+    * 피어링 게이트웨이 연결에 대한 자세한 사항은 [사용자 가이드](/Network/Peering%20Gateway/ko/console-guide/)를 참조하세요.
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
 <br>
 <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
@@ -487,7 +487,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 * **필터 그룹**을 선택합니다.
     * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
-    * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
+    * 자세한 사항은 [필터 그룹 설명](#filter-groups)을 참고하세요.
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 > [참고]
@@ -741,7 +741,7 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
         * AppKey: Log & Crash Search 서비스를 활성화 후 생성된 AppKey를 입력
 
 > [참고]
-> * Object Storage 설정 시 [사용자 가이드](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)를 참고하여 입력하세요.
+> * Object Storage 설정 시 [사용자 가이드](/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)를 참고하여 입력하세요.
 > * Log & Crash Search 서비스를 사용 시 로그 알람 설정 기능을 활용하여 이상 행위를 탐지할 수 있습니다.
 예를 들어, Network Firewall에 특정 목적지로 향하는 SSH 통신에 대한 ACL 차단 정책을 추가한 뒤 해당 정책에서 발생되는 로그에 대한 알람 조건을 설정합니다. (예: 1분 동안 SSH 접속 시도 로그가 20회 이상 발생)
 사용자가 설정한 조건을 만족 시 알람을 수신할 수 있습니다.  
