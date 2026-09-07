@@ -14,7 +14,7 @@
     * NAT 전 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
     * NAT 후 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다. 
 
-![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat2-gov.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/src_nat_gov.png)
 
 ### 수정
 
@@ -35,7 +35,7 @@
     * NAT 전 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
     * NAT 후 IP에서 선택할 객체는 **객체** 탭에서 미리 생성해야만 **추가**를 클릭해 추가할 수 있습니다.
 
-![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/nat3-gov.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/dst_nat_gov.png)
 
 ### 수정
 
