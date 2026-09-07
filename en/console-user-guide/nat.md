@@ -21,7 +21,7 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
     * Objects to be selected in Pre-NAT IP must be created in advance in the **Object** tab before clicking **Add**.
     * For Post-NAT IP, select one of the IPs created in advance in **Network > Floating IP**. 
 
-![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat2-pub.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/src_nat_pub.png)
 
 <a id="modify"></a>
 ### Modify { #modify }
@@ -46,7 +46,7 @@ The Network Address Translation (**NAT**) tab allows you to configure source NAT
     * For Pre-NAT IP, select one of the IPs created in advance in **Network > Floating IP**.  
     * Objects to be selected in Post-NAT IP must be created in advance in the **Object** tab before clicking **Add**.
 
-![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat3-pub.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/dst_nat_pub.png)
 
 <a id="configure-destination-nat-modify"></a>
 ### Modify { #configure-destination-nat-modify }

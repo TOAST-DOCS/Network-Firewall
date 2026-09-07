@@ -21,7 +21,7 @@
     * NAT前IPで選択するオブジェクトは、**オブジェクト**タブであらかじめ作成しておくことで、**追加**をクリックして追加できるようになります。
     * NAT後IPは、**Network > フローティングIP**であらかじめ作成したIPから1つ選択します。 
 
-![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat2-pub.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/src_nat_pub.png)
 
 <a id="modify"></a>
 ### 修正 { #modify }
@@ -46,7 +46,7 @@
     * NAT前IPは、**Network > フローティングIP**であらかじめ作成したIPから1つ選択します。  
     * NAT後IPで選択するオブジェクトは、**オブジェクト**タブであらかじめ作成しておくことで、**追加**をクリックして追加できるようになります。
 
-![nat_add.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/6.nat/nat3-pub.png)
+![nat_add.PNG](../../static/images/26.07.28/2.console-user-guide/6.nat/dst_nat_pub.png)
 
 <a id="configure-destination-nat-modify"></a>
 ### 修正 { #configure-destination-nat-modify }
