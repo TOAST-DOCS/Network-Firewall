@@ -705,7 +705,7 @@ Network Firewallを作成すると、**ポリシー**タブに移動します。
         * AppKey: Log & Crash Searchサービスを有効にした後、作成されたAppKeyを入力
 
 > [参考]
-> * Object Storage設定時、[ユーザーガイド](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)を参考にして入力してください。
+> * Object Storage設定時、[ユーザーガイド](/Storage/Object%20Storage/ja/s3-api-guide/#aws-sdk)を参考にして入力してください。
 > * Log & Crash Searchサービスを使用すると、ログアラーム設定機能を活用して異常行為を検出できます。
 例えば、Network Firewallに特定の目的地に向かうSSH通信に対するACLブロックポリシーを追加した後、そのポリシーで発生するログに対するアラーム条件を設定します。 (例：1分間、SSH接続試行ログが20回以上発生)
 ユーザーが設定した条件を満たした場合、アラームを受信できます。

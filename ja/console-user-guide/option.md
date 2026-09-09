@@ -36,7 +36,7 @@
 
 !!! tip "ポイント"
 
-    * Object Storage設定時、[ユーザーガイド](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)を参考にして入力してください。
+    * Object Storage設定時、[ユーザーガイド](/Storage/Object%20Storage/ja/s3-api-guide/#aws-sdk)を参考にして入力してください。
     * Log & Crash Searchサービスを使用する場合、ログアラーム設定機能を活用して異常な振る舞いを検知できます。
     例えば、Network Firewallに特定の宛先に向かうSSH通信に対するACL遮断ポリシーを追加した後、該当するポリシーから発生するログに対するアラーム条件を設定します。(例: 1分間にSSH接続の試行ログが20回以上発生)
     ユーザーが設定した条件を満たした場合、アラームを受信できます。  
