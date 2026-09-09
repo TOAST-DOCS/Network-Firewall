@@ -3,7 +3,7 @@
 <a id="network-firewall-release-notes"></a>
 ## Network Firewall Release Notes { #network-firewall-release-notes }
 
-<!-- TODO: translate body -->
+**Security > Network Firewall > Release Notes**
 
 {% include-markdown './release-notes/2026.md' %}
 
