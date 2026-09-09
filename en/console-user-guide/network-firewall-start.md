@@ -82,7 +82,7 @@ The minimum network service resources required to create Network Firewall are as
     * Subnet: Subnet that Network Firewall uses to control internal traffic
     * NAT: Subnet that Network Firewall uses to control external traffic
     * External transmission: Subnet that sends traffic and logs created by Network Firewall
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/create.png" height="60%" />
+    <img src="../../../static/images/24.09.12/create.png" height="60%" />
 
 !!! tip "Note"
 
@@ -107,9 +107,9 @@ The minimum network service resources required to create Network Firewall are as
 When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) that needs to connect to the Network Firewall is 172.16.0.0/24.
 
 1. Go to **Network > Peering Gateway** to create a peering.
-    * For more information on connecting a peering gateway, please see the [](/Network/Peering%20Gateway/en/console-guide/)user guide[](/Network/Peering%20Gateway/en/console-guide/).
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
- <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
+    * For more information on connecting a peering gateway, please see the [](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)user guide[](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/).
+    <img src="../../../static/images/23.12.19/ConnectionSettings3.png" height="65%" />
+ <img src="../../../static/images/23.12.19/ConnectionSettings4.png" height="65%" />
    
 !!! tip "Note"
 \* Create the appropriate peering based on the location of the Spoke VPC.
@@ -122,14 +122,14 @@ When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) 
 2. Go to **Network > Routing**, select a Hub VPC, and set up the routing as follows.
     * Destination CIDR: 172.16.0.0/24
     * Gateway: Gateway of peering type added after peering connection
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings5.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings5.png" height="65%" />
 
 <br>
 
 3. Go to **Network > Routing**, select a Spoke VPC, and set up the routing as follows:
     * Destination CIDR: 0.0.0.0/0
     * Gateway: Gateway of peering type added after peering connection
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings6.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings6.png" height="65%" />
 
 !!! tip "Note"
 
@@ -143,8 +143,8 @@ When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) 
     * Click the **Peer** or **Change Local Route** to set up routing as follows:
         * Destination CIDR: 0.0.0.0/0
         * Gateway: NetworkFirewall_INF_TRAFFIC_VIP
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings7.png" height="65%" />
-  <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings8.png" height="50%" />
+        <img src="../../../static/images/23.12.19/ConnectionSettings7.png" height="65%" />
+  <img src="../../../static/images/23.12.19/ConnectionSettings8.png" height="50%" />
       
 Once the above routing settings are complete, instances in the Spoke VPC will be able to communicate publicly through the Network Firewall. (Requires adding destination NAT in **Network Firewall > NAT**)
 
@@ -158,8 +158,8 @@ When the subnet of the Spoke VPC (172.16.0.0/24) is 172.16.0.0/25 and 172.16.0.1
 * Go to **Network > Routing**, and select Spoke VPC and add the two routings as follows.
     * Destination CIDR: 172.16.0.0/25 and 172.16.0.128/25
     * Gateway: Gateway of peering type added after peering connection
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings9.png" height="65%" />
-  <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings10.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings9.png" height="65%" />
+  <img src="../../../static/images/23.12.19/ConnectionSettings10.png" height="65%" />
   
 Once the above routing settings are complete, private communication between subnets within the Spoke VPC can be made through the Network Firewall. (Requires adding a policy in **Network Firewall > Policy** tab)
 
@@ -177,7 +177,7 @@ When it is Spoke VPC1 (17.2.16.0.0/24) and Spoke VPC2 (192.168.0.0/24)
     * Spoke VPC 2
         * Destination CIDR: 192.168.0.0/24
         * Gateway: Gateway of peering type added between Hub VPC and Spoke VPC2
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings11.png" height="65%" />
+        <img src="../../../static/images/23.12.19/ConnectionSettings11.png" height="65%" />
 
 !!! tip "Note"
 
@@ -187,14 +187,14 @@ When it is Spoke VPC1 (17.2.16.0.0/24) and Spoke VPC2 (192.168.0.0/24)
 
 **If you configure a Spoke subnet in the same VPC,** create a new routing table to associate subnets and add routes. 
 * In **Network > Routing**, create a routing table and add a route.
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_create.png" height="65%" />
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/route_create.png" height="65%" />
+<img src="../../../static/images/24.11.07/routetable_create.png" height="65%" />
+<img src="../../../static/images/24.11.07/route_create.png" height="65%" />
 
 <br>
 
 * In **Network > Subnet**, create a new spoke subnet that does not overlap the Network Firewall and associate a routing table with it.
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/subnet_create.png" height="65%" />
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_connect.png" height="65%" />
+<img src="../../../static/images/24.11.07/subnet_create.png" height="65%" />
+<img src="../../../static/images/24.11.07/routetable_connect.png" height="65%" />
 
 <br>
 

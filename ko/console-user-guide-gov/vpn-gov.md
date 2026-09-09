@@ -10,7 +10,7 @@
 
 * **게이트웨이 생성**을 클릭해 피어 VPN 장비와 연결하기 위한 게이트웨이를 생성합니다.
 
-![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
+![gw_add.PNG](../../static/images/24.05.27/gw_add.png)
 
 ### 수정
 
@@ -26,7 +26,7 @@
 * 피어 장비와의 연결에 필요한 플로팅 IP를 설정합니다.
     * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용 중인 항목이 노출됩니다.
 
-![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
+![fip.PNG](../../static/images/24.05.27/fip.png)
 
 !!! tip "알아두기"
 
@@ -39,7 +39,7 @@
 
 * 피어 장비와 연결할 터널을 생성합니다.
 
-![tunnel_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/tunnel_add.png)
+![tunnel_add.PNG](../../static/images/24.05.27/tunnel_add.png)
 
 * 터널 설정
     * 게이트웨이: 게이트웨이 탭에서 생성된 게이트웨이가 노출되며, 터널과 연결할 게이트웨이를 선택합니다.

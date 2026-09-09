@@ -87,7 +87,7 @@ The minimum network service resources needed to create a Network Firewall are as
     * Subnet: Subnet that Network Firewall uses to control internal traffic
     * NAT: Subnet that Network Firewall uses to control external traffic
     * External transmission: Subnet that sends traffic and logs created by Network Firewall
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/create.png" height="60%" />
+    <img src="../../static/images/24.09.12/create.png" height="60%" />
 
 
 > [Notes before Creation]
@@ -109,9 +109,9 @@ The minimum network service resources needed to create a Network Firewall are as
 
 1. Go to <strong>Network > Peering Gateway</strong> to create a peering.
     * For more information on connecting a peering gateway, please see the [User Guide]
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
+<img src="../../static/images/23.12.19/ConnectionSettings3.png" height="65%" />
 <br>
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
+<img src="../../static/images/23.12.19/ConnectionSettings4.png" height="65%" />
 
 > [Note]
 > 
@@ -125,13 +125,13 @@ The minimum network service resources needed to create a Network Firewall are as
 2. Go to <strong>Network > Routing</strong>, select a Hub VPC, and set up the routing as follows.
     * Destination CIDR: 172.16.0.0/24
     * Gateway: Gateway of peering type added after peering connection
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings5.png" height="65%" />
+    <img src="../../static/images/23.12.19/ConnectionSettings5.png" height="65%" />
 <br>
 
 3. Go to <strong>Network > Routing</strong>, select a Spoke VPC, and set up the routing as follows.
     * Destination CIDR: 0.0.0.0/0
     * Gateway: Gateway of peering type added after peering connection
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings6.png" height="65%" />
+    <img src="../../static/images/23.12.19/ConnectionSettings6.png" height="65%" />
 
 > [Note]
 > 
@@ -145,9 +145,9 @@ The minimum network service resources needed to create a Network Firewall are as
     * Click the **Peer** or **Change Local Route** to set up routing as follows.
         * Destination CIDR: 0.0.0.0/0
         * Gateway: NetworkFirewall_INF_TRAFFIC_VIP
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings7.png" height="65%" />
+        <img src="../../static/images/23.12.19/ConnectionSettings7.png" height="65%" />
 <br>
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings8.png" height="50%" />
+<img src="../../static/images/23.12.19/ConnectionSettings8.png" height="50%" />
 
 Once the above routing settings are complete, instances in the Spoke VPC will be able to communicate publicly through the Network Firewall. (Requires adding NAT in <strong>Network Firewall > NAT</strong>)
 
@@ -161,9 +161,9 @@ When the subnets of Spoke VPC (172.16.0.0/24) are 172.16.0.0/25 and 172.16.0.128
 * Go to <strong>Network > Routing</strong>, and select Spoke VPC and add the two routings as follows.
     * Destination CIDR: 172.16.0.0/25 and 172.16.0.128/25
     * Gateway: Gateway of peering type added after peering connection
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings9.png" height="65%" />
+    <img src="../../static/images/23.12.19/ConnectionSettings9.png" height="65%" />
 <br>
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings10.png" height="65%" />
+<img src="../../static/images/23.12.19/ConnectionSettings10.png" height="65%" />
 Once the above routing settings are complete, private communication between subnets within the Spoke VPC can be made through the Network Firewall. (Requires adding a policy in<strong>Network Firewall > Policies</strong> tab)
 
 <br>
@@ -180,7 +180,7 @@ With Spoke VPC1 (172.16.0.0/24) and Spoke VPC2 (192.168.0.0/24)
     * Spoke VPC 2
         * Destination CIDR: 192.168.0.0/24
         * Gateway: Gateway of peering type added between Hub VPC and Spoke VPC1
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings11.png" height="65%" />
+        <img src="../../static/images/23.12.19/ConnectionSettings11.png" height="65%" />
 
 
 > [Note]
@@ -190,14 +190,14 @@ With Spoke VPC1 (172.16.0.0/24) and Spoke VPC2 (192.168.0.0/24)
 
 If you **configure spoke subnets in the same VPC**, create a new routing table to associate the subnets and add routes. 
 * In **Network > Routing**, create a routing table and add routes.
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_create.png" height="65%" />
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/route_create.png" height="65%" />
+<img src="../../static/images/24.11.07/routetable_create.png" height="65%" />
+<img src="../../static/images/24.11.07/route_create.png" height="65%" />
 
 <br>
 
 * In **Network > Subnet**, create a new spoke subnet that does not overlap the Network Firewall and associate a routing table with it.
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/subnet_create.png" height="65%" />
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_connect.png" height="65%" />
+<img src="../../static/images/24.11.07/subnet_create.png" height="65%" />
+<img src="../../static/images/24.11.07/routetable_connect.png" height="65%" />
 
 <br>
 
@@ -212,7 +212,7 @@ After creating Network Firewall and complete all connection settings, you can ac
 
 For example, if you configure 3 subnets with 2 Spoke VPCs in 1 project and need web firewall access from outside, set up NAT and ACLs as shown below.
 
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/instance-access
+<img src="../../static/images/24.09.12/instance-access
 .png" height="65%" />
 
 > [How to set up]
@@ -220,9 +220,9 @@ For example, if you configure 3 subnets with 2 Spoke VPCs in 1 project and need 
 > * Go to **Network Firewall > NAT** tab
 > * Click **Add** and set up NAT
 >   * Create a Destination IP object on the **Objects** tab before setup and need a spare floating IP 
-> <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/nat-add.png" height="65%" />
+> <img src="../../static/images/24.09.12/nat-add.png" height="65%" />
 * Allow the required ACLs on the **Network Firewall > Policies > ACLs** tab
-<img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/access_acl.png" height="65%" />  
+<img src="../../static/images/24.09.12/access_acl.png" height="65%" />  
 > 
 After setting up as above, you can access the instance if the departure IP is allowed in the security groups.
 
@@ -232,7 +232,7 @@ After setting up as above, you can access the instance if the departure IP is al
 ## Policy { #policy }
 After creating Network Firewall, go to the **Policies** tab.
 
-![policy-default.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-default.png)
+![policy-default.PNG](../static/images/24.09.12/policy-default.png)
 
 > [Note]
 >
@@ -254,7 +254,7 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
 * Add policies by setting options such as the status (enabled/disabled) and action (allow/block) of the policy, setting a schedule, and whether or not to log per policy.
 * The schedule feature works after you enable the policy's status (if the policy is disabled, the schedule feature does not apply).
 
-![acl_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/acl_add.png)
+![acl_add.PNG](../static/images/24.05.27/acl_add.png)
 
 <a id="copy"></a>
 ### Copy { #copy }
@@ -263,7 +263,7 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
     * Copy: Copy the same policy as the one you want to copy
     * Reverse copy: Copy by changing the source and destination of the policy you want to copy
 
-![acl_copy.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_copy_1.png)
+![acl_copy.PNG](../static/images/23.09.07/acl_copy_1.png)
 
 > [Note]
 > 
@@ -282,7 +282,7 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
 * Move the policy by clicking **Move**.
     * Could not move below the default-deny policy.
 
-![acl_move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_move_1.png)
+![acl_move.PNG](../static/images/23.09.07/acl_move_1.png)
 
 <a id="delete"></a>
 ### Delete { #delete }
@@ -302,7 +302,7 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
 
 * Register policies at once using the downloaded template.
 
-![acl_batch.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_batch_1.png)
+![acl_batch.PNG](../static/images/23.09.07/acl_batch_1.png)
 
 
 <a id="route"></a>
@@ -310,7 +310,7 @@ On the **ACLs** tab, you can control inbound and outbound traffic and traffic be
 
 On the **Route** tab, specify the path of communication through the Network Firewall.
 
-![policy-route.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-route.png)
+![policy-route.PNG](../static/images/24.09.12/policy-route.png)
 
 > [Note]
 >
@@ -335,7 +335,7 @@ On the **Route** tab, specify the path of communication through the Network Fire
 >       * 172.16.100.0/20 (x) → 172.16.96.0/20 (o)
 >       * 10.10.10.130/25 (x) → 10.10.10.128/25 (o)
 > 
-> ![route_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/route_add.png)
+> ![route_add.PNG](../static/images/24.09.12/route_add.png)
 
 <a id="route-modify"></a>
 ### Modify { #route-modify }
@@ -414,7 +414,7 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
     * For the public IP before NAT, select one of the pre-created IPs in **Network - Floating IP**.  
     * For the objects to be selected in Private IP after NAT, pre-create them on the **Objects** tab to add by clicking **Add**. 
 
-![nat_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.04.05/nat_add_2.png)
+![nat_add.PNG](../static/images/24.04.05/nat_add_2.png)
 
 >[Note]
 > * Instances can be accessed from the pre-NAT public IP that you set when adding NAT (Not required to connect a floating IP directly to the instance).
@@ -439,14 +439,14 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  > [Note]
  **Options -** **Enable****in Mirroring settings**to **enable**and use after activation (takes about 30 seconds to activate)
  <br>
- >     ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+ >     ![Mirorring_Config_Activation_800.png](../static/images/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
  
  <br>
  
  ### Mirroring rules
  
  * Add a mirroring rule to send the copied packets to the desired destination terminal.
- ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
+ ![Mirroring_Rule_Contents_Explain_1_900.png](../static/images/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
      * Name: Displays the name you set.
      * Orientation: Displays the orientation you set.
      * Mirror specified interface: Displays the interface of the selected Network Firewall.
@@ -463,7 +463,7 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  ### Add
  
  * You can add a mirroring rule by clicking **Add**.
- ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
+ ![Mirroring_Rule_Add_900.png](../static/images/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
      * Status: Sets whether the mirroring rule is active or not.
      * Direction: Sets the incoming/outgoing packets to be mirrored on the mirroring interface. This setting allows you to mirror only packets in a specific direction.
          * Receive (Rx): Packets received on the mirror-designated interface
@@ -484,8 +484,8 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  
  * Select a **filter group**.
      * If you haven't added a filter group before, you can add one by clicking **Add filter group**.
-     * See the [filter group description](#filter-groups) for more information.
- ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
+     * See the [filter group description](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9) for more information.
+ ![Mirroring_Rule_Filter_Group_900.png](../static/images/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
  
  > [Note]
  Only one filter group can be applied per rule.
@@ -510,7 +510,7 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  ### Filter Group
  
  * **Filter group** allow you to set filters to apply to mirroring rules so that only the packets you want are sent.
- ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
+ ![Filter_Group_Contents_Explain_1_900.png](../static/images/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
      * Name: Displays the name you set.
      * Associated mirroring rules: Displays mirroring rules that use this filter group.
      * Description: Displays a description.
@@ -520,7 +520,7 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  
  ### Add
  * You can add a filter group by clicking **Add**.
- ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
+ ![Filter_Group_Add_900.png](../static/images/Mirroring/25.03.06/Filter_Group_Add_900.png)
      * Define filter rules
          * Priority: The smaller the number, the higher the priority. Apply the rule to send mirroring packets starting with the highest priority.
          * Protocol: Specifies the protocol.
@@ -541,7 +541,7 @@ In the **NAT** (Network Address Translation) tab, select and connect a dedicated
  >
  > * You can delete or add rules by clicking the [-], [＋] buttons for each rule.
  > * You can change the priority of the rule by clicking the up and down buttons on each rule.
- ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+ ![Filter_Rule_900.png](../static/images/Mirroring/25.03.06/Filter_Rule_900.png)
  > * You can set up to 10 filter groups, including the default filter group.
  > * You can set up to 30 filter rules.
  > * Filter rules are applied from highest priority to lowest priority, so packets that have already been applied to a do not send rule will not be applied to the next priority rule.
@@ -616,7 +616,7 @@ The **VPN** tab enables secure, private communication over an encrypted tunnel b
 
 * Click **Create Gateway** to create a gateway to connect with peer VPN equipment.
 
-![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
+![gw_add.PNG](../static/images/24.05.27/gw_add.png)
 
 > [Note]
 >
@@ -640,14 +640,14 @@ The **VPN** tab enables secure, private communication over an encrypted tunnel b
 * Set the floating IP required to connect to the peer equipment.
     * Floating IPs that are not used appear in the list created in **Network > Floating IP**.
 
-![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
+![fip.PNG](../static/images/24.05.27/fip.png)
 
 <a id="create-tunnel"></a>
 ### Create Tunnel { #create-tunnel }
 
 * Create a tunnel to connect with the peer device.
 
-![tunnel_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/tunnel_add.png)
+![tunnel_add.PNG](../static/images/24.05.27/tunnel_add.png)
 
 * Set up Tunnel
     * Gateway: On the Gateway tab, the created gateways appear, and select the gateway you want to associate with the tunnel.
@@ -767,13 +767,13 @@ In the **Options** tab, set options required for operation of Network Firewall.
     * Syslog: Send logs with up to 2 remote addresses
         * Two remote locations can be configured individually (IP address, protocol, port number)
     * Object Storage: Send logs with the Object Storage service provided by NHN Cloud
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS_5.png" height="65%" />
+    <img src="../../static/images/24.11.07/OBS_5.png" height="65%" />
       * Access key/secret key: Enter the access key information that can be verified when registering S3 API credentials in the Object Storage service.
       * Bucket name: Enter the name of the container created by the Object Storage service
       * Endpoint: Check the endpoints by region and enter the endpoint according to your location.
       * Region: Check the region-specific name and enter the name according to the region location.
   * Log & Crash Search: Send logs to the Log &amp; Crash Search service provided by NHN Cloud.
- <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/LNCS_2.png" height="65%" />
+ <img src="../../static/images/24.11.07/LNCS_2.png" height="65%" />
       * AppKey: Enter the AppKey generated after activating the Log &amp; Crash Search service.
   
 > [Note]

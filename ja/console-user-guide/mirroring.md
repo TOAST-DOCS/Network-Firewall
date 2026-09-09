@@ -9,7 +9,7 @@
 
 !!! tip "ポイント"
     **オプション - ミラーリング設定**で**使用**に設定して有効化すると使用できます。(有効化まで約30秒かかります)
-    ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+    ![Mirorring_Config_Activation_800.png](../../static/images/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
 
 <br>
 
@@ -32,7 +32,7 @@
 ### 追加 { #add }
 
 * **追加**をクリックしてミラーリングルールを追加できます。
-    ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
+    ![Mirroring_Rule_Add_900.png](../../static/images/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
     * 状態：ミラーリングルールの有効化の有無を設定します。
     * 方向：ミラー指定インターフェースでミラーリングする受信/送信パケットを設定します。この設定により、特定の方向のパケットのみをミラーリングできます。
         * 受信(Rx)：ミラー指定インターフェースで受信するパケット
@@ -46,8 +46,8 @@
 
 * **フィルタグループ**を選択します。
     * 以前に追加したフィルタグループがない場合は、**フィルタグループ追加**をクリックしてフィルタグループを追加できます。
-    * 詳細については、[フィルタグループの説明](#configure-filter-group)をご参照ください。
-        ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
+    * 詳細については、[フィルタグループの説明](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)をご参照ください。
+        ![Mirroring_Rule_Filter_Group_900.png](../../static/images/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 <a id="modify"></a>
 ### 修正 { #modify }
@@ -96,7 +96,7 @@
         * 送信の有無：該当するルールに合致するパケットを送信するかどうかを設定します。
             * 送信：ルールに合致するパケットを送信します。
             * 未送信：ルールに合致するパケットを送信しません。
-    ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
+    ![Filter_Group_Add_900.png](../../static/images/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
 <a id="configure-filter-group-modify"></a>
 ### 修正 { #configure-filter-group-modify }
@@ -110,7 +110,7 @@
 
 !!! tip "ポイント"
     * 各ルールの[－]、[＋]ボタンをクリックして削除または追加でき、上、下ボタンをクリックしてルールの優先順位を変更できます。
-     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+     ![Filter_Rule_900.png](../../static/images/Mirroring/25.03.06/Filter_Rule_900.png)
     * フィルタグループは、defaultフィルタグループを含めて最大10個まで設定可能です。
     * フィルタルールは最大30個まで設定可能です。
     * フィルタルールは優先順位が高い順から低い順に適用されます。したがって、未送信ルールがすでに適用されたパケットには、次の優先順位のルールは適用されません。

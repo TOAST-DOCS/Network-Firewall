@@ -81,7 +81,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
     * 서브넷: Network Firewall에서 내부 트래픽 제어를 위해 사용할 서브넷
     * NAT: Network Firewall에서 외부 트래픽 제어를 위해 사용할 서브넷
     * 외부 전송: Network Firewall에서 생성된 트래픽과 로그를 전송할 서브넷
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/create.png" height="60%" />
+    <img src="../../../static/images/24.09.12/create.png" height="60%" />
 
 !!! tip "알아두기"
     * 생성된 Network Firewall은 사용자의 프로젝트에 노출되지 않습니다. 
@@ -104,9 +104,9 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 > Network Firewall이 사용하는 VPC(Hub)는 10.0.0.0/24이고, Network Firewall과 연결이 필요한 VPC(Spoke)는 172.16.0.0/24일 때
 
 1. **Network > Peering Gateway**로 이동하여 피어링을 생성합니다.
-    * 피어링 게이트웨이 연결에 대한 자세한 사항은 [사용자 가이드](/Network/Peering%20Gateway/ko/console-guide/)를 참조하세요.
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings3.png" height="65%" />
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings4.png" height="65%" />
+    * 피어링 게이트웨이 연결에 대한 자세한 사항은 [사용자 가이드](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)를 참조하세요.
+    <img src="../../../static/images/23.12.19/ConnectionSettings3.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings4.png" height="65%" />
 
 !!! tip "알아두기"
     * Spoke VPC의 위치에 따라 알맞은 피어링을 생성합니다. 
@@ -119,14 +119,14 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 2. **Network > Routing**으로 이동하여 Hub VPC를 선택한 후 아래의 라우팅을 설정합니다.
     * 대상 CIDR: 172.16.0.0/24
     * 게이트웨이: 피어링 연결 후 추가된 피어링 타입의 게이트웨이
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings5.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings5.png" height="65%" />
 
 <br>
 
 3. **Network > Routing**으로 이동하여 Spoke VPC를 선택한 후 아래의 라우팅을 설정합니다.
     * 대상 CIDR: 0.0.0.0/0
     * 게이트웨이: 피어링 연결 후 추가된 피어링 타입의 게이트웨이
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings6.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings6.png" height="65%" />
 
 !!! tip "알아두기"
     * 위와 같이 라우팅을 설정하면 Spoke VPC의 모든 통신이 Network Firewall을 통과하게 됩니다.
@@ -139,8 +139,8 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
     * **피어** 또는 **로컬 라우트 변경** 버튼을 눌러 아래와 같이 라우팅을 설정합니다.
         * 대상 CIDR: 0.0.0.0/0
         * 게이트웨이: NetworkFirewall\_INF\_TRAFFIC\_VIP
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings7.png" height="65%" />
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings8.png" height="50%" />
+        <img src="../../../static/images/23.12.19/ConnectionSettings7.png" height="65%" />
+        <img src="../../../static/images/23.12.19/ConnectionSettings8.png" height="50%" />
 
 위의 라우팅 설정이 완료되면 Spoke VPC에 있는 인스턴스가 Network Firewall을 경유하여 공인 통신을 할 수 있습니다. (**Network Firewall > NAT** 탭에서 목적지 NAT 추가 필요)
 
@@ -154,8 +154,8 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 * **Network > Routing**으로 이동하여 Spoke VPC를 선택한 후 아래의 라우팅 2개를 추가합니다.
     * 대상 CIDR: 172.16.0.0/25과 172.16.0.128/25
     * 게이트웨이: 피어링 연결 후 추가된 피어링 타입의 게이트웨이
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings9.png" height="65%" />
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings10.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings9.png" height="65%" />
+    <img src="../../../static/images/23.12.19/ConnectionSettings10.png" height="65%" />
 
 위의 라우팅 설정이 완료되면 Spoke VPC 안에 있는 서브넷 간 Network Firewall을 경유하여 사설 통신을 할 수 있습니다. (**Network Firewall > 정책** 탭에서 정책 추가 필요)
 
@@ -173,7 +173,7 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
     * Spoke VPC 2
         * 대상 CIDR: 192.168.0.0/24
         * 게이트웨이: Hub VPC와 Spoke VPC2 사이에 추가된 피어링 타입의 게이트웨이
-        <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.12.19/ConnectionSettings11.png" height="65%" />
+        <img src="../../../static/images/23.12.19/ConnectionSettings11.png" height="65%" />
 
 !!! tip "알아두기"
     **연결 설정**의 **4**와 같이 Spoke VPC2-Hub 간 VPC 피어링에도 라우트 추가 설정이 필요합니다.
@@ -182,14 +182,14 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 
 **만약 같은 VPC에서 Spoke 서브넷을 구성할 경우** 새로운 라우팅 테이블을 생성하여 서브넷을 연결하고 라우트를 추가합니다. 
 * **Network > Routing**에서 라우팅 테이블을 생성하고 라우트를 추가합니다.
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_create.png" height="65%" />
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/route_create.png" height="65%" />
+    <img src="../../../static/images/24.11.07/routetable_create.png" height="65%" />
+    <img src="../../../static/images/24.11.07/route_create.png" height="65%" />
 
 <br>
 
 * **Network > Subnet**에서 Network Firewall과 겹치지 않는 Spoke 서브넷을 새로 생성하고 라우팅 테이블을 연결합니다.
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/subnet_create.png" height="65%" />
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/routetable_connect.png" height="65%" />
+    <img src="../../../static/images/24.11.07/subnet_create.png" height="65%" />
+    <img src="../../../static/images/24.11.07/routetable_connect.png" height="65%" />
 
 <br>
 
