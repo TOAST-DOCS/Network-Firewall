@@ -9,7 +9,7 @@ The **Mirroring** tab copies network packets passing through Network Firewall to
 
 !!! tip "Note"
 This feature can be used after enabling it by setting it to **Enabled** in **Options - Mirroring Settings**. (Activation takes approximately 30 seconds.)
-![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+![Mirorring_Config_Activation_800.png](../../static/images/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
 
 <br>
 
@@ -32,7 +32,7 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 ### Add { #add }
 
 * You can add a mirroring rule by clicking **Add**.
-![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
+![Mirroring_Rule_Add_900.png](../../static/images/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
     * Status: Sets whether the mirroring rule is active or not.
     * Direction: Sets the incoming/outgoing packets to be mirrored on the mirroring interface. This setting allows you to mirror only packets in a specific direction.
         * Receive (Rx): Packets received on the mirror-designated interface
@@ -47,7 +47,7 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 * Select a **filter group**.
     * If there are no previously added filter groups, you can click **Add Filter Group** to add one.
     * For more information, see [Filter Group Description](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9).
-![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
+![Mirroring_Rule_Filter_Group_900.png](../../static/images/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 <a id="modify"></a>
 ### Modify { #modify }
@@ -97,7 +97,7 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
             * Forward: Forwards packets that match the rule.
             * Do not forward: Does not forward packets that match the rule.
 
-![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
+![Filter_Group_Add_900.png](../../static/images/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
 <a id="configure-filter-group-modify"></a>
 ### Modify { #configure-filter-group-modify }
@@ -112,7 +112,7 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 !!! tip "Note"
 
     * Click the [－] or [＋] button for each rule to delete or add rules, and click the up or down button to change the priority of a rule.
-    ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+    ![Filter_Rule_900.png](../../static/images/Mirroring/25.03.06/Filter_Rule_900.png)
     * Up to 10 filter groups can be configured, including the default filter group.
     * Up to 30 filter rules can be configured.
     * Filter rules are applied in order from the highest to the lowest priority. Therefore, packets that have already been processed by a do-not-forward rule will not be subject to the next priority rule.
