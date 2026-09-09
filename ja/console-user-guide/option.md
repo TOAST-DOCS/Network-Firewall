@@ -25,13 +25,13 @@
     * Syslog: 最大2つの遠隔地アドレスにログを送信
         * 2つの遠隔地は個別に設定可能(IPアドレス、プロトコル、ポート番号)
     * Object Storage: NHN Cloudで提供するObject Storageサービスへログを送信
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS_5.png" height="65%" />
+    <img src="../../../static/images/24.11.07/OBS_5.png" height="65%" />
         * アクセスキー / シークレットキー: Object StorageサービスでS3 API認証情報の登録時に確認可能なアクセスキー情報を入力
         * バケット名: Object Storageサービスで作成したコンテナの名称を入力
         * エンドポイント: リージョンごとのエンドポイントを確認し、位置に合わせてエンドポイントを入力
         * リージョン: リージョンごとの名称を確認し、リージョンの位置に合わせて名称を入力
     * Log & Crash Search: NHN Cloudで提供するLog & Crash Searchサービスへログを送信
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/LNCS_2.png" height="65%" />
+    <img src="../../../static/images/24.11.07/LNCS_2.png" height="65%" />
         * AppKey: Log & Crash Searchサービスを有効化した後に生成されたAppKeyを入力
 
 !!! tip "ポイント"

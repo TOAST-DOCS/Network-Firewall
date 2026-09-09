@@ -25,13 +25,13 @@ In the **Options** tab, you can set the options required for Network Firewall op
     * Syslog: Send logs with up to 2 remote addresses
         * The 2 remote addresses can be configured individually (IP address, protocol, port number)
     * Object Storage: Send logs with the Object Storage service provided by NHN Cloud
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS_5.png" height="65%" />
+    <img src="../../../static/images/24.11.07/OBS_5.png" height="65%" />
 * Access key / Secret key: Enter the access key information available when registering S3 API credentials in the Object Storage service.
       * Bucket name: Enter the name of the container created in the Object Storage service.
       * Endpoint: Check the endpoint for each region and enter the endpoint that matches your location.
       * Region: Check the name for each region and enter the name that matches your region.
   * Log &amp; Crash Search: Sends logs to the Log &amp; Crash Search service provided by NHN Cloud.
-  <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/LNCS_2.png" height="65%" />
+  <img src="../../../static/images/24.11.07/LNCS_2.png" height="65%" />
       * AppKey: Enter the AppKey generated after activating the Log &amp; Crash Search service
   
 !!! tip "Note"

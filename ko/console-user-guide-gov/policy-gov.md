@@ -84,7 +84,7 @@
             * 192.168.199.0/21 (X) → 192.168.192.0/21 (O)
             * 172.16.100.0/20 (X) → 172.16.96.0/20 (O)
             * 10.10.10.130/25 (X) → 10.10.10.128/25 (O)
-            ![route_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/route_add.png)
+            ![route_add.PNG](../../static/images/24.09.12/route_add.png)
 
 !!! danger "주의"
 
