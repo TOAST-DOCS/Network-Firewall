@@ -1,10 +1,15 @@
-## Network Firewallリリースノート
+<!-- pre-align:aligned sig=f90308ef9ace -->
+
+<a id="network-firewall-release-notes"></a>
+## Network Firewallリリースノート { #network-firewall-release-notes }
 
 **Security > Network Firewall > リリースノート**
 
-## 2026. 07. 28.
+<a id="july-28-2026"></a>
+## 2026. 07. 28. { #july-28-2026 }
 
-### 機能追加
+<a id="added-features"></a>
+### 機能追加 { #added-features }
 
 * インターフェース管理機能の追加
     * インターフェースタブで自由にインターフェースを作成し、Network Firewallに接続できます。
@@ -12,54 +17,66 @@
     * インスタンスが外部と通信する際、Network FirewallでNATを設定できます。
         * 1:1またはN:1で設定できます。
 
-### 機能改善・変更
+<a id="feature-updates"></a>
+### 機能改善・変更 { #feature-updates }
 
 * ルート追加画面の改善
     * ゲートウェイを直接入力せず、選択したイーサネットに合わせてインターフェースを選択できるよう、プルダウン形式に変更しました。
 * ACLポリシー追加画面の改善
     * ACLポリシーの追加時に、送信元/宛先インターフェースを選択できるよう画面を改善しました。
 
-### 機能削除
+<a id="removed-features"></a>
+### 機能削除 { #removed-features }
 
 * MTUサイズ設定オプションの削除
     * Network Firewallで使用中のインターフェースのMTUサイズ設定オプションを削除しました。
 
-## 2025. 10. 28.
+<a id="october-28-2025"></a>
+## 2025. 10. 28. { #october-28-2025 }
 
-### 機能改善
+<a id="october-28-2025-feature-updates"></a>
+### 機能改善 { #october-28-2025-feature-updates }
 
 * コピー機能の改善
     * 双方向のポリシーコピーが可能となるよう改善しました。
 
-### 機能削除
+<a id="october-28-2025-removed-features"></a>
+### 機能削除 { #october-28-2025-removed-features }
 
 * サポートアルゴリズムの削除
     * セキュリティ面で脆弱な暗号化及び完全性アルゴリズムを削除しました。
         * 暗号化アルゴリズム: DES、MD5、SHA1
         * 完全性アルゴリズム: DH Groups 1, 2, 5
 
-## 2025. 04. 29.
+<a id="april-29-2025"></a>
+## 2025. 04. 29. { #april-29-2025 }
 
-### 機能追加
+<a id="april-29-2025-added-features"></a>
+### 機能追加 { #april-29-2025-added-features }
 
 * ミラーリング管理機能の追加
     * Network Firewallを経由するトラフィックを特定の宛先にコピーして送信できます。
 
-## 2024. 10. 15.
+<a id="october-15-2024"></a>
+## 2024. 10. 15. { #october-15-2024 }
 
-### 機能追加
+<a id="october-15-2024-added-features"></a>
+### 機能追加 { #october-15-2024-added-features }
 
 * ルート管理機能の追加
     * ルートを設定して、Network Firewallを経由する通信を振り分けて管理できます。
 
-### 機能改善
+<a id="october-15-2024-feature-updates"></a>
+### 機能改善 { #october-15-2024-feature-updates }
 
 * Network Firewall作成手順の改善
     * Network Firewallの作成時にアベイラビリティゾーンを選択できるよう改善しました。
 
-## 2024. 07. 23.
+<a id="july-23-2024"></a>
+## 2024. 07. 23. { #july-23-2024 }
 
-### 機能追加/改善
+<a id="july-23-2024-feature-updates"></a>
+### 機能追加/改善 { #july-23-2024-feature-updates }
 
 * Network Firewall削除機能の追加
     * Network Firewallを削除できる機能を追加しました。
@@ -68,16 +85,19 @@
 * トラフィックログの改善
     * トラフィックログに表示されるカラム項目を追加しました。
 
-## 2024. 06. 25.
+<a id="june-25-2024"></a>
+## 2024. 06. 25. { #june-25-2024 }
 
-### 機能追加
+<a id="june-25-2024-added-features"></a>
+### 機能追加 { #june-25-2024-added-features }
 
 * IPSec VPN管理機能の追加
     * 遠隔地と安全なプライベート通信を行えるよう、IPSec VPN機能を追加しました。
 * ロギング機能の追加
     * ACLポリシー別にロギングの有無を設定できる機能を追加しました。
 
-### 機能改善・変更
+<a id="june-25-2024-feature-updates"></a>
+### 機能改善・変更 { #june-25-2024-feature-updates }
 
 * ポリシースケジュール機能の改善
     * ポリシーページでスケジュール使用の有無を確認できるようUIを改善しました。
@@ -86,16 +106,20 @@
     * セッショングラフで内/外部セッションを区別して表示されるよう改善しました。
     * 検索条件を改善しました。
 
-## 2024. 05. 14.
+<a id="may-14-2024"></a>
+## 2024. 05. 14. { #may-14-2024 }
 
-### 機能追加
+<a id="may-14-2024-added-features"></a>
+### 機能追加 { #may-14-2024-added-features }
 
 * NAT修正機能の追加
     * NATメインページに「修正」機能を追加しました。
 
-## 2024. 03. 26.
+<a id="march-26-2024"></a>
+## 2024. 03. 26. { #march-26-2024 }
 
-### 機能追加/改善
+<a id="march-26-2024-feature-updates"></a>
+### 機能追加/改善 { #march-26-2024-feature-updates }
 
 * MTU設定機能の追加
     * Network Firewallで使用中のインターフェースのMTUサイズを設定できるよう機能を追加しました。   
@@ -104,24 +128,30 @@
 * UI改善
     * ログ項目のうち、プロトコルが数字ではなく文字で表示されるようUIを改善しました。
 
-### 機能削除
+<a id="march-26-2024-removed-features"></a>
+### 機能削除 { #march-26-2024-removed-features }
 
 * NAT設定機能の削除
     * オプションで提供していたNAT有効化機能を削除し、Network Firewallの作成時に自動で有効化されるよう変更しました。
 
-## 2024. 01. 23.
+<a id="january-23-2024"></a>
+## 2024. 01. 23. { #january-23-2024 }
 
-### 機能追加
+<a id="january-23-2024-added-features"></a>
+### 機能追加 { #january-23-2024-added-features }
 
 * 機密情報の暗号化のために、SKM(Secure Key Manager)サービスとの連携を追加しました。
 
-### バグ修正
+<a id="bug-fixes"></a>
+### バグ修正 { #bug-fixes }
 
 * 断続的にAPIレスポンスが遅くなる現象を修正しました。
 
-## 2023. 12. 19.
+<a id="december-19-2023"></a>
+## 2023. 12. 19. { #december-19-2023 }
 
-### 機能追加/改善
+<a id="december-19-2023-feature-updates"></a>
+### 機能追加/改善 { #december-19-2023-feature-updates }
 
 * クォータ管理の追加
     * プロジェクト別のリソースを確認できるよう、クォータ管理機能を追加しました。
@@ -130,8 +160,10 @@
 * 機密情報処理の改善
     * CloudTrailに積載するログのうち、機密情報をマスキング処理できるよう改善しました。
 
-## 2023. 10. 31.
+<a id="october-31-2023"></a>
+## 2023. 10. 31. { #october-31-2023 }
 
-### Network Firewall新規サービスリリース
+<a id="new-service-launch"></a>
+### Network Firewall新規サービスリリース { #new-service-launch }
 
 Network Firewallは、NHN Cloudで使用するインフラ資産を安全に保護するために提供するネットワークセキュリティサービスです。

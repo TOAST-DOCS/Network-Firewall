@@ -1,14 +1,19 @@
-## Network Firewallを始める
+<!-- pre-align:aligned sig=f37ed2d1fbde -->
+
+<a id="getting-started-with-network-firewall"></a>
+## Network Firewallを始める { #getting-started-with-network-firewall }
 
 **Security > Network Firewall > コンソール使用ガイド > Network Firewallを始める**
 
 <br>
 
-## Network Firewallを作成する前に準備する
+<a id="prepare-before-creating-network-firewall"></a>
+## Network Firewallを作成する前に準備する { #prepare-before-creating-network-firewall }
 
 Network Firewallの作成に必要な最小限のネットワークサービスリソースは次のとおりです。
 
-### 1つのプロジェクトを構成する場合の準備事項
+<a id="requirements-for-a-single-project-configuration"></a>
+### 1つのプロジェクトを構成する場合の準備事項 { #requirements-for-a-single-project-configuration }
 
 * 1つのプロジェクト
 * 2つのVPC(Hub VPC、Spoke VPC)
@@ -17,7 +22,8 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 * Spoke VPC内に少なくとも1つのサブネット
 * Hub VPCのルーティングに接続されたインターネットゲートウェイ
 
-### 1つのプロジェクト内に2つのSpoke VPCを構成する場合の準備事項
+<a id="requirements-for-configuring-2-spoke-vpcs-within-a-single-project"></a>
+### 1つのプロジェクト内に2つのSpoke VPCを構成する場合の準備事項 { #requirements-for-configuring-2-spoke-vpcs-within-a-single-project }
 
 * 1つのプロジェクト
 * 3つのVPC(Hub VPC、Spoke1 VPC、Spoke2 VPC)
@@ -26,7 +32,8 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 * Spoke1 VPC、Spoke2 VPC内にそれぞれ少なくとも1つのサブネット
 * Hub VPCのルーティングに接続されたインターネットゲートウェイ
 
-### 1つ以上のプロジェクトを構成する場合の準備事項
+<a id="preparations-for-configuring-more-than-one-project"></a>
+### 1つ以上のプロジェクトを構成する場合の準備事項 { #preparations-for-configuring-more-than-one-project }
 
 * 2つのプロジェクト
 * 2つのVPC(それぞれのプロジェクトにHub VPC、Spoke VPC)
@@ -35,7 +42,8 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 * Spoke VPC内に少なくとも1つのサブネット
 * Hub VPCのルーティングに接続されたインターネットゲートウェイ
 
-### 異なるリージョン間のプロジェクトを構成する場合の準備事項
+<a id="preparations-for-configuring-cross-region-projects"></a>
+### 異なるリージョン間のプロジェクトを構成する場合の準備事項 { #preparations-for-configuring-cross-region-projects }
 
 * 1つのプロジェクト
 * 2つのVPC(KR1リージョンにHub VPC、KR2リージョンにSpoke VPC)
@@ -44,7 +52,8 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 * Spoke VPC内に少なくとも1つのサブネット
 * Hub VPCのルーティングに接続されたインターネットゲートウェイ
 
-### 単一VPC内に複数のサブネットを構成する場合の準備事項
+<a id="preparations-for-configuring-multiple-subnets-within-a-single-vpc"></a>
+### 単一VPC内に複数のサブネットを構成する場合の準備事項 { #preparations-for-configuring-multiple-subnets-within-a-single-vpc }
 
 * 1つのプロジェクト
 * 1つのVPC
@@ -61,7 +70,8 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 
 <br>
 
-## Network Firewallを作成する
+<a id="create-network-firewall"></a>
+## Network Firewallを作成する { #create-network-firewall }
 
 1. **Security > Network Firewall**に移動します。
 2. 各必須項目を全て選択し、下部の**Network Firewall作成**をクリックします。
@@ -87,7 +97,8 @@ Network Firewallの作成に必要な最小限のネットワークサービス�
 
 <br>
 
-## 接続を設定する
+<a id="configure-connection"></a>
+## 接続を設定する { #configure-connection }
 
 > [例]
 > Network Firewallが使用するVPC(Hub)が10.0.0.0/24であり、Network Firewallと接続が必要なVPC(Spoke)が172.16.0.0/24である場合

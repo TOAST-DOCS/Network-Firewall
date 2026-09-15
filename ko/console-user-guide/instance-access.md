@@ -1,4 +1,7 @@
-## 인스턴스 접속
+<!-- pre-align:aligned sig=1e5a2402cc4a -->
+
+<a id="instance-access"></a>
+## 인스턴스 접속 { #instance-access }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 인스턴스 접속**
 
@@ -6,7 +9,8 @@ Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network F
 
 <br>
 
-## 설정하기
+<a id="configure"></a>
+## 설정하기 { #configure }
 
 예를 들어, 1개의 프로젝트 내 2개의 Spoke VPC로 3개의 서브넷을 구성하고, 외부에서 웹방화벽 접속이 필요할 경우 아래와 같이 NAT, ACL을 설정합니다.
 

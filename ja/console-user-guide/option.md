@@ -1,4 +1,7 @@
-## オプション
+<!-- pre-align:aligned sig=05296d704911 -->
+
+<a id="options"></a>
+## オプション { #options }
 
 **Security > Network Firewall > コンソール使用ガイド > オプション**
 
@@ -6,14 +9,17 @@
 
 <br>
 
-## ログの設定
+<a id="configure-logs"></a>
+## ログの設定 { #configure-logs }
 
-### デフォルト遮断ポリシーのログ設定
+<a id="default-block-policy-log-settings"></a>
+### デフォルト遮断ポリシーのログ設定 { #default-block-policy-log-settings }
 
 * Network Firewallの作成後に必須で作成される、デフォルト遮断ポリシーログの保存の有無を選択します。
     * 使用を選択した場合、デフォルト遮断ポリシーによって生成されたログはトラフィックログで検索可能になります。
 
-### ログの遠隔送信設定
+<a id="log-remote-transfer-setting"></a>
+### ログの遠隔送信設定 { #log-remote-transfer-setting }
 
 * 遠隔地にトラフィックログを保存できるオプションを選択します。
     * Syslog: 最大2つの遠隔地アドレスにログを送信
@@ -37,18 +43,22 @@
 
 <br>
 
-## 一般設定
+<a id="configure-general-settings"></a>
+## 一般設定 { #configure-general-settings }
 
-### ミラーリング設定
+<a id="mirroring-settings"></a>
+### ミラーリング設定 { #mirroring-settings }
 
 * Network Firewallで提供する機能のうち、ミラーリングの使用の有無を選択できます。
     * 使用を選択した場合、必要なサブネットにはNetwork Firewallの作成時に使用したサブネットを使用します。
 
-### Network Firewall構成
+<a id="configure-network-firewall"></a>
+### Network Firewall構成 { #configure-network-firewall }
 
 * 単一または冗長化から、Network Firewallの構成方式を設定できます。
 
-### Network Firewallの削除
+<a id="delete-network-firewall"></a>
+### Network Firewallの削除 { #delete-network-firewall }
 
 * 運用中のNetwork Firewallを削除できます。
     * Network Firewallは韓国(パンギョ)リージョンと韓国(ピョンチョン)リージョンでそれぞれ削除できます。
@@ -66,7 +76,8 @@
     
 <br>
 
-## Network Firewallサービスの無効化
+<a id="disable-network-firewall-service"></a>
+## Network Firewallサービスの無効化 { #disable-network-firewall-service }
 
 **プロジェクト管理 > ご利用中のサービス**からNetwork Firewallサービスを無効化できます。
 

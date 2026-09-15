@@ -1,4 +1,7 @@
-## Mirroring
+<!-- pre-align:aligned sig=7c6d3654a3c5 -->
+
+<a id="mirroring"></a>
+## Mirroring { #mirroring }
 
 **Security > Network Firewall > Console User Guide > Mirroring**
 
@@ -10,7 +13,8 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 
 <br>
 
-## Configure Mirroring Rules
+<a id="configure-mirroring-rules"></a>
+## Configure Mirroring Rules { #configure-mirroring-rules }
 
 * Add mirroring rules to forward copied packets to the desired target device.
     * Name: Displays the name you set.
@@ -24,7 +28,8 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
         * Inactive: Disabled
     * Checks the detailed information of the configured mirroring rule.
 
-### Add
+<a id="add"></a>
+### Add { #add }
 
 * You can add a mirroring rule by clicking **Add**.
 ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
@@ -44,11 +49,13 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
     * For more information, see [Filter Group Description](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9).
 ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
-### Modify
+<a id="modify"></a>
+### Modify { #modify }
 
 * You can click **Modify** to modify a mirroring rule.
 
-### Delete
+<a id="delete"></a>
+### Delete { #delete }
 
 * You can click **Delete** to delete the mirroring rule.
 
@@ -61,7 +68,8 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 
 <br>
 
-### Configure Filter Group
+<a id="configure-filter-group"></a>
+## Configure Filter Group { #configure-filter-group }
 
 * By configuring filters to be applied to mirroring rules through the **Filter Group**, you can select and transmit only the packets you want.
     * Name: Displays the name you set.
@@ -69,7 +77,8 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
     * Description: Displays a description.
     * View filter rules: Check the rules configured for the filter group.
 
-### Add
+<a id="configure-filter-group-add"></a>
+### Add { #configure-filter-group-add }
 
 * You can click **Add** to add a filter group.
     * Filter Rule Definitions
@@ -90,11 +99,13 @@ This feature can be used after enabling it by setting it to **Enabled** in **Opt
 
 ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
-### Modify
+<a id="configure-filter-group-modify"></a>
+### Modify { #configure-filter-group-modify }
 
 * You can modify the filter group by clicking **Modify**.
 
-### Delete
+<a id="configure-filter-group-delete"></a>
+### Delete { #configure-filter-group-delete }
 
 * You can delete the filter group by clicking **Delete**.
 

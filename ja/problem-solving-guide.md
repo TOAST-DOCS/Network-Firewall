@@ -1,10 +1,14 @@
-## Network Firewallトラブルシューティングガイド
+<!-- pre-align:aligned sig=9be9bdfa8e4e -->
+
+<a id="network-firewall-troubleshooting-guide"></a>
+## Network Firewallトラブルシューティングガイド { #network-firewall-troubleshooting-guide }
 
 **Security > Network Firewall > トラブルシューティングガイド**
 
 <br>
 
-## Network Firewallサービスを作成できません。
+<a id="i-cannot-create-the-network-firewall-service"></a>
+## Network Firewallサービスを作成できません。 { #i-cannot-create-the-network-firewall-service }
 
 以下のネットワークリソースが準備されているかチェックします。
 
@@ -15,7 +19,8 @@
 
 <br>
 
-## Spoke VPCに属するインスタンスでインターネット通信ができません。
+<a id="instances-in-the-spoke-vpc-cannot-communicate-with-the-internet"></a>
+## Spoke VPCに属するインスタンスでインターネット通信ができません。 { #instances-in-the-spoke-vpc-cannot-communicate-with-the-internet }
 
 Spoke VPCのパブリック通信は、ルーティング、ピアリング、NAT、ACLポリシーが全て設定されて初めて動作します。以下の内容を確認してください。
 
@@ -28,7 +33,8 @@ Spoke VPCのパブリック通信は、ルーティング、ピアリング、NA
 
 <br>
 
-## 外部からインスタンスに接続できません。
+<a id="instances-cannot-be-accessed-from-outside"></a>
+## 外部からインスタンスに接続できません。 { #instances-cannot-be-accessed-from-outside }
 
 外部からインスタンスに接続するには、NAT、ACL、Security Groupsの設定が全て必要です。以下の内容を確認してください。
 
@@ -41,7 +47,8 @@ Spoke VPCのパブリック通信は、ルーティング、ピアリング、NA
 
 <br>
 
-## 遮断されたログがログタブに表示されません。
+<a id="blocked-logs-are-not-visible-in-the-log-tab"></a>
+## 遮断されたログがログタブに表示されません。 { #blocked-logs-are-not-visible-in-the-log-tab }
 
 default-denyポリシーによって遮断されたログは、デフォルト遮断ポリシーのログ設定を「使用」に変更することで確認できます。以下のパスで設定を確認してください。
 

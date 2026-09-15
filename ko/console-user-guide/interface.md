@@ -1,4 +1,7 @@
-## 인터페이스
+<!-- pre-align:aligned sig=b90768e8e6c9 -->
+
+<a id="interface"></a>
+## 인터페이스 { #interface }
 
 **Security > Network Firewall > 콘솔 사용 가이드 > 인터페이스**
 
@@ -6,21 +9,26 @@
 
 <br>
 
-## 인터페이스 설정하기
+<a id="configure-interface"></a>
+## 인터페이스 설정하기 { #configure-interface }
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 * **추가**를 클릭해 인터페이스를 추가합니다.
     * 이름을 입력하고, VPC, 서브넷을 선택합니다.
     ![(interface6)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface6.png)
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 * **수정**을 클릭해 인터페이스를 수정할 수 있습니다.
     * VPC와 서브넷은 수정이 불가능합니다.
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 * **삭제**를 클릭해 인터페이스를 삭제할 수 있습니다.
 
-### 사용 설정
+<a id="enabledisable"></a>
+### 사용 설정 { #enabledisable }
 * 오버플로우 메뉴에서 인터페이스를 사용 또는 미사용으로 설정할 수 있습니다.
 ![(interface7)](../../static/images/26.07.28/2.console-user-guide/5.interface/interface7.png)
 

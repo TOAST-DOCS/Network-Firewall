@@ -1,4 +1,7 @@
-## ポリシー
+<!-- pre-align:aligned sig=9132502e0f26 -->
+
+<a id="policy"></a>
+## ポリシー { #policy }
 
 **Security > Network Firewall > コンソール使用ガイド > ポリシー**
 
@@ -6,9 +9,11 @@
 
 <br>
 
-## ACLの設定
+<a id="configure-acl"></a>
+## ACLの設定 { #configure-acl }
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 
 * 送信元、宛先、宛先ポートに基づいてポリシーを追加できます。
     * すでに作成されているオブジェクトを通じて、送信元、宛先、宛先ポートを選択します。
@@ -17,32 +22,38 @@
 
 ![policy2.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy2.png)
 
-### コピー
+<a id="copy"></a>
+### コピー { #copy }
 
 * **コピー**をクリックしてポリシーをコピーできます。
     * コピー: コピーしたいポリシーと同じポリシーをコピー
     * 逆方向コピー: コピーしたいポリシーの送信元と宛先を変更してコピー
     ![policy3.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy3.png)
     
-### 修正
+<a id="modify"></a>
+### 修正 { #modify }
 
 * **修正**をクリックしてポリシーを修正できます。
 
-### 移動
+<a id="move"></a>
+### 移動 { #move }
 
 * **移動**をクリックしてポリシーを移動できます。
     * default-denyポリシーの下へは移動できません。
     ![policy4.PNG](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/3.policy/policy4.png)
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 
 * **削除**をクリックしてポリシーを削除できます。
 
-### ポリシー一括ダウンロード
+<a id="batch-download-of-policies"></a>
+### ポリシー一括ダウンロード { #batch-download-of-policies }
 
 * ポリシータブに作成されているポリシー全体を一度にダウンロードできます。
 
-### ポリシー一括登録
+<a id="batch-register-policies"></a>
+### ポリシー一括登録 { #batch-register-policies }
 
 * ダウンロードしたテンプレートを使用して、ポリシーを一度に登録できます。
 
@@ -58,20 +69,24 @@
 
 <br>
 
-## ルートの設定
+<a id="configure-routing"></a>
+## ルートの設定 { #configure-routing }
 
-### 追加
+<a id="configure-routing-add"></a>
+### 追加 { #configure-routing-add }
 
 * **追加**をクリックしてイーサネットを選択し、宛先とゲートウェイを入力します。 
     * 宛先: サブネット形式で入力
     * イーサネット: プルダウンリストに表示されるイーサネットを選択
     * ゲートウェイ: ホスト形式で入力
   
-### 修正
+<a id="configure-routing-modify"></a>
+### 修正 { #configure-routing-modify }
 
 * **修正**をクリックしてルートを修正できます。
 
-### 削除
+<a id="configure-routing-delete"></a>
+### 削除 { #configure-routing-delete }
 
 * **削除**をクリックしてルートを削除できます。
 

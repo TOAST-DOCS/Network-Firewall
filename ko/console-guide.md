@@ -1,14 +1,20 @@
-## Security > Network Firewall > 콘솔 사용 가이드
+<!-- pre-align:aligned sig=4fe6a8d6a81c -->
+
+<a id="security-network-firewall-console-user-guide"></a>
+## Security > Network Firewall > 콘솔 사용 가이드 { #security-network-firewall-console-user-guide }
 
 Network Firewall을 생성하기 위한 절차와 생성 이후 콘솔을 사용하는 방법을 설명합니다.
 
-## 시작하기
+<a id="get-started"></a>
+## 시작하기 { #get-started }
 
 Network Firewall을 사용하기 위해서는 가장 먼저 Network Firewall 서비스를 활성화합니다.
 
-## Network Firewall 생성
+<a id="create-network-firewall"></a>
+## Network Firewall 생성 { #create-network-firewall }
 
-### 사전 준비
+<a id="prerequisites"></a>
+### 사전 준비 { #prerequisites }
 
 Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아래와 같습니다.
 
@@ -70,7 +76,8 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 >* 위의 서비스 자원은 [Network] 카테고리에서 생성 가능합니다. 
 >* Network Firewall 생성은 프로젝트당 1개씩만 생성 가능합니다.
 
-### Network Firewall 생성
+<a id="create-network-firewall-2"></a>
+### Network Firewall 생성 { #create-network-firewall-2 }
 
 1. **Security > Network Firewall**로 이동합니다.
 2. 각 필수 항목을 모두 선택하고 하단의 **Network Firewall 생성**을 클릭합니다.
@@ -94,7 +101,8 @@ Network Firewall 생성에 필요한 최소 네트워크 서비스 자원은 아
 > * **Network > Network Interface**에서 Virtual_IP 타입으로 생성되어 있는 IP는 Network Firewall에서 이중화 용도로 사용 중이므로 삭제할 경우 통신이 차단될 수 있습니다.
 > * 단일 또는 이중화 구성을 선택하여 Network Firewall을 생성한 뒤 변경이 필요할 경우 **옵션** 탭에서 구성을 변경할 수 있습니다. 하지만 가용성 영역은 변경이 불가능하므로 이중화 구성의 경우 가급적 가용성 영역을 분리하여 구성하세요. 
 
-### 연결 설정
+<a id="connection-settings"></a>
+### 연결 설정 { #connection-settings }
 
 > [예시]
 > Network Firewall이 사용하는 VPC(Hub)는 10.0.0.0/24이고, Network Firewall과 연결이 필요한 VPC(Spoke)는 172.16.0.0/24일 때
@@ -198,7 +206,8 @@ Network Firewall 서비스 구성도를 참고하여 고객의 환경에 맞게 
 
 ***
 
-## 인스턴스 접속
+<a id="connect-to-instance"></a>
+## 인스턴스 접속 { #connect-to-instance }
 Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network Firewall을 경유하여 인스턴스에 접속할 수 있습니다.
 
 예를 들어, 1개의 프로젝트 내 2개의 Spoke VPC로 3개의 서브넷을 구성하고, 외부에서 웹방화벽 접속이 필요할 경우 아래와 같이 NAT, ACL을 설정합니다.
@@ -219,7 +228,8 @@ Network Firewall을 생성하고 연결 설정을 모두 완료한 후 Network F
 
 <br>>
 
-## 정책
+<a id="policy"></a>
+## 정책 { #policy }
 Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 ![policy-default.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/policy-default.png)
@@ -231,11 +241,13 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-## ACL
+<a id="acl"></a>
+## ACL { #acl }
 **ACL** 탭에서는 Network Firewall과 연결된 VPC 간 트래픽과 인바운드/아웃바운드 트래픽을 제어할 수 있습니다.
 <br/>
 
-### 추가
+<a id="add"></a>
+### 추가 { #add }
 
 * 출발지, 목적지, 목적지 포트를 기반으로 정책을 추가할 수 있습니다.
     * 이미 만들어진 객체를 통해 출발지, 목적지, 목적지 포트를 선택합니다.
@@ -244,7 +256,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 ![acl_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/acl_add.png)
 
-### 복사
+<a id="copy"></a>
+### 복사 { #copy }
 
 * **복사**를 클릭해 정책을 복사할 수 있습니다.
     * 복사: 복사하고자 하는 정책과 동일한 정책을 복사
@@ -257,30 +270,35 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > 복사된 정책은 비활성화됩니다. 사용이 필요할 경우 **수정**을 클릭해 정책을 활성화한 뒤 사용하세요.
 
 
-### 수정
+<a id="modify"></a>
+### 수정 { #modify }
 
 * **수정**을 클릭해 정책을 수정할 수 있습니다.
 
 
-### 이동
+<a id="move"></a>
+### 이동 { #move }
 
 * **이동**을 클릭해 정책을 이동할 수 있습니다.
     * default-deny 정책 아래로는 이동이 불가능합니다.
 
 ![acl_move.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/23.09.07/acl_move_1.png)
 
-### 삭제
+<a id="delete"></a>
+### 삭제 { #delete }
 
 * **삭제**를 클릭해 정책을 삭제할 수 있습니다.
 
 >[주의]
 >한번 삭제한 정책은 복구할 수 없으며, default-deny 정책은 삭제할 수 없습니다.
 
-### 정책 일괄 다운로드
+<a id="batch-download-of-policies"></a>
+### 정책 일괄 다운로드 { #batch-download-of-policies }
 
 * 정책 탭에 생성되어 있는 정책 전체를 한번에 다운로드할 수 있습니다.
 
-### 정책 일괄 등록
+<a id="batch-register-policies"></a>
+### 정책 일괄 등록 { #batch-register-policies }
 
 * 내려받은 템플릿을 사용하여 정책을 한 번에 등록할 수 있습니다.
 
@@ -288,7 +306,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-## 라우트
+<a id="route"></a>
+## 라우트 { #route }
 
 **라우트** 탭에서는 Network Firewall을 경유하는 통신의 경로를 지정할 수 있습니다.
 
@@ -299,7 +318,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * Network Firewall의 기본 게이트웨이는 NAT 이더넷이며, 수정하거나 삭제할 수 없습니다.
 > * 라우트 설정이 변경될 경우 통신에 문제가 있을 수 있으므로 유의하여 설정하세요.  
 
-### 추가
+<a id="route-add"></a>
+### 추가 { #route-add }
 
 * **추가**를 클릭해 이더넷을 선택하고, 목적지와 게이트웨이를 입력합니다. 
     * 목적지: 서브넷 형식으로 입력
@@ -318,21 +338,25 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > 
 > ![route_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.09.12/route_add.png)
 
-### 수정
+<a id="route-modify"></a>
+### 수정 { #route-modify }
 
 * **수정**을 클릭해 라우트를 수정할 수 있습니다.
 
-### 삭제
+<a id="route-delete"></a>
+### 삭제 { #route-delete }
 
 * **삭제**를 클릭해 라우트를 삭제할 수 있습니다.
 
 <br>
 
-## 객체
+<a id="object"></a>
+## 객체 { #object }
 
 **객체** 탭에서는 정책을 생성할 때 사용할 IP, 포트를 생성하고 관리합니다.
 
-### 추가
+<a id="object-add"></a>
+### 추가 { #object-add }
 
 * 필수 항목을 입력하여 객체를 생성합니다.
     * 객체는 IP, 포트의 2가지 형태로 추가할 수 있습니다.
@@ -340,12 +364,14 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > [참고]
 > 그룹 객체 생성 시 그룹 객체는 추가할 수 없습니다(단일이나 범위 객체만 선택하여 추가 가능).
 
-### 수정
+<a id="object-modify"></a>
+### 수정 { #object-modify }
 
 * **수정**을 클릭해 객체를 수정할 수 있습니다.
     * 타입은 수정이 불가능합니다.
 
-### 삭제
+<a id="object-delete"></a>
+### 삭제 { #object-delete }
 
 * **삭제**를 클릭해 객체를 삭제할 수 있습니다.
     * 자동으로 Network Firewall에서 생성한 객체는 수정이나 삭제할 수 없습니다.
@@ -353,20 +379,23 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 >[주의]
 > 정책에서 사용 중인 객체는 삭제 후 ALL 객체로 변경됩니다.
 
-### 인스턴스 객체 추가
+<a id="add-instance-objects"></a>
+### 인스턴스 객체 추가 { #add-instance-objects }
 * Network Firewall이 생성된 프로젝트 내에 있는 인스턴스를 활용하여 객체를 추가할 수 있습니다.
 
 > [참고]
 > 인스턴스와 관계없이 단순히 인스턴스의 이름과 사설 IP 주소만 참고하여 객체를 생성합니다. 생성한 객체는 **객체** 탭에서 관리합니다.
 
 
-### 객체 일괄 다운로드
+<a id="batch-download-of-objects"></a>
+### 객체 일괄 다운로드 { #batch-download-of-objects }
 
 * **객체** 탭에 생성되어 있는 IP와 포트 객체 전체를 각각 한 번에 다운로드할 수 있습니다.
 
 <br>
 
-## NAT
+<a id="nat"></a>
+## NAT { #nat }
 
 **NAT**(네트워크 주소 변환) 탭에서는 외부에서 접속할 인스턴스와 전용으로 사용할 공인 IP를 선택하여 연결합니다.
 
@@ -378,7 +407,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * NAT에 설정된 NAT 후 사설 IP를 소유한 인스턴스에 직접 Floating IP를 할당할 경우 통신에 문제가 있을 수 있습니다.
 > * NAT 삭제 후 사용하지 않는 NAT 전 공인 IP는 **Network > Floating**에서 직접 삭제하세요.
 
-### 추가
+<a id="nat-add"></a>
+### 추가 { #nat-add }
 
 * **추가**를 클릭해 NAT를 생성합니다.
     * NAT 전 공인 IP는 **Network > Floating IP**에서 미리 생성한 IP 중 하나를 선택합니다.  
@@ -389,18 +419,21 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 >[참고]
 > 인스턴스 접속은 NAT를 추가하면서 설정한 NAT 전 공인 IP로 접속 가능합니다. (인스턴스에 직접 Floating IP 연결 불필요)
 
-### 수정
+<a id="nat-modify"></a>
+### 수정 { #nat-modify }
 
 * **수정**을 클릭해 생성된 NAT를 수정합니다.
     * 수정은 공인 IP와 사설 IP 모두 수정할 수 있습니다.
 
-### 삭제
+<a id="nat-delete"></a>
+### 삭제 { #nat-delete }
 
 * **삭제**를 클릭해 생성된 NAT를 삭제합니다.
 
 <br>
 
-## 미러링
+<a id="mirroring"></a>
+## 미러링 { #mirroring }
 
 **미러링** 탭에서는 Network Firewall을 통과하는 네트워크 패킷을 IDS/IPS, SIEM, NDR 등의 위협 탐지 및 분석 솔루션으로 복사하여, 네트워크 위협을 실시간으로 탐지하고 대응할 수 있도록 합니다.
 
@@ -411,7 +444,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 미러링 룰
+<a id="mirroring-rules"></a>
+### 미러링 룰 { #mirroring-rules }
 
 * 미러링 룰을 추가하여 복사한 패킷을 원하는 대상 단말로 전송합니다.
 ![Mirroring_Rule_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Contents_Explain_1_900.png)
@@ -428,7 +462,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 추가
+<a id="mirroring-add"></a>
+### 추가 { #mirroring-add }
 
 * **추가**를 클릭해 미러링 룰을 추가할 수 있습니다.
     ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
@@ -460,7 +495,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 수정
+<a id="mirroring-modify"></a>
+### 수정 { #mirroring-modify }
 
 * **수정**을 클릭해 미러링 룰을 수정할 수 있습니다.
 
@@ -469,13 +505,15 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 삭제
+<a id="mirroring-delete"></a>
+### 삭제 { #mirroring-delete }
 
 * **삭제**를 클릭해 미러링 룰을 삭제할 수 있습니다.
 
 <br>
 
-### 필터 그룹
+<a id="filter-groups"></a>
+### 필터 그룹 { #filter-groups }
 
 * **필터 그룹**을 통해 미러링 룰에 적용할 필터를 설정하면 사용자가 원하는 패킷만 선별하여 전송할 수 있습니다.
 ![Filter_Group_Contents_Explain_1_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Contents_Explain_1_900.png)
@@ -486,7 +524,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 추가
+<a id="mirroring-add-2"></a>
+### 추가 { #mirroring-add-2 }
 * **추가**를 클릭해 필터 그룹을 추가할 수 있습니다.
     ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
     * 필터 규칙 정의
@@ -516,12 +555,14 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 수정
+<a id="mirroring-modify-2"></a>
+### 수정 { #mirroring-modify-2 }
 * **수정**을 클릭해 필터 그룹을 수정할 수 있습니다.
 
 <br>
 
-### 삭제
+<a id="mirroring-delete-2"></a>
+### 삭제 { #mirroring-delete-2 }
 * **삭제**를 클릭해 필터 그룹을 삭제할 수 있습니다.
 
 > [참고]
@@ -529,11 +570,13 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-## VPN
+<a id="vpn"></a>
+## VPN { #vpn }
 
 **VPN** 탭에서는 사이트간 암호화된 터널을 통해 안전한 사설 통신을 지원합니다.
 
-### 게이트웨이 생성
+<a id="create-gateway"></a>
+### 게이트웨이 생성 { #create-gateway }
 
 * **게이트웨이 생성**을 클릭해 피어 VPN 장비와 연결하기 위한 게이트웨이를 생성합니다.
 
@@ -544,23 +587,27 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * VPC와 서브넷은 수정할 수 없습니다.
 > * 게이트웨이는 최대 10개까지 생성 가능합니다.
 
-### 수정
+<a id="vpn-modify"></a>
+### 수정 { #vpn-modify }
 
 * **수정** 버튼을 클릭해 게이트웨이를 수정합니다.
 
-### 삭제
+<a id="vpn-delete"></a>
+### 삭제 { #vpn-delete }
 
 * **삭제** 버튼을 클릭해 게이트웨이를 삭제합니다.
     * 게이트웨이에 연결된 터널이 있을 경우 삭제가 되지 않습니다.
 
-### 플로팅 IP 연결
+<a id="associate-floating-ip"></a>
+### 플로팅 IP 연결 { #associate-floating-ip }
 
 * 피어 장비와의 연결에 필요한 플로팅 IP를 설정합니다.
     * 플로팅 IP는 **Network > Floating IP** 에 생성된 목록 중 미사용중인 항목이 노출됩니다.
 
 ![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
 
-### 터널 생성
+<a id="create-tunnel"></a>
+### 터널 생성 { #create-tunnel }
 
 * 피어 장비와 연결할 터널을 생성합니다.
 
@@ -594,7 +641,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
  >   * 172.16.0.0/12
  >   * 192.168.0.0/16 
 
-### 터널 연결
+<a id="connect-tunnel"></a>
+### 터널 연결 { #connect-tunnel }
 
 * 터널은 연결 대기 상태로 생성되며, **연결**을 클릭하여 생성된 터널과 피어 VPN 장비를 연결합니다.
 
@@ -607,21 +655,25 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
  >   * 주황색: **중지** 버튼을 클릭해 피어 VPN 장비간 연결이 중지된 상태
 > * 터널 생성이 완료된 이후 피어 장비의 종류와 설정에 따라 **연결**을 클릭하지 않아도 연결될 수 있습니다.
 
-### 터널 수정
+<a id="modify-tunnel"></a>
+### 터널 수정 { #modify-tunnel }
 
 * **수정** 버튼을 클릭해 터널을 수정합니다.
     * 설정값 중 게이트웨이를 제외한 모든 값은 수정이 가능하며, 수정할 경우 피어 VPN 장비도 동일한 값으로 수정해야 합니다.
 
-### 터널 중지
+<a id="stop-tunnel"></a>
+### 터널 중지 { #stop-tunnel }
 
 * **중지** 버튼을 클릭해 터널을 중지합니다.
     * 중지할 경우 피어 VPN 장비를 통한 사설 통신이 중단됩니다. 
 
-### 터널 삭제
+<a id="delete-tunnel"></a>
+### 터널 삭제 { #delete-tunnel }
 
 * **삭제** 버튼을 클릭해 터널을 삭제합니다.
 
-### 이벤트
+<a id="event"></a>
+### 이벤트 { #event }
 
 * 피어 VPN 장비와의 터널 연결 시 발생하는 이벤트 로그를 검색할 수 있습니다.
 
@@ -631,11 +683,13 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 > * VPN 터널을 통한 통신 로그 또는 터널 생성과 삭제 등의 감사 로그는 **로그** 탭에서 확인하세요.
 
 
-## 로그
+<a id="log"></a>
+## 로그 { #log }
 
 **로그** 탭에서는 Network Firewall에서 생성된 로그를 검색할 수 있습니다.
 
-### 검색
+<a id="search"></a>
+### 검색 { #search }
 
 * 트래픽: Network Firewall을 경유할 때 허용 또는 차단 정책에 의해 생성된 트래픽 로그를 검색
     * 조회는 1개월 단위로 최대 3개월까지의 과거 데이터만 검색 가능합니다.
@@ -645,26 +699,31 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 * Audit: 정책 생성 및 삭제 등 Network Firewall의 변경 사항에 대한 로그를 검색
     * 조회는 최대 1개월 단위로 검색 가능하며, 조직 서비스인 CloudTrail에서도 검색할 수 있습니다.
 
-### 엑셀 내려받기
+<a id="download-excel"></a>
+### 엑셀 내려받기 { #download-excel }
 
 * **엑셀 내려받기**를 클릭해 트래픽과 Audit 로그의 검색 결과를 다운로드할 수 있습니다..
     * 트래픽 로그의 최대 다운로드 개수는 30만 건입니다.
 
-## 모니터
+<a id="monitor"></a>
+## 모니터 { #monitor }
 
 **모니터** 탭에서는 Network Firewall의 상태를 실시간으로 확인할 수 있습니다.
 검색은 최대 24시간(1일) 내에서만 가능합니다.
 
-### 검색
+<a id="monitor-search"></a>
+### 검색 { #monitor-search }
 
 * 세션: 현재 Network Firewall을 통해 사용하는 세션의 수량
 * 네트워크 사용량: 현재 Network Firewall을 경유하는 인바운드/아웃바운드 트래픽
 
-## 옵션
+<a id="options"></a>
+## 옵션 { #options }
 
 **옵션** 탭에서는 Network Firewall 운영에 필요한 옵션을 설정할 수 있습니다.
 
-### 로그 설정
+<a id="log-settings"></a>
+### 로그 설정 { #log-settings }
 
 * 기본 차단 정책 로그 설정: Network Firewall 생성 후 필수로 생성되는 기본 차단 정책 로그의 저장 여부를 선택합니다.
     * 사용 선택 시 기본 차단 정책으로 생성된 로그는 트래픽 로그에서 검색 가능합니다.
@@ -689,7 +748,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-### 일반 설정
+<a id="general-settings"></a>
+### 일반 설정 { #general-settings }
 
 * MTU(maximum transmission unit) 크기 설정: Network Firewall에 연결된 이더넷의 MTU 크기를 설정합니다.
     * 트래픽: NHN Cloud 내부 통신에 사용하는 이더넷(피어링 통신 포함)
@@ -726,7 +786,8 @@ Network Firewall을 생성하면 **정책** 탭으로 이동합니다.
 
 <br>
 
-## 서비스 비활성화
+<a id="disable-service"></a>
+## 서비스 비활성화 { #disable-service }
 
 **프로젝트 관리 > 이용 중인 서비스**에서 Network Firewall 서비스를 비활성화할 수 있습니다.
 

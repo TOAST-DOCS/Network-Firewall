@@ -1,14 +1,19 @@
-## Getting started with Network Firewall
+<!-- pre-align:aligned sig=f37ed2d1fbde -->
+
+<a id="getting-started-with-network-firewall"></a>
+## Getting started with Network Firewall { #getting-started-with-network-firewall }
 
 **Security > Network Firewall > Console User Guide > Getting Started with Network Firewall**
 
 <br>
 
-## Prepare Before Creating Network Firewall
+<a id="prepare-before-creating-network-firewall"></a>
+## Prepare Before Creating Network Firewall { #prepare-before-creating-network-firewall }
 
 The minimum network service resources required to create Network Firewall are as follows:
 
-### Requirements for a single project configuration
+<a id="requirements-for-a-single-project-configuration"></a>
+### Requirements for a single project configuration { #requirements-for-a-single-project-configuration }
 
 * 1 Project
 * 2 VPCs (Hub VPC, Spoke VPC)
@@ -17,7 +22,8 @@ The minimum network service resources required to create Network Firewall are as
 * At least one subnet in the Spoke VPC
 * Internet gateway connected to the Routing of the Hub VPC
 
-### Requirements for configuring 2 Spoke VPCs within a single project
+<a id="requirements-for-configuring-2-spoke-vpcs-within-a-single-project"></a>
+### Requirements for configuring 2 Spoke VPCs within a single project { #requirements-for-configuring-2-spoke-vpcs-within-a-single-project }
 
 * 1 Project
 * 3 VPCs (Hub VPC, Spoke1 VPC, Spoke2 VPC)
@@ -26,7 +32,8 @@ The minimum network service resources required to create Network Firewall are as
 * At least one subnet each in the Spoke1 VPC and Spoke2 VPC
 * Internet gateway connected to the Routing of the Hub VPC
 
-### Preparations for configuring more than one project
+<a id="preparations-for-configuring-more-than-one-project"></a>
+### Preparations for configuring more than one project { #preparations-for-configuring-more-than-one-project }
 
 * 2 projects
 * 2 VPCs (Hub VPC and Spoke VPC for each project)
@@ -35,7 +42,8 @@ The minimum network service resources required to create Network Firewall are as
 * At least one subnet in the Spoke VPC
 * Internet gateway connected to the Routing of the Hub VPC
 
-### Preparations for configuring cross-region projects
+<a id="preparations-for-configuring-cross-region-projects"></a>
+### Preparations for configuring cross-region projects { #preparations-for-configuring-cross-region-projects }
 
 * 1 Project
 * 2 VPCs (Hub VPC in KR1 region and Spoke VPC in KR2 region)
@@ -44,7 +52,8 @@ The minimum network service resources required to create Network Firewall are as
 * At least one subnet in the Spoke VPC
 * Internet gateway connected to the Routing of the Hub VPC
 
-### Preparations for configuring multiple subnets within a single VPC
+<a id="preparations-for-configuring-multiple-subnets-within-a-single-vpc"></a>
+### Preparations for configuring multiple subnets within a single VPC { #preparations-for-configuring-multiple-subnets-within-a-single-vpc }
 
 * 1 Project
 * 1 VPC
@@ -62,7 +71,8 @@ The minimum network service resources required to create Network Firewall are as
 
 <br>
 
-## Create Network Firewall
+<a id="create-network-firewall"></a>
+## Create Network Firewall { #create-network-firewall }
 
 1. Go to **Security > Network Firewall**.
 2. Select all required items and click **Create Network Firewall** button at the bottom.
@@ -90,7 +100,8 @@ The minimum network service resources required to create Network Firewall are as
 
 <br>
 
-## Configure Connection
+<a id="configure-connection"></a>
+## Configure Connection { #configure-connection }
 
 > [Example]
 When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) that needs to connect to the Network Firewall is 172.16.0.0/24.

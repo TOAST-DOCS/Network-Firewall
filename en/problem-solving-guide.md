@@ -1,10 +1,14 @@
-## Network Firewall Troubleshooting Guide
+<!-- pre-align:aligned sig=9be9bdfa8e4e -->
+
+<a id="network-firewall-troubleshooting-guide"></a>
+## Network Firewall Troubleshooting Guide { #network-firewall-troubleshooting-guide }
 
 **Security > Network Firewall > Troubleshooting Guide**
 
 <br>
 
-## I cannot create the Network Firewall service.
+<a id="i-cannot-create-the-network-firewall-service"></a>
+## I cannot create the Network Firewall service. { #i-cannot-create-the-network-firewall-service }
 
 Check that the following network resources are prepared:
 
@@ -15,7 +19,8 @@ Check that the following network resources are prepared:
 
 <br>
 
-## Instances in the Spoke VPC cannot communicate with the internet.
+<a id="instances-in-the-spoke-vpc-cannot-communicate-with-the-internet"></a>
+## Instances in the Spoke VPC cannot communicate with the internet. { #instances-in-the-spoke-vpc-cannot-communicate-with-the-internet }
 
 Public communication from the Spoke VPC requires routing, peering, NAT, and ACL policies to all be configured. Check the following:
 
@@ -28,7 +33,8 @@ Public communication from the Spoke VPC requires routing, peering, NAT, and ACL 
 
 <br>
 
-## Instances cannot be accessed from outside.
+<a id="instances-cannot-be-accessed-from-outside"></a>
+## Instances cannot be accessed from outside. { #instances-cannot-be-accessed-from-outside }
 
 Accessing instances from outside requires NAT, ACL, and Security Groups to all be configured. Check the following:
 
@@ -41,7 +47,8 @@ Accessing instances from outside requires NAT, ACL, and Security Groups to all b
 
 <br>
 
-## Blocked logs are not visible in the Log tab.
+<a id="blocked-logs-are-not-visible-in-the-log-tab"></a>
+## Blocked logs are not visible in the Log tab. { #blocked-logs-are-not-visible-in-the-log-tab }
 
 Logs blocked by the default-deny policy can only be checked after changing the default block policy log setting to enabled. Check the settings at the following path:
 

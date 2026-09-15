@@ -1,4 +1,7 @@
-## モニター
+<!-- pre-align:aligned sig=d82b8d730add -->
+
+<a id="monitor"></a>
+## モニター { #monitor }
 
 **Security > Network Firewall > コンソール使用ガイド > モニター**
 
@@ -6,7 +9,8 @@
 
 <br>
 
-## Network Firewallの状態をチェックする
+<a id="check-network-firewall-status"></a>
+## Network Firewallの状態をチェックする { #check-network-firewall-status }
 
 Network Firewallインスタンスの右側にあるアイコンの色によって状態をチェックできます。
 
@@ -17,7 +21,8 @@ Network Firewallインスタンスの右側にあるアイコンの色によっ�
 
 <br>
 
-## 検索する
+<a id="search"></a>
+## 検索する { #search }
 
 * セッション：現在Network Firewallを通じて使用しているセッション数
 * ネットワーク使用量：現在Network Firewallを経由するインバウンド/アウトバウンドトラフィック

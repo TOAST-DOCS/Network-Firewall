@@ -1,4 +1,7 @@
-## ミラーリング
+<!-- pre-align:aligned sig=7c6d3654a3c5 -->
+
+<a id="mirroring"></a>
+## ミラーリング { #mirroring }
 
 **Security > Network Firewall > コンソール使用ガイド > ミラーリング**
 
@@ -10,7 +13,8 @@
 
 <br>
 
-## ミラーリングルールを設定する
+<a id="configure-mirroring-rules"></a>
+## ミラーリングルールを設定する { #configure-mirroring-rules }
 
 * ミラーリングルールを追加して、コピーしたパケットを任意の対象端末に送信します。
     * 名前：設定した名前を表示します。
@@ -24,7 +28,8 @@
         * Inactive：無効
     * 詳細表示：設定したミラーリングルールの詳細情報を確認します。
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 
 * **追加**をクリックしてミラーリングルールを追加できます。
     ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
@@ -44,11 +49,13 @@
     * 詳細については、[フィルタグループの説明](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)をご参照ください。
         ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
-### 修正
+<a id="modify"></a>
+### 修正 { #modify }
 
 * **修正**をクリックしてミラーリングルールを修正できます。
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 
 * **削除**をクリックしてミラーリングルールを削除できます。
 
@@ -61,7 +68,8 @@
 
 <br>
 
-### フィルタグループを設定する
+<a id="configure-filter-group"></a>
+## フィルタグループを設定する { #configure-filter-group }
 
 * **フィルタグループ**を通じてミラーリングルールに適用するフィルタを設定すると、ユーザーが指定したパケットのみを選別して送信できます。
     * 名前：設定した名前を表示します。
@@ -69,7 +77,8 @@
     * 説明：説明を表示します。
     * フィルタルールの表示：該当するフィルタグループに設定されたルールを確認します。
 
-### 追加
+<a id="configure-filter-group-add"></a>
+### 追加 { #configure-filter-group-add }
 
 * **追加**をクリックしてフィルタグループを追加できます。
   * フィルタルールの定義
@@ -89,11 +98,13 @@
             * 未送信：ルールに合致するパケットを送信しません。
     ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
-### 修正
+<a id="configure-filter-group-modify"></a>
+### 修正 { #configure-filter-group-modify }
 
 * **修正**をクリックしてフィルタグループを修正できます。
 
-### 削除
+<a id="configure-filter-group-delete"></a>
+### 削除 { #configure-filter-group-delete }
 
 * **削除**をクリックしてフィルタグループを削除できます。
 

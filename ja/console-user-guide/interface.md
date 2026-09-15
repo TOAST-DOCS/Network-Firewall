@@ -1,4 +1,7 @@
-## インターフェース
+<!-- pre-align:aligned sig=b90768e8e6c9 -->
+
+<a id="interface"></a>
+## インターフェース { #interface }
 
 **Security > Network Firewall > コンソール使用ガイド > インターフェース**
 
@@ -6,21 +9,26 @@
 
 <br>
 
-## インターフェースを設定する
+<a id="configure-interface"></a>
+## インターフェースを設定する { #configure-interface }
 
-### 追加
+<a id="add"></a>
+### 追加 { #add }
 * **追加**をクリックしてインターフェースを追加します。
     * 名前を入力し、VPC、サブネットを選択します。
     ![(interface6)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface6.png)
 
-### 修正
+<a id="modify"></a>
+### 修正 { #modify }
 * **修正**をクリックしてインターフェースを修正できます。
     * VPCとサブネットは修正できません。
 
-### 削除
+<a id="delete"></a>
+### 削除 { #delete }
 * **削除**をクリックしてインターフェースを削除できます。
 
-### 使用設定
+<a id="enabledisable"></a>
+### 使用設定 { #enabledisable }
 * オーバーフローメニューからインターフェースを使用、または未使用に設定できます。
 ![(interface7)](https://static.toastoven.net/prod_nfw/26.07.28/2.console-user-guide/5.interface/interface7.png)
 
