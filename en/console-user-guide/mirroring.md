@@ -8,8 +8,8 @@
 The **Mirroring** tab copies network packets passing through Network Firewall to threat detection and analysis solutions such as IDS/IPS, SIEM, and NDR, enabling real-time detection and response to network threats.
 
 !!! tip "Note"
-This feature can be used after enabling it by setting it to **Enabled** in **Options - Mirroring Settings**. (Activation takes approximately 30 seconds.)
-![Mirorring_Config_Activation_800.png](../../static/images/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+    This feature can be used after enabling it by setting it to **Enabled** in **Options - Mirroring Settings**. (Activation takes approximately 30 seconds.)
+    ![Mirorring_Config_Activation_800.png](../../static/images/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
 
 <br>
 
