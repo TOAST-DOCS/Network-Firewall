@@ -14,7 +14,7 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
 
 * Click **Create Gateway** to create a gateway for connecting to a peer VPN device.
 
-![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
+![gw_add.PNG](../../static/images/24.05.27/gw_add.png)
 
 <a id="modify"></a>
 ### Modify { #modify }
@@ -33,7 +33,7 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
 * Configure the floating IP required for connection with the peer device.
     * Only unused floating IPs from the list created in **Network > Floating IP** are displayed.
 
-![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
+![fip.PNG](../../static/images/24.05.27/fip.png)
 
 !!! tip "Note"
 
@@ -47,7 +47,7 @@ The **VPN** tab supports secure private communication through encrypted tunnels 
 
 * Create a tunnel to connect to the peer device.
 
-![tunnel_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/tunnel_add.png)
+![tunnel_add.PNG](../../static/images/24.05.27/tunnel_add.png)
 
 * Tunnel settings
     * Gateway: Gateways created in the Gateway tab are displayed. Select the gateway to connect to the tunnel.

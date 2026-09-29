@@ -25,18 +25,18 @@
     * Syslog: 最大2つの遠隔地アドレスにログを送信
         * 2つの遠隔地は個別に設定可能(IPアドレス、プロトコル、ポート番号)
     * Object Storage: NHN Cloudで提供するObject Storageサービスへログを送信
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/OBS_5.png" height="65%" />
+    <img src="../../../static/images/24.11.07/OBS_5.png" height="65%" />
         * アクセスキー / シークレットキー: Object StorageサービスでS3 API認証情報の登録時に確認可能なアクセスキー情報を入力
         * バケット名: Object Storageサービスで作成したコンテナの名称を入力
         * エンドポイント: リージョンごとのエンドポイントを確認し、位置に合わせてエンドポイントを入力
         * リージョン: リージョンごとの名称を確認し、リージョンの位置に合わせて名称を入力
     * Log & Crash Search: NHN Cloudで提供するLog & Crash Searchサービスへログを送信
-    <img src="https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.11.07/LNCS_2.png" height="65%" />
+    <img src="../../../static/images/24.11.07/LNCS_2.png" height="65%" />
         * AppKey: Log & Crash Searchサービスを有効化した後に生成されたAppKeyを入力
 
 !!! tip "ポイント"
 
-    * Object Storage設定時、[ユーザーガイド](https://docs.nhncloud.com/ko/Storage/Object%20Storage/ko/s3-api-guide/#aws-sdk)を参考にして入力してください。
+    * Object Storage設定時、[ユーザーガイド](/Storage/Object%20Storage/ja/s3-api-guide/#aws-sdk)を参考にして入力してください。
     * Log & Crash Searchサービスを使用する場合、ログアラーム設定機能を活用して異常な振る舞いを検知できます。
     例えば、Network Firewallに特定の宛先に向かうSSH通信に対するACL遮断ポリシーを追加した後、該当するポリシーから発生するログに対するアラーム条件を設定します。(例: 1分間にSSH接続の試行ログが20回以上発生)
     ユーザーが設定した条件を満たした場合、アラームを受信できます。  
