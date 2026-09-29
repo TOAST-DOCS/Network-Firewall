@@ -63,7 +63,7 @@ NHN Cloud에 특화된 접근 제어를 적용할 수 있고, 별도의 방화�
 
     * 위의 구성도는 일반적인 구성이며, 고객의 환경에 따라 Network Firewall을 제외한 WEB, WAS, Load Balancer 등의 구성이 다를 수 있습니다.
 
-    * 다른 리전의 프로젝트 환경에서는 같은 프로젝트만 구성 가능합니다. 자세한 내용은 [사용자 가이드](https://docs.nhncloud.com/ko/Network/Peering%20Gateway/ko/console-guide/)를 참고하세요.
+    * 다른 리전의 프로젝트 환경에서는 같은 프로젝트만 구성 가능합니다. 자세한 내용은 [사용자 가이드](/Network/Peering%20Gateway/ko/console-guide/)를 참고하세요.
 
 !!! danger "주의"
 

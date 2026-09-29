@@ -14,7 +14,7 @@
 
 * **ゲートウェイ作成**をクリックして、ピアVPN機器と接続するためのゲートウェイを作成します。
 
-![gw_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/gw_add.png)
+![gw_add.PNG](../../static/images/24.05.27/gw_add.png)
 
 <a id="modify"></a>
 ### 修正 { #modify }
@@ -33,7 +33,7 @@
 * ピア機器との接続に必要なフローティングIPを設定します。
     * フローティングIPは、**Network > フローティングIP**で作成された一覧のうち、未使用の項目が表示されます。
 
-![fip.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/fip.png)
+![fip.PNG](../../static/images/24.05.27/fip.png)
 
 !!! tip "ポイント"
 
@@ -47,7 +47,7 @@
 
 * ピア機器と接続するトンネルを作成します。
 
-![tunnel_add.PNG](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/24.05.27/tunnel_add.png)
+![tunnel_add.PNG](../../static/images/24.05.27/tunnel_add.png)
 
 * トンネルの設定
     * ゲートウェイ: ゲートウェイタブで作成されたゲートウェイが表示され、トンネルと接続するゲートウェイを選択します。
