@@ -112,10 +112,10 @@ When the VPC (Hub) used by Network Firewall is 10.0.0.0/24, and the VPC (Spoke) 
  <img src="../../../static/images/23.12.19/ConnectionSettings4.png" height="65%" />
    
 !!! tip "Note"
-\* Create the appropriate peering based on the location of the Spoke VPC.
-\* If the Spoke VPC is in the same project, create a peering.
-\* If the Spoke VPC is in a different project, create a project peering.
-\* If the Spoke VPC is in a different region, create a region peering.
+    \* Create the appropriate peering based on the location of the Spoke VPC.
+    \* If the Spoke VPC is in the same project, create a peering.
+    \* If the Spoke VPC is in a different project, create a project peering.
+    \* If the Spoke VPC is in a different region, create a region peering.
 
 <br>
 
