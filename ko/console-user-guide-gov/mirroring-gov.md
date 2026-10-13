@@ -6,7 +6,7 @@
 
 !!! tip "알아두기"
     **옵션 - 미러링 설정**에서 **사용**으로 설정하여 활성화 후 사용할 수 있습니다. (활성화까지 약 30초 소요)
-    ![Mirorring_Config_Activation_800.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
+    ![Mirorring_Config_Activation_800.png](../../static/images/Mirroring/25.03.06/Mirorring_Config_Activation_800.png)
 
 <br>
 
@@ -27,7 +27,7 @@
 ### 추가
 
 * **추가**를 클릭해 미러링 룰을 추가할 수 있습니다.
-    ![Mirroring_Rule_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
+    ![Mirroring_Rule_Add_900.png](../../static/images/Mirroring/25.03.06/Mirroring_Rule_Add_900.png)
     * 상태: 미러링 룰의 활성화 여부를 설정합니다.
     * 방향: 미러 지정 인터페이스에서 미러링할 수신/송신 패킷을 설정합니다. 해당 설정을 통해 특정 방향의 패킷만 미러링할 수 있습니다.
         * 수신(Rx): 미러 지정 인터페이스에서 수신하는 패킷
@@ -42,7 +42,7 @@
 * **필터 그룹**을 선택합니다.
     * 이전에 추가한 필터 그룹이 없으면 **필터 그룹 추가**를 클릭하여 필터 그룹을 추가할 수 있습니다.
     * 자세한 사항은 [필터 그룹 설명](#%ED%95%84%ED%84%B0%20%EA%B7%B8%EB%A3%B9)을 참고하세요.
-        ![Mirroring_Rule_Filter_Group_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
+        ![Mirroring_Rule_Filter_Group_900.png](../../static/images/Mirroring/25.03.06/Mirroring_Rule_Filter_Group_900.png)
 
 ### 수정
 
@@ -87,7 +87,7 @@
         * 전송 여부: 해당 규칙에 부합하는 패킷의 전송 여부를 설정합니다.
             * 전송: 규칙에 맞는 패킷을 전송합니다.
             * 미전송: 규칙에 맞는 패킷을 전송하지 않습니다.
-    ![Filter_Group_Add_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Group_Add_900.png)
+    ![Filter_Group_Add_900.png](../../static/images/Mirroring/25.03.06/Filter_Group_Add_900.png)
 
 ### 수정
 
@@ -99,7 +99,7 @@
 
 !!! tip "알아두기"
     * 각 규칙의 [－], [＋] 버튼을 클릭해 삭제하거나 추가할 수 있고, 위, 아래 버튼을 클릭해 규칙의 우선순위를 변경할 수 있습니다.
-     ![Filter_Rule_900.png](https://kr1-api-object-storage.nhncloudservice.com/v1/AUTH_2acdfabf4efe4efc8a04c00b348110c9/cdn_origin/prod_nfw/Mirroring/25.03.06/Filter_Rule_900.png)
+     ![Filter_Rule_900.png](../../static/images/Mirroring/25.03.06/Filter_Rule_900.png)
     * 필터 그룹은 default 필터 그룹을 포함하여 최대 10개까지 설정 가능합니다.
     * 필터 규칙은 최대 30개까지 설정 가능합니다.
     * 필터 규칙은 우선순위가 높은 순에서 낮은 순으로 적용합니다. 따라서 미전송 규칙에 이미 적용 받은 패킷은 다음 우선순위 규칙에 적용을 받지 않습니다.
